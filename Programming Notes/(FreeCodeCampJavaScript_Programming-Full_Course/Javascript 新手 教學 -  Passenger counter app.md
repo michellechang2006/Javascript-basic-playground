@@ -195,7 +195,7 @@ console.log(count);
 2. 將`myAge`這個變數顯示在控制台。
    Log the myAge variable to the console
 
-[（參考答案）]()
+[參考答案](#Challenge-參考答案)
 
 ### ⚠️ 注意
 
@@ -290,7 +290,7 @@ console.log(count);
 3. 將`myDogAge`這個變數顯示在控制台。
    Log myDogAge to the console
    
-[（參考答案）]()
+[參考答案](#Challenge-參考答案)
 
 ## [Reassigning & incrementing](https://youtu.be/jS4aFq5-91M?t=977)
 
@@ -355,7 +355,7 @@ console.log(count);
 3. 每個設定變數值的步驟後，將其值（Console. Log ）顯示在控制台。
    Console. Log the value after each step
 
-[（參考答案）]()
+[參考答案](#Challenge-參考答案)
 
 ## [onclick event listener](https://youtu.be/jS4aFq5-91M?t=1299)
 
@@ -533,7 +533,7 @@ countDown () // 調用 （callback）countDown 函數
 2. 調用（callback) 此函式
   Call/ invoke the function
 
-[（參考答案）]()
+[參考答案](#Challenge-參考答案)
 
 > [MDN Docs](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function)
 
@@ -553,7 +553,7 @@ let lap2 = 33
 let lap3 = 36
 ```
 
-[（參考答案）]()
+[參考答案](#Challenge-參考答案)
 
 
 ### ⚠️ 注意 - 關於 `let` 變數的宣告方式
@@ -634,7 +634,7 @@ let lapsCompleted = 0
 console.log(lapsCompleted)
 ```
 
-[參考答案](###Function-that-increments)
+[參考答案](#Challenge-參考答案)
 
 ## Challenge 參考答案
 

@@ -1,3 +1,20 @@
+## 🔗 Section links 
+[Setting up file](#Setting-up-file)
+
+[Create variable](#Create-variable)
+
+[Mathematical operations](#Mathematical-operations)
+
+[Reassigning & incrementing](#Reassigning-&-incrementing)
+
+[Write your first function](#Write-your-first-function)
+
+[Function that logs sum](#Function-that-logs-sum)
+
+[本章節 Challenge 題庫](link)
+
+[🏁 Challenge 參考答案](#Challenge-參考答案)
+
 ## [Setting up file](https://youtu.be/jS4aFq5-91M?t=279)
 
 ### 在 HTML檔案中，嵌入Javascript 程式碼
@@ -120,6 +137,7 @@ let count = 0;
 ##### **📝 延伸-宣告方式**
 
 JS 有三種宣告方式（ES6增加let和const關鍵字來宣告變數），包含了：
+
 [`var`](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/var)
 
 宣告一個可隨意更改其內容的變數
@@ -311,7 +329,6 @@ console.log(count);
 
 不是每個變數的宣告方式，都可以重新分配變數的值。（後面我們會提到）
 
-
 [`var`](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/var)
 
 宣告一個可隨意更改其內容的變數
@@ -444,7 +461,7 @@ console.log(1)
 
 ### 🐶
 
-當我們寫一個函式時，如果沒有調用（callback)函式時，則不會執行。我們可以把JS函式想像成一隻狗狗，我們寫函式時像是在訓練一隻狗狗做特定動作，如果我們沒有對狗狗「下指令」（callback），狗狗當然不會做我們剛剛教牠的動作，這就像我們沒有調用（callback)函式，函式的程式碼不會執行。
+當我們寫一個函函式時，如果沒有調用（callback)函函式時，則不會執行。我們可以把JS函函式想像成一隻狗狗，我們寫函函式時像是在訓練一隻狗狗做特定動作，如果我們沒有對狗狗「下指令」（callback），狗狗當然不會做我們剛剛教牠的動作，這就像我們沒有調用（callback)函式，函式的程式碼不會執行。
 
 範例碼 - 沒有調用（callback)函函式：
 
@@ -488,11 +505,6 @@ countDown () // 調用 （callback）countDown 函數
 ```
 
 ![](https://i.imgur.com/WgCX97R.png)
-
-#### 🖼️ **圖解**
-
-![](https://i.imgur.com/Ef3ivNN.png)
-
 
 > [MDN Docs](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function)
 
@@ -557,12 +569,9 @@ console.log(totalTime) // output: ReferenceError: totalTime is not defined
 
 ![](https://i.imgur.com/Gq42uWz.png)
 
->[MDN Docs](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
-
 ### 🗂️ Reference
 
 >[解釋 Scope ( Global scope / Function scope / Block scope )](https://ithelp.ithome.com.tw/m/articles/10259529)
-
 
 ## Challenge 參考答案
 

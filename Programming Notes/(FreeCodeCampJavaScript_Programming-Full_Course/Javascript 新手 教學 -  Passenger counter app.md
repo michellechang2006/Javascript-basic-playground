@@ -13,7 +13,7 @@
 
 [本章節 Challenge 題庫](link)
 
-[🏁 Challenge 參考答案](#🏁-Challenge-參考答案)
+[🏁 Challenge 參考答案](#Challenge-參考答案)
 
 ## [Setting up file](https://youtu.be/jS4aFq5-91M?t=279)
 
@@ -572,7 +572,7 @@ console.log(totalTime) // output: ReferenceError: totalTime is not defined
 
 >[解釋 Scope ( Global scope / Function scope / Block scope )](https://ithelp.ithome.com.tw/m/articles/10259529)
 
-## 🏁 Challenge 參考答案
+## Challenge 參考答案
 
 ### [Create variable](https://youtu.be/jS4aFq5-91M?t=462)
 

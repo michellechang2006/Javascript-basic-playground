@@ -1,0 +1,154 @@
+{
+  "main": {
+    "id": "5ae25bf627c43c84",
+    "type": "split",
+    "children": [
+      {
+        "id": "9351256ceebc1aaf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9d808c9742b4482a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "(FreeCodeCampJavaScript_Programming-Full_Course/Javascript 新手 教學 -  Passenger counter app.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9c530ac9d0d2f63b",
+    "type": "split",
+    "children": [
+      {
+        "id": "29197dbe1ac9d7a5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "119267e6f8a79b9c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d63e4ad5f99309e8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "01d924ec307bd09e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "d892416d61527190",
+    "type": "split",
+    "children": [
+      {
+        "id": "b506648eaeaf68ec",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a64521a9f2771bcc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "(FreeCodeCampJavaScript_Programming-Full_Course/Javascript 新手 教學 -  Passenger counter app.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "25d17f84cce93538",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "(FreeCodeCampJavaScript_Programming-Full_Course/Javascript 新手 教學 -  Passenger counter app.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c7a71c2a00773204",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "60a0babc65998b18",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "(FreeCodeCampJavaScript_Programming-Full_Course/Javascript 新手 教學 -  Passenger counter app.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "9d808c9742b4482a",
+  "lastOpenFiles": [
+    "(FreeCodeCampJavaScript_Programming-Full_Course/Javascript 新手 教學 -  Passenger counter app.md"
+  ]
+}

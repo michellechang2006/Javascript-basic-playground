@@ -1,4 +1,5 @@
 ## 🔗 Section links 
+
 [Setting up file](#Setting-up-file)
 
 [Create variable](#Create-variable)
@@ -6,6 +7,8 @@
 [Mathematical operations](#Mathematical-operations)
 
 [Reassigning & incrementing](#Reassigning-&-incrementing)
+
+[onclick event listener](onclick-event-listener)
 
 [Write your first function](#Write-your-first-function)
 
@@ -151,7 +154,7 @@ JS 有三種宣告方式（ES6增加let和const關鍵字來宣告變數），包
 宣告一個只可讀取的不可變常數
 
 
-📝 **延伸-容器中的值**
+##### 📝 **延伸-容器中的值**
 
 容器中的值，可以是：
 
@@ -413,6 +416,14 @@ console.log("The button was clicked")
 
 ![](https://i.imgur.com/73DUKZ4.gif)
 
+#### 🖼️ **圖解**
+
+![](https://i.imgur.com/LSMUxmr.png)
+
+🌰 **例子**
+
+![](https://i.imgur.com/521bNWE.png)
+
 >[事件監聽（event listener) 列表 ｜｜MDN Docs](https://developer.mozilla.org/en-US/docs/Web/Events)
 
 
@@ -571,11 +582,30 @@ console.log(totalTime) // output: ReferenceError: totalTime is not defined
 
 🌰 **例子**
 
-![](https://i.imgur.com/Gq42uWz.png)
+![](https://i.imgur.com/P3XNvgZ.png)
+
+##### **📝 延伸-宣告方式**
+
+JS 有三種宣告方式（ES6增加let和const關鍵字來宣告變數），包含了：
+
+[`var`](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/var)
+
+宣告一個可隨意更改其內容的變數
+
+[`let`](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/let)
+
+宣告一個可隨意更改其內容的區塊區域變數
+
+[`const`](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/const)
+
+宣告一個只可讀取的不可變常數
 
 ### 🗂️ Reference
 
 >[解釋 Scope ( Global scope / Function scope / Block scope )](https://ithelp.ithome.com.tw/m/articles/10259529)
+
+
+>[MDN Docs](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
 
 ## Challenge 參考答案
 

@@ -14,6 +14,14 @@
 
 [Function that logs sum](#Function-that-logs-sum)
 
+[Function that increments](#Function-that-increments)
+
+[Increment on clicks](#Increment-on-clicks)
+
+[Display count](Display-count)
+
+[Document Object Model (DOM) ](#Document-Object-Model-(DOM) )
+
 [本章節 Challenge 題庫](link)
 
 [🏁 Challenge 參考答案](#Challenge-參考答案)
@@ -614,7 +622,8 @@ JS 有三種宣告方式（ES6增加let和const關鍵字來宣告變數），包
 
 ## [Function that increments](https://youtu.be/jS4aFq5-91M?t=1946)
 
-### 🏁 Challenge (綜合實作題)
+
+### 🏁 Challenge (綜合題)
 
 ⭐ 這個挑戰題，我們需要應用目前所學的JS。
 
@@ -635,6 +644,82 @@ console.log(lapsCompleted)
 ```
 
 [參考答案](#Challenge-參考答案)
+
+## [Increment on clicks](https://youtu.be/jS4aFq5-91M?t=2063)
+
+### 🏁 Challenge (綜合實作題)
+
+⭐ 這個挑戰題，我們需要應用目前所學的JS，來實作Passenger counter app。
+
+1. 創建一個變數為`count`，變數的初始設定為0。
+  initialize the count as 0
+
+2. 為`increment`按鈕，創建一個點擊-監聽事件（event listener)
+   Listen for clicks on the increment button
+
+3. 透過編寫JS程式碼，讓當按鈕被點擊時，`count`變數的值會增加（+1）。
+   increment the count variable when the button is clicked
+
+![](https://i.imgur.com/mpeIjQ8.gif)
+
+
+[參考答案](#Challenge-參考答案)
+
+## [Display count](https://youtu.be/jS4aFq5-91M?t=2195)
+
+### ✋🏻 實作
+
+在上個單元，我們已經編寫完JS程式碼。那麽如何嵌入HTML（使用者介面）中呢？首先，我們使用`document.getElementById("{ID名稱}");`來回傳到HTML的ID名稱後，我們設定屬性`innerText`。
+
+⭐  接下來的單元會說明更多觀念。
+
+範例碼：
+
+```
+let countEl = document.getElementById("count-el");
+
+// initialize the count as 0
+
+let count = 0;
+
+// Listen for clicks on the increment button
+
+// increment the count variable when the button is clicked
+
+function increment(){
+
+count = count + 1;
+
+console.log(count);
+
+countEl.innerText = count;
+
+}
+```
+
+![](https://i.imgur.com/EVVgLvj.gif)
+
+## [Document Object Model (DOM) ](https://youtu.be/jS4aFq5-91M?t=2514)
+
+<u>Document Object Model (DOM) </u>聽起來很抽象，但其實你可以把它理解為「你如何透過JS來修飾一個網頁」（how you use JavaScript to modify a website）。
+
+👩🏻‍💻 **筆者碎碎念**：<u>強烈建議</u>多聽幾遍[影片原音](https://youtu.be/jS4aFq5-91M?t=2514)啊！影片作者用簡單明瞭+生活情境的方式解釋DOM。
+
+#### 🖼️ **圖解 - 解析DOM**
+
+Document = HTML文件。
+
+![](https://i.imgur.com/6Ys3uaq.png)
+
+Object = JS的資料型態 Object (⭐  接下來的單元會說明更多觀念。)
+
+![](https://i.imgur.com/q0NfLLA.png)
+
+Model ：NASA的神農五號火箭就像HTML文件，而樂高版的火箭就像JS Object 一樣，只是模型（Modal)玩具，不是真的NASA火箭。
+
+![](https://i.imgur.com/UrNJ0cy.png)
+
+
 
 ## Challenge 參考答案
 
@@ -782,4 +867,24 @@ allLaps()
 allLaps()
 
 console.log(lapsCompleted)
+```
+
+### [Increment on clicks](https://youtu.be/jS4aFq5-91M?t=2063)
+
+```
+// initialize the count as 0
+
+let count = 0;
+
+// Listen for clicks on the increment button
+
+// increment the count variable when the button is clicked
+
+function increment(){
+
+count = count + 1;
+
+console.log(count);
+
+}
 ```

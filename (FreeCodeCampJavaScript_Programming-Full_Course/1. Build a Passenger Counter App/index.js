@@ -31,14 +31,25 @@
 
 
 // ⭐ challenge
-let lapsCompleted = 0
-// Create a function that increments the lapsCompleted Leted variable with one
-function allLaps(){
-    lapsCompleted = lapsCompleted + 1
-}
-// Run it three times
-allLaps()
-allLaps()
-allLaps()
+// let lapsCompleted = 0
+// // Create a function that increments the lapsCompleted Leted variable with one
+// function allLaps(){
+//     lapsCompleted = lapsCompleted + 1
+// }
+// // Run it three times
+// allLaps()
+// allLaps()
+// allLaps()
 
-console.log(lapsCompleted)
+// console.log(lapsCompleted)
+
+let countEl = document.getElementById("count-el");
+let count = 0;
+function increment(){
+    count = count + 1;
+    console.log(count);
+    countEl.innerText = count;
+}
+
+
+

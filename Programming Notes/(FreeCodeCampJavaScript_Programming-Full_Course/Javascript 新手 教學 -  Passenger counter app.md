@@ -1,4 +1,14 @@
-## Section links 
+## 🔗 Section links 
+[Setting up file](#Setting-up-file)
+
+[Create variable](#Create-variable)
+
+[Mathematical operations](#Mathematical-operations)
+
+[Reassigning & incrementing](#Reassigning-&-incrementing)
+
+[Write your first function](#Write-your-first-function)
+
 [Function that logs sum](#Function-that-logs-sum)
 
 ## [Setting up file](https://youtu.be/jS4aFq5-91M?t=279)

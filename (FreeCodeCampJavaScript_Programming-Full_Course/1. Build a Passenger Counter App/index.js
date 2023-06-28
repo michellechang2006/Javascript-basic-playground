@@ -31,15 +31,14 @@
 
 
 // ⭐ challenge
-let lap1 = 34
-let lap2 = 33
-let lap3 = 36
-
-// Create a function that Logs out the sum of all the Lap times
-function sumAllTheLapTimes(){
-    let totalTime = lap1 + lap2 + lap3
+let lapsCompleted = 0
+// Create a function that increments the lapsCompleted Leted variable with one
+function allLaps(){
+    lapsCompleted = lapsCompleted + 1
 }
+// Run it three times
+allLaps()
+allLaps()
+allLaps()
 
-// console.log(sumAllTheLapTimes());
-
-console.log(totalTime)
+console.log(lapsCompleted)

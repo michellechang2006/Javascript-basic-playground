@@ -8,7 +8,7 @@
 
 [Reassigning & incrementing](#Reassigning-&-incrementing)
 
-[onclick event listener](onclick-event-listener)
+[onclick event listener](#onclick-event-listener)
 
 [Write your first function](#Write-your-first-function)
 
@@ -533,6 +533,8 @@ countDown () // 調用 （callback）countDown 函數
 2. 調用（callback) 此函式
   Call/ invoke the function
 
+[（參考答案）]()
+
 > [MDN Docs](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function)
 
 
@@ -550,6 +552,9 @@ let lap2 = 33
 
 let lap3 = 36
 ```
+
+[（參考答案）]()
+
 
 ### ⚠️ 注意 - 關於 `let` 變數的宣告方式
 
@@ -606,6 +611,30 @@ JS 有三種宣告方式（ES6增加let和const關鍵字來宣告變數），包
 
 
 >[MDN Docs](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
+
+## [Function that increments](https://youtu.be/jS4aFq5-91M?t=1946)
+
+### 🏁 Challenge (綜合實作題)
+
+⭐ 這個挑戰題，我們需要應用目前所學的JS。
+
+1. 創建一個函式(函式名稱自行決定)，將lapsCompleted變數的值，增加為1。
+   Create a function that increments the lapsCompleted Leted variable with one
+
+2. 執行（調用 callback) 三次
+   Run it three times
+
+```
+let lapsCompleted = 0
+
+// Create a function that increments the lapsCompleted Leted variable with one
+
+// Run it three times
+
+console.log(lapsCompleted)
+```
+
+[（參考答案）](### Function that increments)
 
 ## Challenge 參考答案
 
@@ -728,4 +757,29 @@ console.log(lap1 + lap2 + lap3);
 }
 
 sumAllTheLapTimes()
+```
+
+
+### [Function that increments](https://youtu.be/jS4aFq5-91M?t=1946)
+
+```
+let lapsCompleted = 0
+
+// Create a function that increments the lapsCompleted Leted variable with one
+
+function allLaps(){ //函式名稱自行決定
+
+lapsCompleted = lapsCompleted + 1
+
+}
+
+// Run it three times
+
+allLaps()
+
+allLaps()
+
+allLaps()
+
+console.log(lapsCompleted)
 ```

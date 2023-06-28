@@ -11,7 +11,7 @@
 
 [Function that logs sum](#Function-that-logs-sum)
 
-[本章節題庫]（）
+[本章節題庫](link)
 
 ## [Setting up file](https://youtu.be/jS4aFq5-91M?t=279)
 

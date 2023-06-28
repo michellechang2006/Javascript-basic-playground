@@ -1,3 +1,6 @@
+## Section links 
+[Function that logs sum](#Function-that-logs-sum)
+
 ## [Setting up file](https://youtu.be/jS4aFq5-91M?t=279)
 
 ### 在 HTML檔案中，嵌入Javascript 程式碼

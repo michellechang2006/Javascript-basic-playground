@@ -634,7 +634,7 @@ let lapsCompleted = 0
 console.log(lapsCompleted)
 ```
 
-[參考答案](### Function that increments)
+[參考答案](### Function-that-increments)
 
 ## Challenge 參考答案
 

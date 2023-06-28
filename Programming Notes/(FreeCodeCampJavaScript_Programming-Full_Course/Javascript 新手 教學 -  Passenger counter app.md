@@ -506,6 +506,10 @@ countDown () // 調用 （callback）countDown 函數
 
 ![](https://i.imgur.com/WgCX97R.png)
 
+#### 🖼️ **圖解**
+
+![](https://i.imgur.com/WKEc805.png)
+
 > [MDN Docs](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function)
 
 ## [Write your first function](https://youtu.be/jS4aFq5-91M?t=1731)

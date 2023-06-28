@@ -137,6 +137,7 @@ let count = 0;
 ##### **📝 延伸-宣告方式**
 
 JS 有三種宣告方式（ES6增加let和const關鍵字來宣告變數），包含了：
+
 [`var`](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/var)
 
 宣告一個可隨意更改其內容的變數

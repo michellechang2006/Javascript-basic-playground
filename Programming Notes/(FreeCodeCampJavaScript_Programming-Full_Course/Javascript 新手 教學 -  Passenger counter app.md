@@ -22,6 +22,16 @@
 
 [Document Object Model (DOM) ](#Document-Object-Model-(DOM) )
 
+[Display count / innerText](#Display-count-/-innerText)
+
+[Create save button](#Create save button)
+
+[What is string?](#What-is-string?)
+
+[First string variable](#First-string-variable)
+
+[Log greeting to console](#Log-greeting-to-console)
+
 [本章節 Challenge 題庫](link)
 
 [🏁 Challenge 參考答案](#Challenge-參考答案)
@@ -34,7 +44,7 @@
 
 範例碼：
 ```  
-// HTML
+<!-- HTML -->
 
 <html>
 
@@ -71,7 +81,7 @@ document.getElementById("count-el").innerText = 5;
 
 範例碼：
 ```  
-// HTML
+<!-- HTML -->
 
 <html>
 
@@ -372,7 +382,7 @@ console.log(count);
 範例碼：
 
 ```
-// HTML
+<!-- HTML -->
 
 <!-- Create a INCREMENT button with the id=increment-btn" -->
 
@@ -405,7 +415,7 @@ console.log("The button was clicked")
 當我們的使用者，按一次按鈕（onclick)後，透過`onclick`事件監聽（event listener)後，
 
 ```
-// HTML
+<!-- HTML -->
 
 <!-- Create a INCREMENT button with the id=increment-btn" -->
 
@@ -719,6 +729,160 @@ Model ：NASA的神農五號火箭就像HTML文件，而樂高版的火箭就像
 
 ![](https://i.imgur.com/UrNJ0cy.png)
 
+##### **📝 延伸
+
+[[Javascript][HTML] DOM 概念](https://ithelp.ithome.com.tw/articles/10094965)
+
+
+>[MDN DOCS](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
+
+## [Display count / innerText](https://youtu.be/jS4aFq5-91M?t=2627)
+
+### 🏁 Challenge 
+
+現在嘗試看看自己寫[Display count](https://youtu.be/jS4aFq5-91M?t=2195)單元的程式碼吧！
+
+```
+// grab the count-el element, store it in a countEl variable
+
+let count = 0
+
+function increment() {
+
+count = count + 1
+
+}
+
+// set countEl's innerText to the count
+```
+
+[參考答案](#Challenge-參考答案)
+
+
+## [Create save button](https://youtu.be/jS4aFq5-91M?t=2670)
+
+### 🏁 Challenge 
+
+1. 創建一個`save()`函式，當它回傳時，將它顯示(log)在控制台（console)。
+   Create a function, `save()`, which logs out the count when it's called
+
+2. 在HTML，創建一個`SAVE`按鈕，將它的ID設定為`save-btn`，接著透過程式，當使用者點擊`SAVE`按鈕時，回傳到`save()`函式。
+   Create a `SAVE` button. Set the id to "`save-btn`" and call the `save()` function when it's clicked
+
+[參考答案](#Challenge-參考答案)
+
+
+
+## [What is string?](https://youtu.be/jS4aFq5-91M?t=2800)
+
+字串（string），是一種JS資料型態。可以把它理解為文字(text)。其實在之前的單元，我已經寫過這個JS資料型態：
+
+```
+let count = 0
+
+let countEl = document.getElementById("count-el"); // "count-el" 就是字串
+
+function increment() {
+
+count = count + 1
+
+countEl.innerText = count;
+
+}
+```
+
+##### **📝 延伸
+
+在HTML中，所有的資料型態都是字串（string) 而不是數字（number)，則是因HTML並不是程式語言，沒辦法進行計算，所有自然不會有數字（number)這個資料型態。
+
+
+> [MDN DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/String)
+
+
+
+## [First string variable](https://youtu.be/jS4aFq5-91M?t=2896)
+
+字串（string）我們常常會使用到。我們可以宣告一個變數的值為字串（string）。
+
+🌰 **例子**：
+
+```
+let username = "per" //字串（string）
+
+console.log(username)
+```
+
+### ⚠️ 注意
+
+我們可以使用雙引號`""`或單引號`''`來創建字串（string）。但必須注意不可同時使用雙引號`""`和單引號`''`來創建字串（string），否則執行時會`syntax error`。
+
+❌ 範例碼
+
+```
+let username = "per'
+
+console.log(username)
+```
+
+![](https://i.imgur.com/4h5UkoG.png)
+
+### 🏁 Challenge 1
+
+創建一個變數為`message`，變數的值為`"You have tree new notifications"`字串。
+Create a variable, message, that stores the string: "You have tree new notifications"
+
+[參考答案](#Challenge-參考答案)
+
+##### **📝 延伸
+
+將創建好的`message`變數，在結尾加上`username`後，顯示(log)在控制台（console)。
+
+```
+let message = "You have tree new notifications";
+
+let username = "per" //字串（string）
+
+console.log(message + username)
+```
+
+![](https://i.imgur.com/1baDtwE.png)
+
+但字串這樣顯示在控制台不閱讀，所以我們要加入：
+
+```
+console.log(message + " ," + username + "!")
+```
+
+這樣好閱讀多了！
+
+![](https://i.imgur.com/RgtZNSk.png)
+
+### 🏁 Challenge 2
+
+創建一個變數為`messageToUser`，變數的值為`message + " ," + username + "!"`字串。（記得console.log)
+Create a variable, `messageToUser`, that contains the message we have Logged
+
+[參考答案](#Challenge-參考答案)
+
+> [MDN DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/String)
+
+
+
+## [Log greeting to console](https://youtu.be/jS4aFq5-91M?t=3120)
+
+### 🏁 Challenge
+
+1. 創建兩個變數，分別為`name`和`greeting`。`name`的值為你的名字，`greeting`的值為`"Hi, my name is "`。
+   Create two variables, `name` and `greeting`. The name variable should store your name, and the greeting should store e.g. "Hi, my name is "
+   
+2. 創建第三個變數為`myGreeting`，變數的值為`name`加上`greeting`的字串。
+   Create a third variable, `myGreeting`, that contatenates the two strings
+   
+3. Log `myGreeting` to the console
+
+[參考答案](#Challenge-參考答案)
+
+[MDN DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 
 ## Challenge 參考答案
@@ -887,4 +1051,117 @@ count = count + 1;
 console.log(count);
 
 }
+```
+
+### [Display count / innerText](https://youtu.be/jS4aFq5-91M?t=2627)
+
+```
+// grab the count-el element, store it in a countEl variable
+
+let count = 0
+
+let countEl = document.getElementById('count-el');
+
+function increment() {
+
+count = count + 1
+
+countEl.innerText = count;
+
+}
+
+// set countEl's innerText to the count
+```
+
+
+### [Create save button](https://youtu.be/jS4aFq5-91M?t=2670)
+
+```
+// JS
+
+// 1. Create a function, save(), which logs out the count when it's called
+
+function save(){
+
+console.log(count)
+
+}
+```
+
+
+```
+<!-- HTML -->
+
+<!-- 2. Create a SAVE button. Set the id to "save-btn" and call the save() function when it's clicked -->
+
+<button id="save-btn" onclick="save()">SAVE</button>
+```
+
+### [First string variable](https://youtu.be/jS4aFq5-91M?t=2896)
+
+#### 🏁 Challenge 1
+
+```
+let message = "You have tree new notifications";
+```
+
+```
+let message = 'You have tree new notifications';
+```
+
+#### 🏁 Challenge 2
+
+```
+// Create a variable, messageToUser, that contains the message we have Logged
+
+let messageToUser = message + ", " + username + "!";
+
+console.log(messageToUser)
+```
+
+```
+// Create a variable, messageToUser, that contains the message we have Logged
+
+let messageToUser = message + ', ' + username + '!';
+
+console.log(messageToUser)
+```
+
+
+### [Log greeting to console](https://youtu.be/jS4aFq5-91M?t=3120)
+
+```
+// Create two variables, name and greeting. The name variable should store your name,
+
+// and the greeting should store e.g. "Hi, my name is "
+
+let name = "Michelle";
+
+let greeting = "Hi, my name is ";
+
+// Create a third variable, myGreeting, that contatenates the two strings
+
+let myGreeting = greeting + name;
+
+// Log myGreeting to the console
+
+console.log(myGreeting);
+```
+
+```
+// Create two variables, name and greeting. The name variable should store your name,
+
+// and the greeting should store e.g. 'Hi, my name is '
+
+let name = 'Michelle';
+
+let greeting = 'Hi, my name is ';
+
+// Create a third variable, myGreeting, that contatenates the two strings
+
+let myGreeting = greeting + name;
+
+// Log myGreeting to the console
+
+console.log(myGreeting);
 ```

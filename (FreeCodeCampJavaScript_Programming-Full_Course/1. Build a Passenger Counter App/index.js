@@ -1,55 +1,43 @@
-// intialize the count as 0
-// listen for clicks on the increment button
-// increment the count variable when the button is clicked
-// change the count-el in the HTML to reflect the new count
 
-
-/// Setting up the the race
-
-// function countDown () {
-//     console.log(5)
-//     console.log(4)
-//     console.log(3)
-//     console.log(2)
-//     console.log(1)
+// // grab the count-el element, store it in a countEl variable
+// let count = 0
+// let countEl = document.getElementById('count-el');
+// function increment() {
+//     count = count + 1
+//     countEl.innerText = count;
 // }
 
-// countDown () // 調用 （callback）countDown 函數
+// // set countElIs innerText to the count
 
-// GO! 
-// Players are running the race
-// Race is finished!
-// Get ready for a new race as ae
 
-// ⭐ challenge
-// Create a function (you decide the name) that Logs out the number 42 to the console
-// function myFirstFunciton(){
-// console.log(42);
+
+// function save(){
+//     console.log(count)
 // }
-// Call/ invoke the function
-// myFirstFunciton()
-
-
-// ⭐ challenge
-// let lapsCompleted = 0
-// // Create a function that increments the lapsCompleted Leted variable with one
-// function allLaps(){
-//     lapsCompleted = lapsCompleted + 1
-// }
-// // Run it three times
-// allLaps()
-// allLaps()
-// allLaps()
-
-// console.log(lapsCompleted)
-
-let countEl = document.getElementById("count-el");
-let count = 0;
-function increment(){
-    count = count + 1;
-    console.log(count);
-    countEl.innerText = count;
-}
 
 
 
+// Create a variable, message, that stores the string: "You have tree new notifications"
+
+// let message = "You have tree new notifications";
+
+// let username = "per" //字串（string）
+
+// console.log(message + ", " +  username + "!")
+
+
+// // Create a variable, messageToUser, that contains the message we have Logged
+
+// let messageToUser = message + ", " +  username + "!";
+
+// console.log(messageToUser)
+
+// ⭐ Challenge
+// Create two variables, name and greeting. The name variable should store your name,
+// and the greeting should store e.g. "Hi, my name is "
+let name = "Michelle";
+let greeting = "Hi, my name is ";
+// Create a third variable, myGreeting, that contatenates the two strings
+let myGreeting = greeting + name;
+// Log myGreeting to the console
+console.log(myGreeting);

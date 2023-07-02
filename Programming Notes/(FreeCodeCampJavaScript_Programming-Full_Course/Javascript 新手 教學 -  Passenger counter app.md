@@ -24,13 +24,21 @@
 
 [Display count / innerText](#Display-count-/-innerText)
 
-[Create save button](#Create save button)
+[Create save button](#Create-save-button)
 
 [What is string?](#What-is-string?)
 
 [First string variable](#First-string-variable)
 
 [Log greeting to console](#Log-greeting-to-console)
+
+[Strings vs. Numbers](#Strings-vs.-Numbers)
+
+[Render welcome message](#Render-welcome-message)
+
+[Improve the message with string concatenation](#Improve-the-message-with-string-concatenation)
+
+[Use plus equal for count](#Use-plus-equal-for-count)
 
 [本章節 Challenge 題庫](link)
 
@@ -709,6 +717,10 @@ countEl.innerText = count;
 
 ![](https://i.imgur.com/EVVgLvj.gif)
 
+>[[Javascript][HTML] DOM 概念](https://ithelp.ithome.com.tw/articles/10094965)
+
+> [HTML DOM Documents list](https://www.w3schools.com/jsref/dom_obj_document.asp)
+
 ## [Document Object Model (DOM) ](https://youtu.be/jS4aFq5-91M?t=2514)
 
 <u>Document Object Model (DOM) </u>聽起來很抽象，但其實你可以把它理解為「你如何透過JS來修飾一個網頁」（how you use JavaScript to modify a website）。
@@ -733,8 +745,10 @@ Model ：NASA的神農五號火箭就像HTML文件，而樂高版的火箭就像
 
 [[Javascript][HTML] DOM 概念](https://ithelp.ithome.com.tw/articles/10094965)
 
-
 >[MDN DOCS](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
+
+> [HTML DOM Documents list](https://www.w3schools.com/jsref/dom_obj_document.asp)
+
 
 ## [Display count / innerText](https://youtu.be/jS4aFq5-91M?t=2627)
 
@@ -882,7 +896,152 @@ Create a variable, `messageToUser`, that contains the message we have Logged
 
 [參考答案](#Challenge-參考答案)
 
-[MDN DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/String)
+>[MDN DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/String)
+
+
+
+## [Strings vs. Numbers](https://youtu.be/jS4aFq5-91M?t=3198)
+
+字串（strings)和數字(numbers)都是JS常見的資料型態。
+
+![](https://i.imgur.com/41RXhs8.png)
+
+### 字串（strings) + 數字(numbers)
+
+想想看，如果我們將字串（strings) 與數字(numbers)相加後，會怎麼樣呢？
+<u>數字(numbers)資料型態的資料會轉成字串（strings)</u>。
+
+```
+let name = 42
+
+let greeting = "Hi, my name is "
+
+let myGreeting = greeting + name
+
+console.log(myGreeting)
+```
+
+Output:
+
+```
+Hi, my name is 42
+```
+
+![](https://i.imgur.com/TcQl2Hv.png)
+
+我們再看看另一個例子：想想看這段程式碼會輸出什麼呢？
+
+```
+let points = 4
+
+let bonusPoints = "10"
+
+let totalPoints = points + bonusPoints
+
+console.log(totalPoints)
+```
+
+Output:
+
+為何輸出為`410`，而不是`14`呢？這是因為`points`的值`4`，是字串資料型態（strings）。
+
+```
+410
+```
+
+![](https://i.imgur.com/jcpQP0h.png)
+
+### 🏁 Challenge
+
+請在每段程式碼旁，以註解(comments)`//`的方式作答輸出（`console.log`)的值。
+
+🌰 例子：
+
+```
+console.log(4 + "10"); // 410
+```
+
+🏁 Challenge
+
+```
+console.log(4 + 5)
+
+console.log("2" + "4")
+
+console.log("5" + 1)
+
+console.log(100 + "100")
+```
+
+[參考答案](#Challenge-參考答案)
+
+>[MDN DOCS | | 字串 （strings)](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/String)
+
+>[MDN DOCS | | 數字 （number)](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Number)
+
+
+## [Render welcome message](https://youtu.be/jS4aFq5-91M?t=3366)
+
+### 🏁 Challenge (綜合實作題)
+
+1. 創建一個變數`welcomeEl`，其值為[取出 HTML 內容當中](#Display-count)，ID為`welcome-el`的字串
+   Grab the `welcome-el` paragraph and store it in a variable called `welcomeEl`
+
+2. 創建兩個變數，分別為`name`和`greeting`，其值為你的名字和`Welcome back` 
+   Create two variables (`name` & `greeting`) that contains your name and the `greeting` we want to render on the page
+
+3. 透過`welcomeEl.innerText`來渲染（呈現）在網頁上（HTML）
+   Render the welcome message using `welcomeEl.innerText`
+   
+
+```
+<!-- HTML -->
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+<p id="welcome-el"></p>
+
+<script src="index.js"></script>
+
+</body>
+
+</html>
+```
+
+**<u>Reference</u>**
+[[Javascript][HTML] DOM 概念](https://ithelp.ithome.com.tw/articles/10094965)
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+## [Improve the message with string concatenation](https://youtu.be/jS4aFq5-91M?t=3488)
+
+### 🏁 Challenge （上個單元的延伸題）
+
+1. 在結尾，加一個表情符號（例如：👋🏻）
+   Add an emoji to the end!
+
+2. 請再寫一段碼，不可修改上個單元挑戰題作答的程式碼
+   WRITE YOUR CODE BELOW HERE
+
+💡 提示 :  count = count + 1
+
+[參考答案](#Challenge-參考答案)
+
+
+
+## [Use plus equal for count](https://youtu.be/jS4aFq5-91M?t=3595)
+
+
+
+
 
 
 ## Challenge 參考答案
@@ -1165,3 +1324,48 @@ let myGreeting = greeting + name;
 
 console.log(myGreeting);
 ```
+
+## [Strings vs. Numbers](https://youtu.be/jS4aFq5-91M?t=3198)
+ 
+```
+console.log(4 + 5) // 9
+
+console.log("2" + "4") // 24
+
+console.log("5" + 1) // 51
+
+console.log(100 + "100") // 100100
+```
+
+## [Render welcome message](https://youtu.be/jS4aFq5-91M?t=3366)
+
+```
+// Grab the welcome-el paragraph and store it in a variable called welcomeEl
+
+let welcomeEl = document.getElementById("welcome-el");
+
+// Create two variables (name & greeting) that contains your name
+
+let name ="Michelle"
+
+// and the greeting we want to render on the page
+
+let greeting = "Welcome back " 
+
+// Render the welcome message using welcomeEl.innerText
+
+welcomeEl.innerText = greeting + name;
+```
+
+### [Improve the message with string concatenation](https://youtu.be/jS4aFq5-91M?t=3488)
+
+```
+// Add an emoji to the end!
+
+// WRITE YOUR CODE BELOW HERE
+
+welcomeEl.innerText = welcomeEl.innerText + "👋🏻";
+
+// HINT: count = count + 1
+```
+

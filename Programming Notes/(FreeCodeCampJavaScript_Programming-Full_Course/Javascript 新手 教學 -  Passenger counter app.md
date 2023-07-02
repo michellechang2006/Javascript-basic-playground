@@ -805,7 +805,7 @@ countEl.innerText = count;
 }
 ```
 
-##### **📝 延伸
+##### **📝 延伸**
 
 在HTML中，所有的資料型態都是字串（string) 而不是數字（number)，則是因HTML並不是程式語言，沒辦法進行計算，所有自然不會有數字（number)這個資料型態。
 

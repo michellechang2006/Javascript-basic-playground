@@ -51,7 +51,7 @@
 使用`<script> </script>` 標籤，來嵌入JS程式碼。
 
 範例碼：
-```  
+```  html
 <!-- HTML -->
 
 <html>
@@ -88,7 +88,7 @@ document.getElementById("count-el").innerText = 5;
 使用`<script scr="{Javascript 檔案路徑}"> </script>` 標籤，來嵌入JS程式碼<u>檔案</u>。
 
 範例碼：
-```  
+```  html
 <!-- HTML -->
 
 <html>
@@ -130,7 +130,7 @@ document.getElementById("count-el").innerText = 5;
 
 範例碼：
 
-```  
+```  js
 // document.getElementById("count-el").innerText = 5;
 ```  
 
@@ -145,7 +145,7 @@ document.getElementById("count-el").innerText = 5;
 
 範例碼：
 
-```  
+```  js
 /* document.getElementById("count-el").innerText = 5;*/
 ```  
 
@@ -157,7 +157,7 @@ document.getElementById("count-el").innerText = 5;
 
 範例碼：
 
-```  
+```  js
 let count = 0;
 ```  
 
@@ -202,7 +202,7 @@ JS 有三種宣告方式（ES6增加let和const關鍵字來宣告變數），包
 
 範例碼：
 
-```
+```js
 let count = 0;
 
 console.log(count);
@@ -229,7 +229,7 @@ console.log(count);
 
 範例碼：
 
-```
+```js
 console.log(count);
 
 let count = 0;
@@ -251,7 +251,7 @@ let count = 0;
 
 範例碼：
 
-```
+```js
 let count1 = 5 + 7;
 
 console.log(count1);
@@ -279,7 +279,7 @@ console.log(count4);
 
 範例碼 1：
 
-```
+```js
 let firstBatch = 5;
 
 count = firstBatch;
@@ -292,7 +292,7 @@ console.log(count);
 
 範例碼 2：
 
-```
+```js
 let firstBatch = 5;
 
 let secondBatch = 7;
@@ -324,7 +324,7 @@ console.log(count);
 
 範例碼：
 
-```
+```js
 let count = 5;
 
 count = 3;
@@ -342,7 +342,7 @@ console.log(count);
 
 範例碼：
 
-```
+```js
 let count = 5;
 
 // count + 1
@@ -389,7 +389,7 @@ console.log(count);
 
 範例碼：
 
-```
+```html
 <!-- HTML -->
 
 <!-- Create a INCREMENT button with the id=increment-btn" -->
@@ -405,7 +405,7 @@ console.log(count);
 
 範例碼：
 
-```
+```js
 function increment(){
 
 console.log("The button was clicked")
@@ -422,7 +422,7 @@ console.log("The button was clicked")
 
 當我們的使用者，按一次按鈕（onclick)後，透過`onclick`事件監聽（event listener)後，
 
-```
+```html
 <!-- HTML -->
 
 <!-- Create a INCREMENT button with the id=increment-btn" -->
@@ -432,7 +432,7 @@ console.log("The button was clicked")
 
 觸法了`increment()`函數。接著，執行`increment()`函式中的JS程式碼，也就是`console.log("The button was clicked")`。
 
-```
+```js
 function increment(){
 
 console.log("The button was clicked")
@@ -463,8 +463,8 @@ console.log("The button was clicked")
 
 範例碼：
 
-```
-/// Setting up the the race
+```js
+// Setting up the the race
 
 console.log(5)
 
@@ -502,7 +502,7 @@ console.log(1)
 
 範例碼 - 沒有調用（callback)函函式：
 
-```
+```js
 function countDown () {
 
 console.log(5)
@@ -523,7 +523,7 @@ console.log(1)
 
 範例碼 - 調用（callback)函式：
 
-```
+```js
 function countDown () {
 
 console.log(5)
@@ -571,7 +571,7 @@ countDown () // 調用 （callback）countDown 函數
 這是一個賽車競賽選手的成績。請透過創建一個函式來加總這位賽車競賽選手這場競賽總共花了多少時間。
 Create a function that Logs out the sum of all the Lap times
 
-```
+```js
 let lap1 = 34
 
 let lap2 = 33
@@ -593,7 +593,7 @@ let lap3 = 36
 
 ⭐ MDN的文件有提到，以階層關係來說，基本上子階層（`sumAllTheLapTimes`函式）可以調用（callback)父級階層裡的變數（`lap1～3`變數）。
 
-```
+```js
 // Create a function that Logs out the sum of all the Lap times
 
 function sumAllTheLapTimes(){
@@ -651,7 +651,7 @@ JS 有三種宣告方式（ES6增加let和const關鍵字來宣告變數），包
 2. 執行（調用 callback) 三次
    Run it three times
 
-```
+```js
 let lapsCompleted = 0
 
 // Create a function that increments the lapsCompleted Leted variable with one
@@ -693,7 +693,7 @@ console.log(lapsCompleted)
 
 範例碼：
 
-```
+```js
 let countEl = document.getElementById("count-el");
 
 // initialize the count as 0
@@ -756,7 +756,7 @@ Model ：NASA的神農五號火箭就像HTML文件，而樂高版的火箭就像
 
 現在嘗試看看自己寫[Display count](https://youtu.be/jS4aFq5-91M?t=2195)單元的程式碼吧！
 
-```
+```js
 // grab the count-el element, store it in a countEl variable
 
 let count = 0
@@ -791,7 +791,7 @@ count = count + 1
 
 字串（string），是一種JS資料型態。可以把它理解為文字(text)。其實在之前的單元，我已經寫過這個JS資料型態：
 
-```
+```js
 let count = 0
 
 let countEl = document.getElementById("count-el"); // "count-el" 就是字串
@@ -820,7 +820,7 @@ countEl.innerText = count;
 
 🌰 **例子**：
 
-```
+```js
 let username = "per" //字串（string）
 
 console.log(username)
@@ -832,7 +832,7 @@ console.log(username)
 
 ❌ 範例碼
 
-```
+```js
 let username = "per'
 
 console.log(username)
@@ -851,7 +851,7 @@ Create a variable, message, that stores the string: "You have tree new notificat
 
 將創建好的`message`變數，在結尾加上`username`後，顯示(log)在控制台（console)。
 
-```
+```js
 let message = "You have tree new notifications";
 
 let username = "per" //字串（string）
@@ -863,7 +863,7 @@ console.log(message + username)
 
 但字串這樣顯示在控制台不閱讀，所以我們要加入：
 
-```
+```js
 console.log(message + " ," + username + "!")
 ```
 
@@ -911,7 +911,7 @@ Create a variable, `messageToUser`, that contains the message we have Logged
 想想看，如果我們將字串（strings) 與數字(numbers)相加後，會怎麼樣呢？
 <u>數字(numbers)資料型態的資料會轉成字串（strings)</u>。
 
-```
+```js
 let name = 42
 
 let greeting = "Hi, my name is "
@@ -931,7 +931,7 @@ Hi, my name is 42
 
 我們再看看另一個例子：想想看這段程式碼會輸出什麼呢？
 
-```
+```js
 let points = 4
 
 let bonusPoints = "10"
@@ -957,13 +957,13 @@ Output:
 
 🌰 例子：
 
-```
+```js
 console.log(4 + "10"); // 410
 ```
 
 🏁 Challenge
 
-```
+```js
 console.log(4 + 5)
 
 console.log("2" + "4")
@@ -994,7 +994,7 @@ console.log(100 + "100")
    Render the welcome message using `welcomeEl.innerText`
    
 
-```
+```html
 <!-- HTML -->
 <html>
 
@@ -1049,7 +1049,7 @@ console.log(100 + "100")
 ### [Create variable](https://youtu.be/jS4aFq5-91M?t=462)
 
 
-```
+```js
 // 1. Create a variable, myAge, and set its Value to your age
 
 let myAge = 16;
@@ -1062,7 +1062,7 @@ console.log(myAge);
 
 ### [Mathematical operations](https://youtu.be/jS4aFq5-91M?t=749)
 
-```
+```js
 // 1. Create two variable, myAge and humanDogRatio
 
 let myAge = 16;
@@ -1081,7 +1081,7 @@ console.log(myDogAge);
 
 ### [Reassigning & incrementing](https://youtu.be/jS4aFq5-91M?t=977)
 
-```
+```js
 // Create a variable, bonusPoints. Initialize it as 50. Increase it to 100.
 
 let bonusPoints = 50;
@@ -1108,7 +1108,7 @@ console.log(bonusPoints);
 
 ### [Write your first function](https://youtu.be/jS4aFq5-91M?t=1731)
 
-```
+```js
 // Create a function (you decide the name) that Logs out the number 42 to the console
 
 function myFirstFunciton(){ //  函式名稱自行決定 you decide the name 
@@ -1125,7 +1125,7 @@ myFirstFunciton()
 
 ### [Function that logs sum](https://youtu.be/jS4aFq5-91M?t=1775)
 
-```
+```js
 let lap1 = 34
 
 let lap2 = 33
@@ -1147,7 +1147,7 @@ console.log(totalTime);
 sumAllTheLapTimes()
 ```
 
-```
+```js
 let lap1 = 34
 
 let lap2 = 33
@@ -1170,7 +1170,7 @@ sumAllTheLapTimes()
 
 ### [Function that increments](https://youtu.be/jS4aFq5-91M?t=1946)
 
-```
+```js
 let lapsCompleted = 0
 
 // Create a function that increments the lapsCompleted Leted variable with one
@@ -1194,7 +1194,7 @@ console.log(lapsCompleted)
 
 ### [Increment on clicks](https://youtu.be/jS4aFq5-91M?t=2063)
 
-```
+```js
 // initialize the count as 0
 
 let count = 0;
@@ -1214,7 +1214,7 @@ console.log(count);
 
 ### [Display count / innerText](https://youtu.be/jS4aFq5-91M?t=2627)
 
-```
+```js
 // grab the count-el element, store it in a countEl variable
 
 let count = 0
@@ -1235,7 +1235,7 @@ countEl.innerText = count;
 
 ### [Create save button](https://youtu.be/jS4aFq5-91M?t=2670)
 
-```
+```js
 // JS
 
 // 1. Create a function, save(), which logs out the count when it's called
@@ -1248,7 +1248,7 @@ console.log(count)
 ```
 
 
-```
+```html
 <!-- HTML -->
 
 <!-- 2. Create a SAVE button. Set the id to "save-btn" and call the save() function when it's clicked -->
@@ -1260,17 +1260,17 @@ console.log(count)
 
 #### 🏁 Challenge 1
 
-```
+```js
 let message = "You have tree new notifications";
 ```
 
-```
+```js
 let message = 'You have tree new notifications';
 ```
 
 #### 🏁 Challenge 2
 
-```
+```js
 // Create a variable, messageToUser, that contains the message we have Logged
 
 let messageToUser = message + ", " + username + "!";
@@ -1278,7 +1278,7 @@ let messageToUser = message + ", " + username + "!";
 console.log(messageToUser)
 ```
 
-```
+```js
 // Create a variable, messageToUser, that contains the message we have Logged
 
 let messageToUser = message + ', ' + username + '!';
@@ -1289,7 +1289,7 @@ console.log(messageToUser)
 
 ### [Log greeting to console](https://youtu.be/jS4aFq5-91M?t=3120)
 
-```
+```js
 // Create two variables, name and greeting. The name variable should store your name,
 
 // and the greeting should store e.g. "Hi, my name is "
@@ -1307,7 +1307,7 @@ let myGreeting = greeting + name;
 console.log(myGreeting);
 ```
 
-```
+```js
 // Create two variables, name and greeting. The name variable should store your name,
 
 // and the greeting should store e.g. 'Hi, my name is '
@@ -1327,7 +1327,7 @@ console.log(myGreeting);
 
 ## [Strings vs. Numbers](https://youtu.be/jS4aFq5-91M?t=3198)
  
-```
+```js
 console.log(4 + 5) // 9
 
 console.log("2" + "4") // 24
@@ -1339,7 +1339,7 @@ console.log(100 + "100") // 100100
 
 ## [Render welcome message](https://youtu.be/jS4aFq5-91M?t=3366)
 
-```
+```js
 // Grab the welcome-el paragraph and store it in a variable called welcomeEl
 
 let welcomeEl = document.getElementById("welcome-el");
@@ -1359,7 +1359,7 @@ welcomeEl.innerText = greeting + name;
 
 ### [Improve the message with string concatenation](https://youtu.be/jS4aFq5-91M?t=3488)
 
-```
+```js
 // Add an emoji to the end!
 
 // WRITE YOUR CODE BELOW HERE

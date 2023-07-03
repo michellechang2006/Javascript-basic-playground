@@ -40,6 +40,10 @@
 
 [Use plus equal for count](#Use-plus-equal-for-count)
 
+[Create save feature](#Create-save-feature)
+
+[Debugging online](#Debugging-online)
+
 [本章節 Challenge 題庫](link)
 
 [🏁 Challenge 參考答案](#Challenge-參考答案)
@@ -1035,14 +1039,237 @@ console.log(100 + "100")
 
 [參考答案](#Challenge-參考答案)
 
+### 加法賦值 `+=`
+
+我們可以將 `count = count + 1` 寫成  `count += 1`，以上個單元的程式碼為例：
+
+```js
+
+welcomeEl.innerText = welcomeEl.innerText + "👋🏻";
+
+// 我們可以寫成：
+welcomeEl.innerText += "👋🏻";
+
+```
+
+`+=` 我們成為「加法賦值」。
+
+> [MDN DOCS](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Addition_assignment)
 
 
-## [Use plus equal for count](https://youtu.be/jS4aFq5-91M?t=3595)
+
+## [Use plus equal for count](https://youtu.be/jS4aFq5-91M?t=3626)
+
+### 🏁 Challenge （上個單元的實作題）
+
+⭐ 回到我們的Passenger counter app，請透過上單元學到的，來修改以下程式碼：
+
+```js
+let countEl = document.getElementById("count-el")
+
+let count = 0
+
+function increment() {
+
+// 修改以下程式碼
+// Change this to use the plus equal technique you've learned
+
+count = count + 1
+
+// 修改以上程式碼
+
+countEl.innerText = count
+
+}
+
+function save() {
+
+console.log(count)
+
+}
+```
+
+[參考答案](#Challenge-參考答案)
+
+## [Create save feature](https://youtu.be/jS4aFq5-91M?t=3655)
+
+### 🏁 Challenge （綜合實作題）
+
+⭐ 這個挑戰題，我們需要應用目前所學的JS，來實作 Passenger counter app。
+
+1. 創建一個變數`save-el`，其值為[取出 HTML 內容當中](#Display-count)，ID為`save-el`的字串
+   Grab the `save-el` paragraph and store it in a variable called `saveEl`
+
+2. 創建一個變數（名稱自行決定），其值為`count`變數的值加上分隔符號 `-`，例如：`"12 - "`
+   Create a variable that contains both the count and the dash separator, i.e. "12 - "
+
+3. 透過`saveEl.innerText`來渲染（呈現）在網頁上（HTML）
+   Render the variable in the saveEl using innerText
+
+⚠️ 注意：Make sure to not delete the existing content of the paragraph
+
+```js
+// 1. Grab the save-el paragraph and store it in a variable called saveEl
+
+let countEl = document.getElementById("count-el")
+
+let count = 0
+
+function increment() {
+
+count += 1
+
+countEl.innerText = count
+
+}
+
+function save() {
+
+// 2. Create a variable that contains both the count and the dash separator, i.e. "12 - "
+
+// 3. Render the variable in the saveEl using innerText
+
+// NB: Make sure to not delete the existing content of the paragraph
+
+console.log(count)
+
+}
+```
+
+
+<iframe height="500" style= "width: 100%;" scrolling="no" src="https://codepen.io/michellechang2006/embed/preview/abQwNZB?default-tab=html%2Cresult&theme-id=dark">
+</iframe>
+
+## [Debugging online](https://youtu.be/jS4aFq5-91M?t=3936)
+
+本單元，說明如何使用網路資源來debug。
+
+🐝  **Bug**
+在我們的Passenger counter app中，有個美中不足的地方，那就是在HTML`Previous entires`數字的分隔號後面沒有空格。
+
+![](https://i.imgur.com/qWnn9kW.jpg)
+
+### ✋🏻 實作
+
+嘗試用Google來搜尋來解決吧！想想看要用什麼關鍵字呢？
+
+```js
+function save() {
+// 從這段碼找找看吧～
+countStr = count + " - "
+
+saveEl.innerText += countStr
+
+console.log(count)
+
+}
+```
 
 
 
+💡 **提示：關鍵字**
+🔍 `innerText alternative mdn`
+
+(MDN Web Docs 是一個開源的、協作式的項目，記錄了包括 CSS、HTML、JavaScript 和 Web API 等 Web 平台技術。我們還為初學者和學生提供了大量的學習資源。)
+
+![](https://i.imgur.com/yu1GTgu.png)
 
 
+我們可以從MDN Docs 的網頁中，得知`innertext`和`textcontent`的差異。
+
+![](https://i.imgur.com/BW9S25K.png)
+
+⭐ **以下是Bing（GPT)的中文翻譯：**
+
+不要被 `Node.textContent` 和 `HTMLElement.innerText` 之間的區別所困惑。雖然名字看起來相似，但它們之間有重要的區別：
+
+textContent 獲取所有元素的內容，包括 `<script>` 和 `<style>` 元素。相反，，`innerText` <u>只顯示「人類可讀」（實際所見的內容）的元素</u>。
+`textContent` 返回節點中的每個元素。相反，`innerText` 能夠感知樣式，並且不會返回「隱藏」元素的文本。
+此外，由於 `innerText` 考慮了 CSS 樣式，因此讀取 `innerText` 的值會觸發重排以確保最新的計算樣式。（重排可能會消耗大量計算資源，因此應盡量避免。）
+
+⭐ **運用：**
+
+從MDN文件得知，`innerText`「只顯示「人類可讀」（實際所見的內容）」的元素。因此空格無法渲染(呈現）到HTML，我們需要使用`textContent` 取代`innerText`。
+
+```js
+function save() {
+
+countStr = count + " - "
+
+// 我們需要使用textContent 取代innerText
+
+saveEl.textContent += countStr
+
+console.log(count)
+
+}
+```
+
+這樣bug就修好啦～
+
+![](https://i.imgur.com/q03FcxC.gif)
+
+### 🎢 筆者玩玩看 - 用AI debug
+
+本部教學影片拍攝時間2021年，那時還沒有ChatGPT。剛好在寫此篇學習筆記時，MDN出了「[AI Help Beta](https://developer.mozilla.org/en-US/plus/ai-help)」功能，它其實算是ChatGPT，只不過有了最新的MDN文件資料，相信在Web技術這方面，會比一般的GPT更加準確。
+
+🪄 一起來當AI詠唱師吧！我們來嘗試把剛剛的bug，問AI如何解決(記得要先註冊MDN的帳號喔～)：
+
+**🪄 提詞：**
+請問如何<u>透過修改以下原始碼</u>，字串(strings)中的空格(space)，渲染到HTML。以下是我的原始碼：
+
+```js
+function save() {
+
+countStr = count + " - "
+
+saveEl.innerText += countStr
+
+console.log(count)
+
+}
+```
+
+
+結果：
+AI 給了另種解決方式，使用`innerHTML`取代`innerText`，也是能執行。
+
+![](https://i.imgur.com/4o55bJD.png)
+
+<u>完整回覆：</u>
+根據提供的原始碼，您可以透過修改 `saveEl.innerText` 的方式將字串中的空格渲染到HTML。請參考以下修改後的程式碼：
+
+```js
+function save() {
+      countStr = count + " - ";
+      saveEl.innerHTML += countStr;
+      console.log(count);
+}
+```
+
+在這個修改後的程式碼中，我們將 `saveEl.innerText` 改為 `saveEl.innerHTML`。這是因為 `innerText` 只會將文字內容直接渲染到HTML，而 `innerHTML` 則會將文字內容作為HTML解析並渲染到HTML。這樣一來，字串中的空格就能正確地顯示在HTML中了。
+
+請注意，修改後的程式碼僅針對提供的原始碼進行了修改，其他部分可能需要根據您的需求進行調整。如果您有其他問題，請隨時提出。
+
+[NamedNodeMap: setNamedItem() method](https://developer.mozilla.org/en-US/docs/Web/API/NamedNodeMap/setNamedItem)
+
+<u>💡 AI詠唱 Tips </u>
+
+提詞其實我修改了好幾次。我發現一個詠唱小撇步：為了避免AI (GPT)~~亂唬爛~~，請記得在提詞開頭要有 `...透過修改以下原始碼... `，並提供你要它修改的原始碼。另外，無論是MDN文件資料，或是GPT本身的資料庫，英文的資料一定比中文資料更多、更齊全，所以記得在專用名詞後面補充英文，例如字串(strings)、空格(space)。
+
+歡迎到[Github的issue](https://github.com/michellechang2006/Javascript-basic-playground/issues)和我交流一下你使用MDN「[AI Help Beta](https://developer.mozilla.org/en-US/plus/ai-help)」功能的技巧、心得喔～
+
+
+**比較Bing(GPT 4):**
+
+確實比起一般的GPT，回答上更加精準。
+
+![](https://i.imgur.com/R3Zss5P.png)
+
+**執行成果**
+
+<iframe height="500" style= "width: 100%;" scrolling="no" src="https://codepen.io/michellechang2006/embed/preview/zYMzKqX?default-tab=js%2Cresult&theme-id=dark">
+</iframe>
 
 ## Challenge 參考答案
 
@@ -1368,4 +1595,74 @@ welcomeEl.innerText = welcomeEl.innerText + "👋🏻";
 
 // HINT: count = count + 1
 ```
+
+
+
+### [Use plus equal for count](https://youtu.be/jS4aFq5-91M?t=3626)
+
+```js
+let countEl = document.getElementById("count-el")
+
+let count = 0
+
+function increment() {
+
+// 修改以下程式碼
+// Change this to use the plus equal technique you've learned
+
+count += 1
+
+// 修改以上程式碼
+
+countEl.innerText = count
+
+}
+
+function save() {
+
+console.log(count)
+
+}
+```
+
+### [Create save feature](https://youtu.be/jS4aFq5-91M?t=3655)
+
+```js
+// 1. Grab the save-el paragrah and store it in a variable called saveEl
+
+let countEl = document.getElementById("count-el")
+
+let saveEl = document.getElementById("save-el")
+
+let count = 0
+
+function increment() {
+
+count += 1
+
+countEl.innerText = count
+
+}
+
+function save() {
+
+// 2. Create a variable that contains both the count and the dash separator, i.e. "12 - "
+
+countStr = count + " - "
+
+// 3. Render the variable in the saveEl using innerText
+
+saveEl.innerText += countStr
+
+// NB: Make sure to not delete the existing content of the paragraph
+
+console.log(count)
+
+}
+```
+
+### [Create save feature](https://youtu.be/jS4aFq5-91M?t=3655)
+
+<iframe height="500" style= "width: 100%;" scrolling="no" src="https://codepen.io/michellechang2006/embed/preview/abQwNZB?default-tab=js%2Cresult&theme-id=dark">
+</iframe>
 

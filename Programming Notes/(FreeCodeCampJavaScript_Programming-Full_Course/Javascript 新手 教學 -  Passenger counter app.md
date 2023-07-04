@@ -1137,14 +1137,12 @@ console.log(count)
 ```
 
 
-<iframe height="500" style= "width: 100%;" scrolling="no" src="https://codepen.io/michellechang2006/embed/preview/abQwNZB?default-tab=html%2Cresult&theme-id=dark">
-</iframe>
-
 ## [Debugging online](https://youtu.be/jS4aFq5-91M?t=3936)
 
 本單元，說明如何使用網路資源來debug。
 
 🐝  **Bug**
+
 在我們的Passenger counter app中，有個美中不足的地方，那就是在HTML`Previous entires`數字的分隔號後面沒有空格。
 
 ![](https://i.imgur.com/qWnn9kW.jpg)
@@ -1232,7 +1230,7 @@ console.log(count)
 
 
 結果：
-AI 給了另種解決方式，使用`innerHTML`取代`innerText`，也是能執行。
+AI 給了另一種解決方式，使用`innerHTML`取代`innerText`，也是能執行。
 
 ![](https://i.imgur.com/4o55bJD.png)
 
@@ -1266,10 +1264,8 @@ function save() {
 
 ![](https://i.imgur.com/R3Zss5P.png)
 
-**執行成果**
 
-<iframe height="500" style= "width: 100%;" scrolling="no" src="https://codepen.io/michellechang2006/embed/preview/zYMzKqX?default-tab=js%2Cresult&theme-id=dark">
-</iframe>
+
 
 ## Challenge 參考答案
 
@@ -1660,9 +1656,4 @@ console.log(count)
 
 }
 ```
-
-### [Create save feature](https://youtu.be/jS4aFq5-91M?t=3655)
-
-<iframe height="500" style= "width: 100%;" scrolling="no" src="https://codepen.io/michellechang2006/embed/preview/abQwNZB?default-tab=js%2Cresult&theme-id=dark">
-</iframe>
 

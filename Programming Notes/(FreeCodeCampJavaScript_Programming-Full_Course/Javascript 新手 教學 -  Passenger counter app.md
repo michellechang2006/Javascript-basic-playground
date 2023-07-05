@@ -1,4 +1,6 @@
-## 🔗 Section links 
+# 🔗 Section links 
+
+### [✏️ 學習筆記](#學習筆記)
 
 [Setting up file](#Setting-up-file)
 
@@ -44,9 +46,33 @@
 
 [Debugging online](#Debugging-online)
 
-[本章節 Challenge 題庫](link)
+[Set count to 0](#Set-count-to-0)
 
-[🏁 Challenge 參考答案](#Challenge-參考答案)
+### [🏁 Recap Challenge](#Recap-Challenge)
+
+[Variables practice](#Variables-practice)
+
+[Concatenate strings](#Concatenate-strings)
+
+[Incrementing & decrementing](#Incrementing-&-decrementing)
+
+[Strings & numbers](#Strings-&-numbers)
+
+[Rendering error message](#Rendering-error-message)
+
+[Calculator challenge](#Calculator-challenge)
+
+### [⭐ 復刻 APP]()
+
+### [⭐ 學以致用]()
+
+### [🏁 Challenge 題庫](link)
+
+###  [🏁 Challenge 參考答案](#Challenge-參考答案)
+
+
+
+# 學習筆記
 
 ## [Setting up file](https://youtu.be/jS4aFq5-91M?t=279)
 
@@ -1136,10 +1162,12 @@ console.log(count)
 }
 ```
 
+[參考答案](#Challenge-參考答案)
 
 ## [Debugging online](https://youtu.be/jS4aFq5-91M?t=3936)
 
-本單元，說明如何使用網路資源來debug。
+本單元，說明如何使用網路資源來debug。善用網路資源，是每位開發人員的
+必備的技能。
 
 🐝  **Bug**
 
@@ -1207,9 +1235,18 @@ console.log(count)
 
 ![](https://i.imgur.com/q03FcxC.gif)
 
+😊 貼心小提醒：
+教學影片作者有提到，看這一類「文件」的網路資源，不需看懂所有內容，只要擷取需要的資訊就好，他也不建議以一類「文件」的網路資源來學習（特別是新手），因為內容太複雜，可以嘗試看看其他專門「讓人學習」的網路資源，例如：[W3Schools](https://www.w3schools.com/)。
+
+>[MDN DOCS](https://developer.mozilla.org/)
+
+>[W3Schools](https://www.w3schools.com/)
+
+
+
 ### 🎢 筆者玩玩看 - 用AI debug
 
-本部教學影片拍攝時間2021年，那時還沒有ChatGPT。剛好在寫此篇學習筆記時，MDN出了「[AI Help Beta](https://developer.mozilla.org/en-US/plus/ai-help)」功能，它其實算是ChatGPT，只不過有了最新的MDN文件資料，相信在Web技術這方面，會比一般的GPT更加準確。
+教學影片拍攝時間是2021年，那時還沒有ChatGPT。剛好在寫此篇學習筆記時，MDN出了「[AI Help Beta](https://developer.mozilla.org/en-US/plus/ai-help)」功能，它其實也算是ChatGPT，只不過有了最新的MDN文件資料，相信在Web技術這方面，會比一般的GPT更加準確。
 
 🪄 一起來當AI詠唱師吧！我們來嘗試把剛剛的bug，問AI如何解決(記得要先註冊MDN的帳號喔～)：
 
@@ -1234,7 +1271,7 @@ AI 給了另一種解決方式，使用`innerHTML`取代`innerText`，也是能�
 
 ![](https://i.imgur.com/4o55bJD.png)
 
-<u>完整回覆：</u>
+<u>完整答覆：</u>
 根據提供的原始碼，您可以透過修改 `saveEl.innerText` 的方式將字串中的空格渲染到HTML。請參考以下修改後的程式碼：
 
 ```js
@@ -1265,9 +1302,221 @@ function save() {
 ![](https://i.imgur.com/R3Zss5P.png)
 
 
+>[MDN AI Help Beta](https://developer.mozilla.org/en-US/plus/ai-help)
+
+>[Bing](https://www.bing.com/)
 
 
-## Challenge 參考答案
+## [Set count to 0](https://youtu.be/jS4aFq5-91M?t=4169)
+
+### 🏁 Challenge （綜合實作題）
+
+⭐ 這個挑戰題，我們需要應用目前所學的JS，來實作Passenger counter app。
+
+完成此功能：當使用者按下`SAVE`按鈕時，歸零。
+
+本次挑戰題，沒有提供任何提示，嘗試完成這個挑戰題吧！
+
+![](https://i.imgur.com/XxPARfw.gif)
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+## [Recap](https://youtu.be/jS4aFq5-91M?t=4349)
+
+我們來回顧，我們目前學了什麼JS:
+
+- [script tag](#Setting-up-file)
+- [variables](#Create-variable)
+- [numbers](#Strings-vs.-Numbers)
+- [strings](#What-is-string?)
+- [console.log()](#Create-variable)
+- [functions](#Using functions to write less code)
+- [The DOM (Document Object Model)](#Document-Object-Model-(DOM))
+- [getElementByld()](#Display-count)
+- [innerText](#Display-count)
+- [textContent](#Debugging-online)
+
+恭喜🎉 你已經學會以上JS，並製作出你的第一個JS應用程式 -Javascript 新手 教學 - [Passenger counter app](https://codepen.io/michellechang2006/pen/abQwNZB)！
+
+⭐ 接下來的單元，會有更多題目讓你練習。
+
+
+# Recap Challenge
+
+
+## [Variables practice](https://youtu.be/jS4aFq5-91M?t=4548)
+
+1. 創建兩個變數，分別為`firstName`和`lastName`（分別宣告你的名字和姓氏為變數的值
+  Create two variables, `firstName` and `lastName`
+
+2. 把這兩個變數的值串連起來，宣告為`fullName`變數的值。
+  Concatenate the two variables into a third variable called `fullName`
+
+3. 將`fullName`變數顯示（Log ）在控制台（console）。
+   Log `fullName` to the console
+
+[參考答案](#Challenge-參考答案)
+
+## [Concatenate strings](https://youtu.be/jS4aFq5-91M?t=4662)
+
+創建一個函式（function），讓`"Hi there, Linda!"`顯示(log)在控制台（console)
+Create a function that logs out `"Hi there, Linda!"` when called
+
+```js
+let name = "Linda"
+
+let greeting = "Hi there"
+
+// Create a function that logs out "Hi there, Linda!" when called
+```
+
+[參考答案](#Challenge-參考答案)
+
+
+
+## [Incrementing & decrementing](https://youtu.be/jS4aFq5-91M?t=4724)
+
+1. 創建兩個函式，分別為`add3Points()` 和`remove1Point()`，其程式碼為加減`myPoints`變數的值。
+   Create two functions, `add3Points()` and `remove1Point()`, and have them add/remove points to/from the `myPoints` variable
+
+2. 透過調用（callback)這些函式，讓`myPoints`變數的值為`10`。
+   Call the functions to that the line below logs out `10`
+
+```js
+let myPoints = 3
+
+// Create two functions, add3Points() and remove1Point(), and have them
+
+// add/remove points to/from the myPoints variable
+
+// Call the functions to that the line below logs out 10
+
+console.log(myPoints)
+```
+
+[參考答案](#Challenge-參考答案)
+
+
+
+## [Strings & numbers](https://youtu.be/jS4aFq5-91M?t=4856)
+
+請在每段程式碼旁，以註解(comments)`//`的方式作答輸出（`console.log`)的值。
+
+```js
+// Try to predict what each of the lines will log out
+
+console.log("2" + 2) // 
+
+console.log(11 + 7) // 
+
+console.log(6 + "5") // 
+
+console.log("My points: " + 5 + 9) //
+
+console.log(2 + 2) // 
+
+console.log("11" + "14") // 
+```
+
+[參考答案](#Challenge-參考答案)
+
+## [Rendering error message](https://youtu.be/jS4aFq5-91M?t=4955)
+
+1. 當使用者點擊`purchase`按鈕時
+   When the user clicks the purchase button
+
+2. 渲染（呈現到HTML) `"Something went wrong, please try again"`字串在ID為`error`的段落中（HTML P 標籤）
+   ender out "Something went wrong, please try again" in the paragraph that has the id="error".
+   
+```html
+<html>
+
+<head>
+
+<link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+<img src="images/shoe.jpeg" alt="Nike shoe">
+
+<p>Nike shoe</p>
+
+<button>Purchase - $149</button>
+
+<p id="error"></p>
+
+<script src="index.js"></script>
+
+</body>
+
+</html>
+```
+
+[參考答案](#Challenge-參考答案)
+
+## [Calculator challenge](https://youtu.be/jS4aFq5-91M?t=5152)
+
+1. 透過編寫JS，實現讓`num1`和`num2`的計算功能
+   Perform the given calculation using `num1` and `num2`
+
+2. 渲染（呈現到HTML) 到ID為 `sum-el `的段落中（HTML P 標籤）
+Render the result of the calculation in the paragraph with `id="sum-el"`
+
+🌰 **例子：**
+
+E.g. if the user clicks on the `"Plus"` button, you should render
+
+`"Sum: 10"` (since 8 + 2 = 10) inside the paragraph with `id="sum-el"`
+
+```html
+<html>
+
+<head>
+
+<link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+<span id="num1-el"></span>
+
+<span id="num2-el"></span>
+
+<br>
+
+<button onclick="add()">Add</button>
+
+<button onclick="subtract()">Subtract</button>
+
+<button onclick="divide()">Divide</button>
+
+<button onclick="multiply()">Multiply</button>
+
+<br>
+
+<span id="sum-el">Sum: </span>
+
+<script src="index.js"></script>
+
+</body>
+
+</html>
+```
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+# Challenge 參考答案
+
+## ✏️ 學習筆記
 
 ### [Create variable](https://youtu.be/jS4aFq5-91M?t=462)
 
@@ -1657,3 +1906,241 @@ console.log(count)
 }
 ```
 
+
+### [Set count to 0](https://youtu.be/jS4aFq5-91M?t=4169)
+
+我的解答：
+```js
+let countEl = document.getElementById("count-el")
+
+let saveEl = document.getElementById("save-el")
+
+let count = 0
+
+function increment() {
+
+count += 1
+
+countEl.innerText = count
+
+}
+
+function save() {
+
+countStr = count + " - "
+
+saveEl.innerHTML += countStr
+
+count = 0;
+
+countEl.textContent = count
+
+}
+```
+
+影片中，老師的解答：
+```js
+let saveEl = document.getElementById("save-el")
+
+let countEl = document.getElementById("count-el")
+
+let count = 0
+
+function increment() {
+
+count += 1
+
+countEl.textContent = count
+
+}
+
+function save() {
+
+let countStr = count + " - "
+
+saveEl.textContent += countStr
+
+countEl.textContent = 0
+
+count = 0
+
+}
+```
+
+## Recap
+
+### [Variables practice](https://youtu.be/jS4aFq5-91M?t=4548)
+
+```js
+// Create two variables, firstName and lastName
+
+let firstName = "Michelle "
+
+let lastName = "Chang"
+
+// Concatenate the two variables into a third variable called fullName
+
+fullName = firstName + lastName
+
+// Log fullName to the console
+
+console.log(fullName)
+```
+
+
+### [Concatenate strings](https://youtu.be/jS4aFq5-91M?t=4662)
+
+```js
+let name = "Linda"
+
+let greeting = "Hi there"
+
+// Create a function that logs out "Hi there, Linda!" when called
+
+function twoStrings() { //函式名稱自行決定
+
+console.log(greeting + ", " + name + "!");
+
+}
+
+twoStrings()
+```
+
+
+### [Incrementing & decrementing](https://youtu.be/jS4aFq5-91M?t=4724)
+
+```js
+let myPoints = 3
+
+// Create two functions, add3Points() and remove1Point(), and have them
+
+// add/remove points to/from the myPoints variable
+
+function add3Points() {
+
+myPoints += 3
+
+}
+
+function remove1Point() {
+
+myPoints -= 1
+
+}
+
+add3Points()
+
+add3Points()
+
+add3Points()
+
+remove1Point()
+
+remove1Point()
+
+// Call the functions to that the line below logs out 10
+
+console.log(myPoints)
+```
+
+
+### [Strings & numbers](https://youtu.be/jS4aFq5-91M?t=4856)
+
+```js
+// Try to predict what each of the lines will log out
+
+console.log("2" + 2) // 22
+
+console.log(11 + 7) // 18
+
+console.log(6 + "5") // 65
+
+console.log("My points: " + 5 + 9) // My points: 59
+
+console.log(2 + 2) // 4
+
+console.log("11" + "14") // 1114
+```
+
+### [Rendering error message](https://youtu.be/jS4aFq5-91M?t=4955)
+
+```js
+// When the user clicks the purchase button, render out
+
+// "Something went wrong, please try again" in the paragraph
+
+// that has the id="error".
+
+let errorParagraph = document.getElementById("error")
+
+function errorBtn() {
+
+errorParagraph.textContent = "Something went wrong, please try again"
+
+}
+```
+
+
+### [Calculator challenge](https://youtu.be/jS4aFq5-91M?t=5152)
+
+```js
+let num1 = 8
+
+let num2 = 2
+
+document.getElementById("num1-el").textContent = num1
+
+document.getElementById("num2-el").textContent = num2
+
+  
+
+let sumEl = document.getElementById("sum-el")
+
+  
+
+// Create four functions: add(), subtract(), divide(), multiply()
+
+// Call the correct function when the user clicks on one of the buttons
+
+function add(){
+
+sumEl.textContent = num1 + num2
+
+}
+
+  
+
+function subtract(){
+
+sumEl.textContent = num1 - num2
+
+}
+
+  
+
+function divide(){
+
+sumEl.textContent = num1 / num2
+
+}
+
+  
+
+function multiply(){
+
+sumEl.textContent = num1 * num2
+
+}
+
+  
+
+// Perform the given calculation using num1 and num2
+
+// Render the result of the calculation in the paragraph with id="sum-el"
+
+  
+
+// E.g. if the user clicks on the "Plus" button, you should render
+
+// "Sum: 10" (since 8 + 2 = 10) inside the paragraph with id="sum-el"
+```

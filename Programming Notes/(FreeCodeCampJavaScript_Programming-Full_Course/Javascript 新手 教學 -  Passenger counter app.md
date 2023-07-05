@@ -62,9 +62,9 @@
 
 [Calculator challenge](#Calculator-challenge)
 
-### [⭐ 復刻 APP]()
+### [⭐ 復刻 APP](#復刻-APP)
 
-### [⭐ 學以致用]()
+### [⭐ 學以致用](#學以致用)
 
 ### [🏁 Challenge 題庫](link)
 
@@ -1201,7 +1201,7 @@ console.log(count)
 ![](https://i.imgur.com/yu1GTgu.png)
 
 
-我們可以從MDN Docs 的網頁中，得知`innertext`和`textcontent`的差異。
+我們可以從[MDN Docs 的網頁中](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent)，得知`innertext`和`textcontent`的差異。
 
 ![](https://i.imgur.com/BW9S25K.png)
 
@@ -1333,7 +1333,7 @@ function save() {
 - [numbers](#Strings-vs.-Numbers)
 - [strings](#What-is-string?)
 - [console.log()](#Create-variable)
-- [functions](#Using functions to write less code)
+- [functions](#Using-functions-to-write-less-code)
 - [The DOM (Document Object Model)](#Document-Object-Model-(DOM))
 - [getElementByld()](#Display-count)
 - [innerText](#Display-count)
@@ -1511,6 +1511,121 @@ E.g. if the user clicks on the `"Plus"` button, you should render
 
 [參考答案](#Challenge-參考答案)
 
+
+# [復刻 APP]()
+
+🎉 恭喜你！學完第一階段啦～在將目前所學到JS學以致用，做一個小小的專案前，我決定先自行嘗試，從零開始復刻Passenger counter app的功能。歡迎透過[Github Issues](https://github.com/michellechang2006/Javascript-basic-playground/issues)來和我交流你復刻的Passenger counter app喔！
+
+### ✏️ 復刻筆記
+
+[Create variable](#Create-variable)
+
+[宣告一個變數](#Create-variable) `count`，作為計數功能。
+
+```js
+let count = 0;
+```
+
+**[The DOM](#Document-Object-Model-(DOM))**
+
+[宣告了幾個變數](#Create-variable)，其值為[取出 HTML 內容當中](#Display-count)：
+
+```js
+let countEl = document.getElementById("counter")
+
+let saveEl = document.getElementById("save-el")
+```
+
+**[onclick event listener](#onclick-event-listener)**
+
+加入了`onclick`事件監聽（event listener)，這代表當使用者按一次按鈕時，則會執行`incrementBtn()`和`saveBtn()`函式裡的程式碼。
+
+```html
+<button id="increment-btn" onclick="incrementBtn()">INCREMENT</button>
+
+<button id="save-btn" onclick="saveBtn()">SAVE</button>
+```
+
+**[Using functions to write less code](#Using-functions-to-write-less-code)**
+
+透過函式，讓JS記住使用者按一次`INCREMENT`和`Save`按鈕時，要執行什麼程式碼。
+
+```js
+function incrementBtn(){
+
+}
+
+function saveBtn(){
+
+}
+```
+
+
+
+**[Mathematical operations](#Mathematical-operations)**
+
+創建完函式，接著是寫裡面的程式碼。每次使用者按一次`INCREMENT`時，`count`變數的值加一。
+
+```js
+function incrementBtn(){
+
+count += 1;
+
+}
+```
+
+**[Display count / innerText](#Display-count-/-innerText)**
+
+計算好後，使用[`textContent`](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent)來將計算好的值嵌入HTML。
+
+```js
+function incrementBtn(){
+
+count += 1;
+
+countEl.textContent = count;
+
+}
+```
+
+**[What is string?](#What-is-string?)**
+
+除了計數功能外，還有儲存計數的功能。每次使用者按一次`SAVE`時，`count`變數的值會加入`" - "`[字串](#What-is-string?)後嵌入HTML，ID為`save-el`的段落。
+
+```js
+function saveBtn(){
+
+saveEl.textContent += count + " - "
+
+count = 0;
+
+countEl.textContent = count;
+
+}
+```
+
+**[Set count to 0](#Set-count-to-0)**
+
+最後，編寫此功能：當使用者按下`SAVE`按鈕時，計數歸零。完成啦～
+
+```js
+function saveBtn(){
+
+saveEl.textContent += count + " - "
+
+count = 0;
+
+countEl.textContent = count;
+
+}
+```
+
+**[復刻成果]()**
+
+![](https://i.imgur.com/CXBzZao.gif)
+
+
+# [學以致用]()
 
 
 

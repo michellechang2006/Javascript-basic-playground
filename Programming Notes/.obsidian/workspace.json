@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9351256ceebc1aaf",
+        "id": "e5afadc55ff84584",
         "type": "tabs",
         "children": [
           {
-            "id": "9d808c9742b4482a",
+            "id": "0c9dca90295d8dc6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -130,12 +130,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -147,9 +147,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9d808c9742b4482a",
+  "active": "60a0babc65998b18",
   "lastOpenFiles": [
-    "link.md",
-    "(FreeCodeCampJavaScript_Programming-Full_Course/Javascript 新手 教學 -  Passenger counter app.md"
+    "().md",
+    "(FreeCodeCampJavaScript_Programming-Full_Course/Javascript 新手 教學 -  Passenger counter app.md",
+    "link.md"
   ]
 }

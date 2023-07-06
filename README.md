@@ -23,9 +23,9 @@
     
   -  Recap Challenge 👉🏻 教學影片中，每個階段都會提供一些題目來複習。
     
-  -  復刻 APP 👉🏻 教學影片中，會以實作小專案（例如：Passenger counter app）來教`JS`。這個單元，則是筆者嘗試自己從零開始寫程式，開發教學影片中，實作的小專案。（可略過）
+  -  復刻 APP 👉🏻 教學影片中，會以實作小專案（例如：[Passenger counter app](https://codepen.io/michellechang2006/pen/abQwNZB)）來教`JS`。這個單元，則是筆者嘗試自己從零開始寫程式，開發教學影片中，實作的小專案。（可略過）
     
-  -  Solo Project 學以致用 👉🏻 將目前所學到的JS，實作小專案（[Table Tennis Scoreboard](https://github.com/michellechang2006/My-First-Javascript-APP))。
+  -  Solo Project 學以致用 👉🏻 將目前所學到的`JS`，實作小專案（例如：[Table Tennis Scoreboard](https://github.com/michellechang2006/My-First-Javascript-APP))。
     
   -  Challenge 參考答案 👉🏻 教學影片中，會提供大量題目來練習。
 

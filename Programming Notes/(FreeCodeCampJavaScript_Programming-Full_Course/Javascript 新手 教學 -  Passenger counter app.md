@@ -1512,7 +1512,7 @@ E.g. if the user clicks on the `"Plus"` button, you should render
 [參考答案](#Challenge-參考答案)
 
 
-# [復刻 APP](https://github.com/michellechang2006/Javascript-basic-playground/tree/main/(FreeCodeCampJavaScript_Programming-Full_Course/1.%20Build%20a%20Passenger%20Counter%20App/%E5%BE%A9%E5%88%BB)
+# [復刻 APP](https://codepen.io/michellechang2006/pen/abQwNZB)
 
 🎉 恭喜你！學完第一階段啦～在將目前所學到JS學以致用，做一個小小的專案前，我決定先自行嘗試，從零開始復刻Passenger counter app的功能。歡迎透過[Github Issues](https://github.com/michellechang2006/Javascript-basic-playground/issues)來和我交流你復刻的Passenger counter app喔！
 
@@ -1620,14 +1620,16 @@ countEl.textContent = count;
 }
 ```
 
-**[復刻成果](https://github.com/michellechang2006/Javascript-basic-playground/tree/main/(FreeCodeCampJavaScript_Programming-Full_Course/1.%20Build%20a%20Passenger%20Counter%20App/%E5%BE%A9%E5%88%BB)**
+**[復刻成果 原始碼](https://github.com/michellechang2006/Javascript-basic-playground/tree/main/(FreeCodeCampJavaScript_Programming-Full_Course/1.%20Build%20a%20Passenger%20Counter%20App/%E5%BE%A9%E5%88%BB)**
 
 ![](https://i.imgur.com/CXBzZao.gif)
 
 
-# [Solo Project 學以致用]()
+# [Solo Project 學以致用](https://michellechang2006.github.io/My-First-Javascript-APP/)
 
+![](https://i.imgur.com/gE3lMwA.gif)
 
+### ✏️ 筆記
 
 
 

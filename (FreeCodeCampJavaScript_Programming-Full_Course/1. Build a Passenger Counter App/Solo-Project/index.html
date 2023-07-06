@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table tennis scoreboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scoreboard">
+        <div class="scores-group">
+            <h1 class="score"><div style="display: inline;" class="score-left">0</div><sub style="font-size:50px;">/11</sub></h1>
+            <h1 class="score"><div style="display: inline;" class="score-right">0</div><sub style="font-size:50px;">/11</sub></h1>
+        </div>
+        <br>
+        <div class="btn-group">
+            <button class="blue-btn btn-top" onclick="incrementLeftBtn()">得分</button>
+            <button class="red-btn" onclick="incrementRightBtn()">得分</button>
+        </div>
+        <br>
+        <div class="other-btn-group">
+            <button class="other-btn" onclick="saving()">記錄分數</button>
+            <button class="other-btn" onclick="set0()">重置分數</button>
+        </div>
+        <div class="recorder">
+            <p id="score-recorder">成績紀錄:</p>
+            <button class="delete-record" onclick="deleteRecord()">刪除紀錄</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+body{
+    background-image: url(https://tinyurl.com/2deossfg);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    /* 水平置中 */
+    justify-content: center;    
+    /* 垂直置中 */
+    align-items: center;    
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.scoreboard{
+    border-radius: 1.5em;
+    backdrop-filter: blur(15px);
+    padding: 10vh 20em;
+    margin: 10vh 0;
+    /* background-color: #fff; */
+    color: #fff;
+}
+.score,button{
+    display: inline;
+    margin: 1vh 1vw;
+    font-size: 100px;
+}
+
+.blue-btn{
+    background-color: #31539A;
+}
+
+
+@keyframes btn-animation{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.red-btn{
+    background-color: #C73739;
+}
+
+.other-btn,.delete-record{
+    background-color: #221914;
+}
+button{
+    color:#fff;
+    border-radius: .3em;
+    font-size: 40px;
+    border: none;
+    padding: 1vh 1em;
+    box-shadow: 10px 9px 18px 1px rgba(105,105,105,0.29);
+    -webkit-box-shadow: 10px 9px 18px 1px rgba(105,105,105,0.29);
+    -moz-box-shadow: 10px 9px 18px 1px rgba(105,105,105,0.29);
+}
+
+#score-recorder,.delete-record{
+    font-size: 20px;
+}
+
+.delete-record:hover{
+    font-size: 23px;
+    transition: font-size .2s
+}
+
+.blue-btn:hover,.red-btn:hover,.other-btn:hover{
+    font-size: 45px;
+    transition: font-size .2s
+}

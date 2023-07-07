@@ -1518,7 +1518,7 @@ E.g. if the user clicks on the `"Plus"` button, you should render
 
 ### ✏️ 復刻筆記
 
-[Create variable](#Create-variable)
+**[Create variable](#Create-variable)**
 
 [宣告一個變數](#Create-variable) `count`，作為計數功能。
 
@@ -1597,10 +1597,6 @@ function saveBtn(){
 
 saveEl.textContent += count + " - "
 
-count = 0;
-
-countEl.textContent = count;
-
 }
 ```
 
@@ -1613,25 +1609,268 @@ function saveBtn(){
 
 saveEl.textContent += count + " - "
 
-count = 0;
+count = 0; // 計數歸零
 
 countEl.textContent = count;
 
 }
 ```
 
-**[復刻成果 原始碼](https://github.com/michellechang2006/Javascript-basic-playground/tree/main/(FreeCodeCampJavaScript_Programming-Full_Course/1.%20Build%20a%20Passenger%20Counter%20App/%E5%BE%A9%E5%88%BB)**
-
 ![](https://i.imgur.com/CXBzZao.gif)
 
 
-# [Solo Project 學以致用](https://michellechang2006.github.io/My-First-Javascript-APP/)
+# [Solo Project 學以致用](https://scrimba.com/learn/learnjavascript/why-are-solo-projects-important-crdV3Gtq)
+
+### 🏓 [桌球計分板 Table Tennis Scoreboard](https://michellechang2006.github.io/My-First-Javascript-APP/)
 
 ![](https://i.imgur.com/gE3lMwA.gif)
 
 ### ✏️ 筆記
 
+**[The DOM](#Document-Object-Model-(DOM))**
 
+[宣告了幾個變數](#Create-variable)，其值為[取出 HTML 內容當中](#Display-count)：
+
+```js
+let scoreLeft = document.querySelector(".score-left")
+
+let scoreRight = document.querySelector(".score-right")
+
+let scoreRecorder = document.getElementById("score-recorder")
+```
+
+**[Create variable](#Create-variable)**
+
+[宣告了變數](#Create-variable) `countLeft`和 `countRight`，作為分數計分功能。
+
+```js
+
+let countLeft = 0
+
+let countRight = 0
+
+```
+
+**[onclick event listener](#onclick-event-listener)**
+
+加入了`onclick`事件監聽（event listener)，這代表當使用者按一次按鈕時，則會執行`incrementLeftBtn()`、`incrementRightBtn()`、`saving()`、`set0()`和`deleteRecord()`函式裡的程式碼。
+
+```html
+<div class="btn-group">
+
+<button class="blue-btn btn-top" onclick="incrementLeftBtn()">得分</button>
+
+<button class="red-btn" onclick="incrementRightBtn()">得分</button>
+
+</div>
+
+<br>
+
+<div class="other-btn-group">
+
+<button class="other-btn" onclick="saving()">記錄分數</button>
+
+<button class="other-btn" onclick="set0()">重置分數</button>
+
+</div>
+
+<div class="recorder">
+
+<p id="score-recorder">成績紀錄:</p>
+
+<button class="delete-record" onclick="deleteRecord()">刪除紀錄</button>
+
+</div>
+```
+
+**[Using functions to write less code](#Using-functions-to-write-less-code)**
+
+透過函式，讓JS記住使用者按一次`incrementLeftBtn()`、`incrementRightBtn()`、`saving()`、`set0()`和`deleteRecord()`按鈕時，要執行什麼程式碼。
+
+```js
+function incrementLeftBtn() {
+
+}
+
+function incrementRightBtn() {
+
+}
+
+function saving(){
+
+
+}
+
+function set0() {
+
+}
+
+function deleteRecord() {
+
+}
+```
+
+**[Mathematical operations](#Mathematical-operations)**
+
+創建完函式，接著是寫裡面的程式碼。每次使用者按一次`得分`時，`incrementLeftBtn()`、`incrementRightBtn()`變數的值加一。
+
+``` js
+function incrementLeftBtn() {
+
+countLeft += 1;
+
+}
+
+function incrementRightBtn() {
+
+countRight += 1;
+
+}
+```
+
+**[Display count / innerText](#Display-count-/-innerText)**
+
+計算好後，使用[`textContent`](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent)來將計算好的值嵌入HTML。
+
+``` js
+function incrementLeftBtn() {
+
+countLeft += 1;
+
+scoreLeft.textContent = countLeft
+
+}
+
+function incrementRightBtn() {
+
+countRight += 1;
+
+scoreRight.textContent = countRight
+
+}
+```
+
+**[What is string?](#What-is-string?)**
+
+除了分數計分功能外，還有分數成績的功能。每次使用者按一次`紀錄分數`時，`countAll`變數的值會加入 `" " + countLeft + " : " + countRight + " | "` [字串](#What-is-string?)和`countLeft` 和`countRight`變數的值後嵌入HTML，ID為`score-recorder`的段落。
+
+```js
+function saving(){
+
+countAll = " " + countLeft + " : " + countRight + " | "
+
+scoreRecorder.textContent += countAll
+
+}
+```
+
+
+**[Set count to 0](#Set-count-to-0)**
+
+編寫此功能：當使用者按下`重置分數`按鈕時，分數歸零。完成啦～
+
+```js
+function set0() {
+
+countLeft = 0; // 分數歸零
+
+countRight = 0; // 分數歸零
+
+scoreRight.textContent = countRight
+
+scoreLeft.textContent = countLeft
+
+}
+```
+
+**[分數成績紀錄刪除 - What is string?](#What-is-string?)**
+
+最後，我還編寫了此功能：當使用者按下`刪除紀錄`按鈕時，分數成績紀錄會全部刪除（取代「`成績紀錄: `」[字串](#What-is-string?)）。
+
+```js
+function deleteRecord() {
+
+countAll = "成績紀錄: " // 取代 "成績紀錄: "字串 (strings)
+
+scoreRecorder.textContent = countAll
+
+}
+```
+
+**[完整JS原始碼](https://tinyurl.com/294zqn2o)**
+
+```js
+let scoreLeft = document.querySelector(".score-left")
+
+let scoreRight = document.querySelector(".score-right")
+
+let scoreRecorder = document.getElementById("score-recorder")
+
+  
+
+let countLeft = 0
+
+let countRight = 0
+
+  
+  
+
+function incrementLeftBtn() {
+
+countLeft += 1;
+
+scoreLeft.textContent = countLeft
+
+}
+
+function incrementRightBtn() {
+
+countRight += 1;
+
+scoreRight.textContent = countRight
+
+}
+
+  
+
+function saving(){
+
+countAll = " " + countLeft + " : " + countRight + " | "
+
+scoreRecorder.textContent += countAll
+
+}
+
+  
+
+function set0() {
+
+countLeft = 0;
+
+countRight = 0;
+
+scoreRight.textContent = countRight
+
+scoreLeft.textContent = countLeft
+
+}
+
+  
+
+function deleteRecord() {
+
+countAll = "成績紀錄: "
+
+scoreRecorder.textContent = countAll
+
+}
+```
+
+### [成果]([michellechang2006.github.io/My-First-Javascript-APP/](https://michellechang2006.github.io/My-First-Javascript-APP/ "https://michellechang2006.github.io/My-First-Javascript-APP/"))
+
+![](https://i.imgur.com/gE3lMwA.gif)
+
+>[原始碼](https://tinyurl.com/2688hl86)
 
 # Challenge 參考答案
 
@@ -1898,25 +2137,7 @@ let myGreeting = greeting + name;
 console.log(myGreeting);
 ```
 
-```js
-// Create two variables, name and greeting. The name variable should store your name,
-
-// and the greeting should store e.g. 'Hi, my name is '
-
-let name = 'Michelle';
-
-let greeting = 'Hi, my name is ';
-
-// Create a third variable, myGreeting, that contatenates the two strings
-
-let myGreeting = greeting + name;
-
-// Log myGreeting to the console
-
-console.log(myGreeting);
-```
-
-## [Strings vs. Numbers](https://youtu.be/jS4aFq5-91M?t=3198)
+### [Strings vs. Numbers](https://youtu.be/jS4aFq5-91M?t=3198)
  
 ```js
 console.log(4 + 5) // 9

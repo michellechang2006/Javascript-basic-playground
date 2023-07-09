@@ -1,18 +1,22 @@
 {
   "main": {
-    "id": "5ae25bf627c43c84",
+    "id": "1d2002ea7ea4d8e3",
     "type": "split",
     "children": [
       {
-        "id": "e5afadc55ff84584",
+        "id": "94f687aef4242610",
         "type": "tabs",
         "children": [
           {
-            "id": "0fb5131cae85eaa2",
+            "id": "c30a293cf64e7c84",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Javascript 新手 教學 -  Passenger counter app.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -21,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "9c530ac9d0d2f63b",
+    "id": "9a6b007d1db34ea0",
     "type": "split",
     "children": [
       {
-        "id": "29197dbe1ac9d7a5",
+        "id": "433785f2188cdc71",
         "type": "tabs",
         "children": [
           {
-            "id": "119267e6f8a79b9c",
+            "id": "e914f0d193730cf4",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -39,7 +43,7 @@
             }
           },
           {
-            "id": "d63e4ad5f99309e8",
+            "id": "8891a740859960fb",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -54,7 +58,7 @@
             }
           },
           {
-            "id": "01d924ec307bd09e",
+            "id": "1efd60debfcb43ef",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -69,19 +73,20 @@
     "collapsed": true
   },
   "right": {
-    "id": "d892416d61527190",
+    "id": "cdd7d109e14c4d4b",
     "type": "split",
     "children": [
       {
-        "id": "b506648eaeaf68ec",
+        "id": "ec7d99474e3d3e8c",
         "type": "tabs",
         "children": [
           {
-            "id": "a64521a9f2771bcc",
+            "id": "defce45584ae1a80",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Javascript 新手 教學 -  Passenger counter app.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,18 +98,19 @@
             }
           },
           {
-            "id": "25d17f84cce93538",
+            "id": "337159484e05b0c3",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Javascript 新手 教學 -  Passenger counter app.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "c7a71c2a00773204",
+            "id": "7219d8e9c3460cdd",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -115,11 +121,13 @@
             }
           },
           {
-            "id": "60a0babc65998b18",
+            "id": "5ba6ab3a149772cc",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Javascript 新手 教學 -  Passenger counter app.md"
+              }
             }
           }
         ],
@@ -127,8 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -140,51 +147,6 @@
       "command-palette:Open command palette": false
     }
   },
-  "floating": {
-    "id": "4d98e023ca75bcaf",
-    "type": "floating",
-    "children": [
-      {
-        "id": "993179759dd0a344",
-        "type": "window",
-        "children": [
-          {
-            "id": "0861817857a36b87",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "356996bccc4d9d0a",
-                "type": "leaf",
-                "state": {
-                  "type": "empty",
-                  "state": {}
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 269,
-        "y": 107,
-        "width": 1024,
-        "height": 800,
-        "maximize": true,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "0fb5131cae85eaa2",
-  "lastOpenFiles": [
-    "(FreeCodeCampJavaScript_Programming-Full_Course/(解答放最後面）Challenge_Passenger_counter_app.md",
-    "(FreeCodeCampJavaScript_Programming-Full_Course/Javascript 新手 教學 -  Passenger counter app.md",
-    "(FreeCodeCampJavaScript_Programming-Full_Course/1. Build a Passenger Counter App/Challenge_Passenger_counter_app.md",
-    "(FreeCodeCampJavaScript_Programming-Full_Course/1. Build a Passenger Counter App/(解答放最後面）Challenge_Passenger_counter_app.md",
-    "(FreeCodeCampJavaScript_Programming-Full_Course/1. Build a Passenger Counter App/Javascript 新手 教學 -  Passenger counter app.md",
-    "(FreeCodeCampJavaScript_Programming-Full_Course/1. Build a Passenger Counter App",
-    "(FreeCodeCampJavaScript_Programming-Full_Course/未命名檔案夾",
-    "(FreeCodeCampJavaScript_Programming-Full_Course/Challenge_Passenger_counter_app.md",
-    "(FreeCodeCampJavaScript_Programming-Full_Course/Javascript 新手 教學 -  Passenger counter app 1.md",
-    "().md",
-    "link.md"
-  ]
+  "active": "5ba6ab3a149772cc",
+  "lastOpenFiles": []
 }

@@ -1250,7 +1250,7 @@ console.log(count)
 
 ### 🎢 筆者玩玩看 - 用AI debug
 
-教學影片拍攝時間是2021年，那時還沒有ChatGPT。剛好在寫此篇學習筆記時，MDN出了「[AI Help Beta](https://developer.mozilla.org/en-US/plus/ai-help)」功能，它其實也算是ChatGPT，只不過有了最新的MDN文件資料，相信在Web技術這方面，會比一般的GPT更加準確。
+教學影片拍攝時間是2021年，那時還沒有[ChatGPT](https://chat.openai.com)。剛好在寫此篇學習筆記時，MDN出了「[AI Help Beta](https://developer.mozilla.org/en-US/plus/ai-help)(Powered by GPT-3.5)」功能，它其實也算是ChatGPT，只不過有了最新的MDN文件資料，相信在Web技術這方面，會比一般的GPT更加準確。
 
 🪄 一起來當AI詠唱師吧！我們來嘗試把剛剛的bug，問AI如何解決(記得要先註冊MDN的帳號喔～)：
 

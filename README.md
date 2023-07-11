@@ -12,6 +12,8 @@
 
 4. 筆記中，稱`Javascript`為`JS`。
 
+5. 學習筆記，只會有純`Javascript`，其他教學影片中所教的關於`CSS`及`HTML`不會呈現在筆記。
+
 ## 筆記架構
 
 （持續更新...)
@@ -25,22 +27,40 @@
     
   -  復刻 APP 👉🏻 教學影片中，會以實作小專案（例如：[Passenger counter app](https://codepen.io/michellechang2006/pen/abQwNZB)）來教`JS`。這個單元，則是筆者嘗試自己從零開始寫程式，開發教學影片中，實作的小專案。（可略過）
     
-  -  Solo Project 學以致用 👉🏻 將目前所學到的`JS`，實作小專案（例如：[Table Tennis Scoreboard](https://github.com/michellechang2006/My-First-Javascript-APP))。
+  -  Solo Project 學以致用 👉🏻 將影片中目前所學到的`JS`，實作小專案（例如：[Table Tennis Scoreboard](https://github.com/michellechang2006/My-First-Javascript-APP))。（可略過）
     
   -  Challenge 參考答案 👉🏻 教學影片中，會提供大量題目來練習。
 
 - 標題
-  - 📝 延伸
-  - 🏁 Challenge
-  - ⚠️ 注意
-  - ✋🏻 實作
-  - Recap
-  - 🖼️ 圖解
-  - 🎢 筆者玩玩看
+  - 📝 延伸 👉🏻 每個單元學習內容的提升（大部份都會有獨立的單元來解說，可略過）
+    
+  - 🏁 Challenge 👉🏻 大部份的單元都會提供一些題目來測驗。
+    
+  - ⚠️ 注意 👉🏻 注意事項
+    
+  - ✋🏻 實作 👉🏻 教學影片中，會以實作小專案來教`JS`。這個單元，則是解說如何透過所學到的`JS`來實作。
+    
+  - Recap 👉🏻 有時一個單元資訊量太大/太複雜，會有一個段落來總結。
+    
+  - 🖼️ 圖解 👉🏻 有些單元資訊量太複雜，筆者嘗試整理成 🖼️ 圖解筆記，儘量以生活情境（有些是來自於[教學影片](https://youtube.com/playlist?list=PLWKjhJtqVAbleDe3_ZA8h3AO2rXar-q2V)）  來舉例，讓人容易理解。
+    
+  - 🎢 筆者玩玩看 👉🏻 簡單來說，就是教學影片沒有提到的，筆者自己去延伸。（例如：[JavaScript Programming - Full Course 教學影片](https://youtu.be/jS4aFq5-91M)拍攝時間是2021年，那時還沒有[ChatGPT](https://chat.openai.com)。剛好在寫此篇學習筆記時，MDN出了「[AI Help Beta](https://developer.mozilla.org/en-US/plus/ai-help)(Powered by GPT-3.5)」功能，筆者有嘗試用此功能來debug。（可略過）
 
 - 其他
-  - 🗂️ Reference
-  - 👩🏻‍💻 筆者碎碎念
-  - 😊 貼心小提醒
+  - 🗂️ Reference 👉🏻 參考資料 （可略過）
+    
+  - 👩🏻‍💻 筆者碎碎念 👉🏻 筆者的小雜記 （可略過）
+    
+  - 😊 貼心小提醒 👉🏻 [教學影片](https://youtube.com/playlist?list=PLWKjhJtqVAbleDe3_ZA8h3AO2rXar-q2V)中，老師的提醒/建議
+
+## 所有的學習筆記
+（持續更新...)
+- [JavaScript Programming - Full Course 教學影片](https://youtu.be/jS4aFq5-91M)
+  
+  - [Passenger counter app](https://tinyurl.com/2cgr5545)
+    
+  - [Build Blackjack Game](https://tinyurl.com/223oyx48)
+
 
 ## issues
+（持續更新...)

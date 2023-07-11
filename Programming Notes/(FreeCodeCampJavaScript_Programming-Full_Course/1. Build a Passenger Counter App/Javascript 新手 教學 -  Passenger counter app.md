@@ -1,3 +1,16 @@
+# 💪🏻 這個階段，我們會學到...
+
+- ### [script tag](#Setting-up-file)
+- ### [variables](#Create-variable)
+- ### [numbers](#Strings-vs.-Numbers)
+- ### [strings](#What-is-string?)
+- ### [console.log()](#Create-variable)
+- ### [functions](#Using-functions-to-write-less-code)
+- ### [The DOM (Document Object Model)](#Document-Object-Model-(DOM))
+- ### [getElementByld()](#Display-count)
+- ### [innerText](#Display-count)
+- ### [textContent](#Debugging-online)
+
 # 🔗 Section links 
 
 ### [✏️ 學習筆記](#學習筆記)
@@ -66,12 +79,9 @@
 
 ### [⭐ Solo Project 學以致用](#學以致用-Solo-Project)
 
-### [🏁 Challenge 題庫](https://tinyurl.com/28evusbg)
+### [🏁 Challenge 題庫](https://tinyurl.com/2bzxhxza)
 
 ###  [🏁 Challenge 參考答案](#Challenge-參考答案)
-
-
-
 
 
 
@@ -721,7 +731,7 @@ console.log(lapsCompleted)
 
 ### ✋🏻 實作
 
-在上個單元，我們已經編寫完JS程式碼。那麽如何嵌入HTML（使用者介面）中呢？首先，我們使用`document.getElementById("{ID名稱}");`來回傳到HTML的ID名稱後，我們設定屬性`innerText`。
+在上個單元，我們已經編寫完JS程式碼。那麽如何嵌入HTML（使用者介面）中呢？首先，我們使用`document.getElementById("{ID名稱}");`來回傳（嵌入）到document（HTML），選到的第一個`ID名稱`後，我們設定屬性`innerText`。
 
 ⭐  接下來的單元會說明更多觀念。
 

@@ -27,6 +27,10 @@
 
 [Display sum](#Display-sum)
 
+[Display cards](#Display-cards)
+
+[New card button](#New-card-button)
+
 ### [🏁 Recap Challenge](#Recap-Challenge)
 
 ### [⭐ 復刻 APP](#復刻-APP)
@@ -706,7 +710,7 @@ isAlive = false
 **⭐ Passenger counter app 複習題 [Document Object Model (DOM)](https://tinyurl.com/24fjzhhg)/ [Display count](https://tinyurl.com/2cgr5545)**
 
 1.  宣告一個變數為 `sumEl`，其值為取出 HTML 內容當中，ID為`sum-el`的段落（`<p>`標籤）。
-   Store the sum paragraph in a variable called sumEl
+   Store the sum paragraph in a variable called `sumEl`
 
 2. 將玩家的總點數（`sum`變數的值）呈現到HTML 。（呈現的文字，例子：`Sum: 14`）
    Render the sum on the page using this format -> `"Sum: 14"`
@@ -776,6 +780,151 @@ var el = document.querySelector(".myclass"); // el 變數的值為回傳 documen
 
 
 >[MDN DOCS](https://developer.mozilla.org/zh-TW/docs/Web/API/Document/querySelector)
+
+
+
+## [Display cards](https://youtu.be/jS4aFq5-91M?t=8377)
+
+### 🏁 Challenge 
+
+**⭐ Passenger counter app 複習題 [Document Object Model (DOM)](https://tinyurl.com/24fjzhhg)/ [Display count](https://tinyurl.com/2cgr5545)**
+
+1. 宣告一個變數為 `cardsEl`，其值為取出 HTML 內容當中，ID為`cardsEl`的段落（`<p>`標籤）。
+Store the cards paragraph in a variable called `cardsEl`
+
+2. 將玩家的第一張庫克牌和第二張庫克牌點數（`firstCard`和`secondCard`變數的值）呈現到HTML 。（呈現的文字，例子：`Cards: 10 4`)
+   Render the cars on the page using this format -> `"Cards: 10 4"`
+
+```js
+let firstCard = 10
+
+let secondCard = 21
+
+let sum = firstCard + secondCard
+
+let hasBlackJack = false
+
+let isAlive = true
+
+let message = ""
+
+  
+
+// 1. Store the cards paragraph in a variable called cardsEl
+
+let sumEl = document.querySelector("#sum-el")
+
+let messageEl = document.getElementById("message-el")
+
+  
+
+function startGame(){
+
+// 2. Render the cars on the page using this format -> "Cards: 10 4"
+
+sumEl.textContent = "Sum: " + sum
+
+if (sum <= 20) {
+
+message = "Do you want to draw a new card? 🙂"
+
+} else if (sum === 21) {
+
+message = "Wohoo! You've got Blackjack! 🥳"
+
+hasBlackJack = true
+
+} else {
+
+message = "You're out of the game! 😭"
+
+isAlive = false
+
+}
+
+messageEl.textContent = message
+
+}
+```
+
+
+
+
+## [New card button](https://youtu.be/jS4aFq5-91M?t=8495)
+
+### 🏁 Challenge 
+
+**⭐ Passenger counter app 複習題 [Document Object Model (DOM)](https://tinyurl.com/24fjzhhg)/ [Display count](https://tinyurl.com/2cgr5545)/[functions](https://tinyurl.com/2cgr5545)**
+
+1. 創建一個`HTML`按鈕為`NEW CARD`，並加入監聽事件（event click)，讓使用者點擊一次按鈕後，觸法 `newCard()`函式。
+   Create a `NEW CARD` button, make it run `newCard()` on click
+
+2.  創建一個`newCard()`函式，將`"Drawing a new card from the deck!"`字串顯示（log)在控制台(console)。
+   Create a function `newCard()` that logs out `"Drawing a new card from the deck!"`
+
+
+```js
+let firstCard = 10
+
+let secondCard = 21
+
+let sum = firstCard + secondCard
+
+let hasBlackJack = false
+
+let isAlive = true
+
+let message = ""
+
+  
+
+let sumEl = document.querySelector("#sum-el")
+
+let messageEl = document.getElementById("message-el")
+
+let cardsEl = document.getElementById("cards-el")
+
+  
+
+function startGame(){
+
+sumEl.textContent = "Sum: " + sum
+
+cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
+
+if (sum <= 20) {
+
+message = "Do you want to draw a new card? 🙂"
+
+} else if (sum === 21) {
+
+message = "Wohoo! You've got Blackjack! 🥳"
+
+hasBlackJack = true
+
+} else {
+
+message = "You're out of the game! 😭"
+
+isAlive = false
+
+}
+
+messageEl.textContent = message
+
+}
+
+  
+
+// 2. Create a function newCard() that logs out "Drawing a new card from the deck!"
+
+```
+
+
+
+
+### [Add to sum when newCard is clicked](https://youtu.be/jS4aFq5-91M?t=8716)
+
 
 
 
@@ -1094,7 +1243,7 @@ messageEl.textContent = message
 👩🏻‍💻 **筆者碎碎念**：要記得`messageEl.textContent = message`要放在`startGame()`函式裡，這樣當使用者點擊`START GAME`，才會觸發（執行）程式碼。
 
 
-## [Display sum](https://youtu.be/jS4aFq5-91M?t=8029)
+### [Display sum](https://youtu.be/jS4aFq5-91M?t=8029)
 
 
 ```js
@@ -1198,6 +1347,132 @@ isAlive = false
 }
 
 messageEl.textContent = message
+
+}
+```
+
+
+### [Display cards](https://youtu.be/jS4aFq5-91M?t=8377)
+
+```js
+let firstCard = 10
+
+let secondCard = 21
+
+let sum = firstCard + secondCard
+
+let hasBlackJack = false
+
+let isAlive = true
+
+let message = ""
+
+  
+
+// 2. Store the cards paragraph in a variable called cardsEl
+
+let sumEl = document.querySelector("#sum-el")
+
+let messageEl = document.getElementById("message-el")
+
+let cardsEl = document.getElementById("cards-el")
+
+  
+
+function startGame(){
+
+// 3. Render the cars on the page using this format -> "Cards: 10 4"
+
+sumEl.textContent = "Sum: " + sum
+
+cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
+
+if (sum <= 20) {
+
+message = "Do you want to draw a new card? 🙂"
+
+} else if (sum === 21) {
+
+message = "Wohoo! You've got Blackjack! 🥳"
+
+hasBlackJack = true
+
+} else {
+
+message = "You're out of the game! 😭"
+
+isAlive = false
+
+}
+
+messageEl.textContent = message
+
+}
+```
+
+### [New card button](https://youtu.be/jS4aFq5-91M?t=8495)
+
+```js
+
+let firstCard = 10
+
+let secondCard = 21
+
+let sum = firstCard + secondCard
+
+let hasBlackJack = false
+
+let isAlive = true
+
+let message = ""
+
+  
+
+let sumEl = document.querySelector("#sum-el")
+
+let messageEl = document.getElementById("message-el")
+
+let cardsEl = document.getElementById("cards-el")
+
+  
+
+function startGame(){
+
+sumEl.textContent = "Sum: " + sum
+
+cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
+
+if (sum <= 20) {
+
+message = "Do you want to draw a new card? 🙂"
+
+} else if (sum === 21) {
+
+message = "Wohoo! You've got Blackjack! 🥳"
+
+hasBlackJack = true
+
+} else {
+
+message = "You're out of the game! 😭"
+
+isAlive = false
+
+}
+
+messageEl.textContent = message
+
+}
+
+  
+
+// 2. Create a function newCard() that logs out "Drawing a new card from the deck!"
+
+  
+
+function newCard() {
+
+console.log("Drawing a new card from the deck!")
 
 }
 ```

@@ -5,14 +5,13 @@ let hasBlackJack = false
 let isAlive = true
 let message = ""
 
-// 2. Store the sum paragraph in a variable called sumEl
 let sumEl = document.querySelector("#sum-el")
 let messageEl = document.getElementById("message-el")
+let cardsEl = document.getElementById("cards-el")
 
 function startGame(){
-     // 3. Render the sum on the page using this format -> "Sum: 14"
      sumEl.textContent = "Sum: " + sum
-    
+    cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
     if (sum <= 20) {
         message = "Do you want to draw a new card? 🙂"
     } else if (sum === 21) {
@@ -25,5 +24,9 @@ function startGame(){
     messageEl.textContent = message
 }
 
+// 2. Create a function newCard() that logs out "Drawing a new card from the deck!"
 
+function newCard() {
+    console.log("Drawing a new card from the deck!")
+}
 

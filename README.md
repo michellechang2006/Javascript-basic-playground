@@ -3,6 +3,8 @@
 ## ❓ 這是什麼？
 主要是放我「從零開始學`JS`」的學習筆記。歡迎參考！教材主要來源為[FreeCodeCamp](https://www.youtube.com/@freecodecamp) 的 [YouTube 教學影片](https://youtube.com/playlist?list=PLWKjhJtqVAbleDe3_ZA8h3AO2rXar-q2V)。
 
+## 📝 為什麼要寫這些學習筆記？
+
 ## ⚠️ 注意：如果你要參考我的筆記
 1. 我是完全新手，內容可能有誤！如果你有發現任何錯誤，麻煩到[issues](#issues)回報給我🙏🏻
    

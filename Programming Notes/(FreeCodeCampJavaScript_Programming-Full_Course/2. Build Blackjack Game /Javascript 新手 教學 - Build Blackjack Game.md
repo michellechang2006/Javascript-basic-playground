@@ -473,7 +473,7 @@ console.log("You're out of the game! 😭")
 
 ```
 
-
+[參考答案](#Challenge-參考答案)
 
 ## [Practice boolean conditions](https://youtu.be/jS4aFq5-91M?t=6688)
 
@@ -626,6 +626,7 @@ isAlive = false
 // 3. Log it out!
 ```
 
+[參考答案](#Challenge-參考答案)
 
 
 ## [Make start button work](https://youtu.be/jS4aFq5-91M?t=6896)
@@ -663,6 +664,8 @@ isAlive = false
 }
 ```
 
+
+[參考答案](#Challenge-參考答案)
 
 
 
@@ -723,6 +726,7 @@ isAlive = false
 }
 ```
 
+[參考答案](#Challenge-參考答案)
 
 
 ## [Display sum](https://youtu.be/jS4aFq5-91M?t=8029)
@@ -790,6 +794,8 @@ isAlive = false
 
 }
 ```
+
+[參考答案](#Challenge-參考答案)
 
 
 
@@ -875,6 +881,7 @@ messageEl.textContent = message
 }
 ```
 
+[參考答案](#Challenge-參考答案)
 
 
 
@@ -951,10 +958,14 @@ messageEl.textContent = message
 
 ```
 
+[參考答案](#Challenge-參考答案)
 
 
+## [Add to sum when newCard is clicked](https://youtu.be/jS4aFq5-91M?t=8716)
 
-### [Add to sum when newCard is clicked](https://youtu.be/jS4aFq5-91M?t=8716)
+### 🏁 Challenge 
+
+**⭐ Passenger counter app 複習題 [Document Object Model (DOM)](https://tinyurl.com/24fjzhhg)/ [Display count](https://tinyurl.com/2cgr5545) / [回呼函式 (callback function)](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
 
 1. 創建一個`card`變數，其值設定為`2`到`11`
 
@@ -969,6 +980,173 @@ messageEl.textContent = message
 3. 回呼`startGame()`函式
 
    Call `startGame()`
+
+[參考答案](#Challenge-參考答案)
+
+
+
+## [Rename startGame function](https://youtu.be/jS4aFq5-91M?t=8916)
+
+**⭐ 假如， 我們要和其他開發者一起開發，我們必需須將`startGame()`函式重新命名為`renderGame`，否則其他的開發者要讀以下原始碼時搞混；為何在新增卡片`newCard()`的函式中，還需要「開始遊戲」（回呼`startGame()`函式）。
+
+```js
+function startGame(){
+
+sumEl.textContent = "Sum: " + sum
+
+cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
+
+if (sum <= 20) {
+
+message = "Do you want to draw a new card? 🙂"
+
+} else if (sum === 21) {
+
+message = "Wohoo! You've got Blackjack! 🥳"
+
+hasBlackJack = true
+
+} else {
+
+message = "You're out of the game! 😭"
+
+isAlive = false
+
+}
+
+messageEl.textContent = message
+
+}
+
+  
+
+function newCard() {
+
+console.log("Drawing a new card from the deck!")
+
+let card = 6;
+
+sum += card;
+
+startGame() // 其他開發者：為何在新增卡片`newCard()`的函式中，還需要「開始遊戲」（回呼`startGame()`函式）
+
+}
+```
+
+
+### 🏁 Challenge 
+
+**⭐ Passenger counter app 複習題 [函式 (function)](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
+
+創建一個函式 `renderGame()`來回呼（callback) `startGame()`函式
+Create a new function called startGame() that calls renderGame()
+
+```js
+function startGame(){
+
+sumEl.textContent = "Sum: " + sum
+
+cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
+
+if (sum <= 20) {
+
+message = "Do you want to draw a new card? 🙂"
+
+} else if (sum === 21) {
+
+message = "Wohoo! You've got Blackjack! 🥳"
+
+hasBlackJack = true
+
+} else {
+
+message = "You're out of the game! 😭"
+
+isAlive = false
+
+}
+
+messageEl.textContent = message
+
+}
+
+  
+
+function newCard() {
+
+console.log("Drawing a new card from the deck!")
+
+let card = 6;
+
+sum += card;
+
+startGame() 
+
+}
+```
+
+
+[參考答案](#Challenge-參考答案)
+
+
+## [Arrays intro](https://youtu.be/jS4aFq5-91M?t=9251)
+
+⭐ 這個單元資訊量有點大，我們透過(圖解）筆記來慢慢解析此語法。
+
+**先看語法架構：**
+
+🌰 例子
+
+```js
+var fruits = ["Apple", "Banana"];
+```
+
+（來源：MDN Docs)
+
+### 🖼️ 圖解
+
+![](https://i.imgur.com/PlayUY2.png)
+
+
+
+![](https://i.imgur.com/PmBce49.png)
+
+
+
+![](https://i.imgur.com/hMNj3kB.png)
+
+
+**我們再看看程式碼：**
+
+```js
+let fruitProducts = [ "watermelons",
+
+						"oranges",
+						
+						"mangos",
+						
+						"apples" ]
+```
+
+
+**👩🏻‍💻 筆者碎碎念:** 教學影片中，老師是以Linkedin 個人主頁（Linkedin Profile)網頁上的組件（components)來舉例，但筆者認為以此例子來解釋`JS`陣列，對於初學者而言，反而會複雜`JS`陣列的理解。所以，學習筆記是以水果攤的產品清單來說明`JS`陣列。
+
+
+### 🏁 Challenge 
+
+1. 創建一個陣列，來列表你的經歷、學歷或技能...等等。
+   Create an array that lists your i.e. experience, education, licenses, skills or similar
+
+2. 每個項目必需是字串（strings）
+   The items of the array should be strings
+
+[參考答案](#Challenge-參考答案)
+
+
+## [Array indexes](https://youtu.be/jS4aFq5-91M?t=9580)
+
+
+
 
 
 
@@ -1518,4 +1696,60 @@ function newCard() {
 console.log("Drawing a new card from the deck!")
 
 }
+```
+
+### [Rename startGame function](#Rename-startGame-function)
+
+```js
+function startGame(){
+
+sumEl.textContent = "Sum: " + sum
+
+cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
+
+if (sum <= 20) {
+
+message = "Do you want to draw a new card? 🙂"
+
+} else if (sum === 21) {
+
+message = "Wohoo! You've got Blackjack! 🥳"
+
+hasBlackJack = true
+
+} else {
+
+message = "You're out of the game! 😭"
+
+isAlive = false
+
+}
+
+messageEl.textContent = message
+
+}
+
+  
+
+function newCard() {
+
+console.log("Drawing a new card from the deck!")
+
+let card = 6;
+
+sum += card;
+
+startGame()
+
+}
+```
+
+👩🏻‍💻 筆者碎碎念: 記得在HTML文件裡，`onclick`監聽事件的函式名稱也要更改喔～
+
+### [Arrays intro](https://youtu.be/jS4aFq5-91M?t=9251)
+
+```js
+
+let experience = ["CEO at Scrimba", "Frontend developer at Xeneta", "People counter for Norstat"]
+
 ```

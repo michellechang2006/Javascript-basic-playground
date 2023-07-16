@@ -5,6 +5,15 @@
 
 ## 📝 為什麼要寫這些學習筆記？
 
+## 所有的學習筆記
+（持續更新...)
+- [JavaScript Programming - Full Course 教學影片](https://youtu.be/jS4aFq5-91M)
+  
+  - [Passenger counter app](https://tinyurl.com/2cgr5545)
+    
+  - [Build Blackjack Game](https://tinyurl.com/223oyx48)
+ 
+
 ## ⚠️ 注意：如果你要參考我的筆記
 1. 我是完全新手，內容可能有誤！如果你有發現任何錯誤，麻煩到[issues](#issues)回報給我🙏🏻
    
@@ -54,14 +63,6 @@
   - 👩🏻‍💻 筆者碎碎念 👉🏻 筆者的小雜記 （可略過）
     
   - 😊 貼心小提醒 👉🏻 [教學影片](https://youtube.com/playlist?list=PLWKjhJtqVAbleDe3_ZA8h3AO2rXar-q2V)中，老師的提醒/建議
-
-## 所有的學習筆記
-（持續更新...)
-- [JavaScript Programming - Full Course 教學影片](https://youtu.be/jS4aFq5-91M)
-  
-  - [Passenger counter app](https://tinyurl.com/2cgr5545)
-    
-  - [Build Blackjack Game](https://tinyurl.com/223oyx48)
 
 
 ## issues

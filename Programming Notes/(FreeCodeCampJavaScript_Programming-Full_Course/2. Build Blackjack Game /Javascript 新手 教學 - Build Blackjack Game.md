@@ -51,9 +51,12 @@
 **⭐ Passenger counter app 複習題 [Create variable](https://tinyurl.com/28evusbg)**
 
 1. 創建兩個變數，分別宣告為`firstCard`和`secondCard`。其值設定為二到十一中，隨機的數字。
+
   Create two variables, firstCard and secondCard.  Set their values to a random number between 2-11
 
+
 2. 創建一個變數`sum`，其值為`firstCard`和`secondCard`的加總。
+
    Create a variable, sum, and set it to the sum of the two cards
    
 [參考答案](#Challenge-參考答案)
@@ -243,9 +246,12 @@ console.log("You're out of the game! 😭")// You're 英文字有一個單引號
 挑戰看看自己編寫`if..else`陳述式語法吧！
 
 1. 請透過`JS`編寫`if..else`陳述式語法，來檢查一個的年齡是否是滿21歲，才能進入夜店。
+
    Check if the person is old enough to enter the nightclub (21)
 
+
 2. 將訊息顯示（log)在控制台(console)，（如果未滿二十一歲，則顯示（log)`"You can not enter the club!"`，如果有則顯示（log)`"Welcome!`"）
+
    Log a suitable message to the console in both cases
 
 ```js
@@ -417,12 +423,17 @@ console.log(hasBlackJack)
 ⭐ 回到我們的Blackjack Game，請透過上單元學到的，來編寫以下程式碼：
 
 1. 創建一個變數宣告為 `isAlive`（來檢查玩家是否有出局），並其值為`true`。
+
    Create a variable called `isAlive` and assign it to true
 
+
 2. 在`if/else...if/else statement`陳述式的程式碼，請嘗試找找看要在哪個區塊，將`isAlive`的值重新宣告為`false`。
+
    Flip its value to false in the appropriate code block
 
+
 3. 將結果顯示（log)在控制台(console)，來檢查結果
+
    Log it out to check that you're doing it right
    
 ```js
@@ -560,12 +571,17 @@ console.log(3 <= 2) //
 ### 🏁 Challenge
 
 1. 宣告一個變數為`message`，其值為空格的字串（`" "`)
+
    Declare a variable called message and assign its value to an empty string
 
+
 2. 將各區塊的字串作為`message`變數的值。
+
    Reassign the message variable to the string we're logging out
 
+
 3. 將這些字串顯示(log)在控制台（console)
+
    Log it out!
 
 ⭐ 請透過以上說明修改以下原始碼：
@@ -619,9 +635,12 @@ isAlive = false
 ⭐ 真實的Web開發者，常常會把`JS`、`HTML`和`CSS`一起編程。
 
 1. 創建一個`HTML`按鈕為`START GAME`，並加入監聽事件（event click)，讓使用者點擊一次按鈕後，觸法 `startGame()`函式。
+
 Create a button that says START GAME.   Make it call a startGame() function when clicked
 
+
 2. 創建一個`startGame()`函式，將以下`JS`原始碼放入`startGame()`。
+
 Create a startGame() function. Move the conditional below (line 11-20) inside the body of the function.
 
 ```js
@@ -652,9 +671,12 @@ isAlive = false
 ### 🏁 Challenge
 
 1. 宣告一個變數為 `messageEl`，其值為取出 HTML 內容當中，ID為`message-el`的段落（`<p>`標籤）。
+
    Store the `message-el` paragraph in a variable called `messageEl`
 
+
 2. 將這些字串呈現到HTML ，請使用`messageEl.textContent`
+
    Display the message in the messageEl using messageEl.textContent
 
 ```js
@@ -710,9 +732,12 @@ isAlive = false
 **⭐ Passenger counter app 複習題 [Document Object Model (DOM)](https://tinyurl.com/24fjzhhg)/ [Display count](https://tinyurl.com/2cgr5545)**
 
 1.  宣告一個變數為 `sumEl`，其值為取出 HTML 內容當中，ID為`sum-el`的段落（`<p>`標籤）。
+
    Store the sum paragraph in a variable called `sumEl`
 
+
 2. 將玩家的總點數（`sum`變數的值）呈現到HTML 。（呈現的文字，例子：`Sum: 14`）
+
    Render the sum on the page using this format -> `"Sum: 14"`
 
 
@@ -790,9 +815,12 @@ var el = document.querySelector(".myclass"); // el 變數的值為回傳 documen
 **⭐ Passenger counter app 複習題 [Document Object Model (DOM)](https://tinyurl.com/24fjzhhg)/ [Display count](https://tinyurl.com/2cgr5545)**
 
 1. 宣告一個變數為 `cardsEl`，其值為取出 HTML 內容當中，ID為`cardsEl`的段落（`<p>`標籤）。
+
 Store the cards paragraph in a variable called `cardsEl`
 
+
 2. 將玩家的第一張庫克牌和第二張庫克牌點數（`firstCard`和`secondCard`變數的值）呈現到HTML 。（呈現的文字，例子：`Cards: 10 4`)
+
    Render the cars on the page using this format -> `"Cards: 10 4"`
 
 ```js
@@ -857,9 +885,12 @@ messageEl.textContent = message
 **⭐ Passenger counter app 複習題 [Document Object Model (DOM)](https://tinyurl.com/24fjzhhg)/ [Display count](https://tinyurl.com/2cgr5545)/[functions](https://tinyurl.com/2cgr5545)**
 
 1. 創建一個`HTML`按鈕為`NEW CARD`，並加入監聽事件（event click)，讓使用者點擊一次按鈕後，觸法 `newCard()`函式。
+
    Create a `NEW CARD` button, make it run `newCard()` on click
 
+
 2.  創建一個`newCard()`函式，將`"Drawing a new card from the deck!"`字串顯示（log)在控制台(console)。
+
    Create a function `newCard()` that logs out `"Drawing a new card from the deck!"`
 
 
@@ -925,7 +956,19 @@ messageEl.textContent = message
 
 ### [Add to sum when newCard is clicked](https://youtu.be/jS4aFq5-91M?t=8716)
 
+1. 創建一個`card`變數，其值設定為`2`到`11`
 
+   Create a `card` variable, and hard code its value to a number (`2-11`)
+
+
+2. 將sum變數的值加入`card`變數。
+
+   Add the new `card` to the `sum` variable
+
+
+3. 回呼`startGame()`函式
+
+   Call `startGame()`
 
 
 

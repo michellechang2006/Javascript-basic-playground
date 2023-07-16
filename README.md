@@ -17,13 +17,13 @@
 ## ⚠️ 注意：如果你要參考我的筆記
 1. 我是完全新手，內容可能有誤！如果你有發現任何錯誤，麻煩到[issues](#issues)回報給我🙏🏻
    
-2. 雖然筆記幾乎涵蓋了所以教學影片內容，學習`JS`，請以[教學影片](https://youtube.com/playlist?list=PLWKjhJtqVAbleDe3_ZA8h3AO2rXar-q2V)及[MDN 文件](https://developer.mozilla.org/zh-TW/)為主，筆記為輔。筆記終究只是筆記，[教學影片](https://youtube.com/playlist?list=PLWKjhJtqVAbleDe3_ZA8h3AO2rXar-q2V)有很多內容雖然筆記沒有呈現，但對於學習`JS`，相當有幫助！
+2. 雖然筆記幾乎涵蓋了所有教學影片內容，學習`JS`，請以[教學影片](https://youtube.com/playlist?list=PLWKjhJtqVAbleDe3_ZA8h3AO2rXar-q2V)及[MDN 文件](https://developer.mozilla.org/zh-TW/)為主，筆記為輔。筆記終究只是筆記，[教學影片](https://youtube.com/playlist?list=PLWKjhJtqVAbleDe3_ZA8h3AO2rXar-q2V)有很多內容雖然筆記沒有呈現，但對於學習`Javascript`，相當有幫助！
    
 3. 筆記是Markdown語法。因有大大小小的標題，**強烈建議**一定要先了解[筆記的架構](#筆記架構)。
 
 4. 筆記中，稱`Javascript`為`JS`。
 
-5. 學習筆記，只會有純`Javascript`，其他教學影片中所教的關於`CSS`及`HTML`基本上不會呈現在筆記。
+5. 學習筆記，只會純`Javascript`，其他教學影片中所教的關於`CSS`及`HTML`基本上不會呈現在筆記。
 
 ## 筆記架構
 

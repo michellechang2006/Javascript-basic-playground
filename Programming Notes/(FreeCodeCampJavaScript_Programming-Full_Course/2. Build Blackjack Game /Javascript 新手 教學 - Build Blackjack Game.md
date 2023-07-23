@@ -90,7 +90,7 @@ else
   statement2
 ```
 
-（來源：MDN Docs)
+（來源：[MDN Docs](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/if...else))
 
 
 **中文解析**
@@ -1095,13 +1095,11 @@ startGame()
 
 **先看語法架構：**
 
-🌰 例子
-
 ```js
 var fruits = ["Apple", "Banana"];
 ```
 
-（來源：MDN Docs)
+（來源：[MDN Docs](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array))
 
 ### 🖼️ 圖解
 
@@ -1143,7 +1141,995 @@ let fruitProducts = [ "watermelons",
 [參考答案](#Challenge-參考答案)
 
 
+> [MDN DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+
+
+
 ## [Array indexes](https://youtu.be/jS4aFq5-91M?t=9580)
+
+### 語法架構：
+
+建立陣列
+
+```js
+var fruits = ["Apple", "Banana"];
+```
+
+
+
+(透過索引indexes）取得陣列項目
+
+```js
+var first = fruits[0];
+// Apple
+```
+
+（來源：[MDN DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array))
+
+
+
+### 🖼️ 圖解
+
+ **⚠️ 注意：**`JS` 索引是從0開始。
+
+![](https://i.imgur.com/C339mRs.png)
+
+
+![](https://i.imgur.com/Nea08Zu.png)
+
+**程式碼：**
+
+```js
+let fruitProducts = [ "watermelons",
+
+"oranges",
+
+"mangos",
+
+"apples"]
+
+  
+
+console.log(fruitProducts[0]) // 水果攤的產品清單的第一個項目
+
+console.log(fruitProducts[1]) // 水果攤的產品清單的第二個項目
+
+console.log(fruitProducts[2]) // 水果攤的產品清單的第三個項目
+
+console.log(fruitProducts[3]) // 水果攤的產品清單的第四個項目
+```
+
+### 🏁 Challenge 
+
+```js
+// Make the following appear in the console:
+
+// Frontend developer at Xeneta
+
+// People counter for Norstat
+
+// CEO at Scrimba
+
+let experience = ["CEO at Scrimba", "Frontend developer at Xeneta", "People counter for Norstat"]
+```
+
+
+[參考答案](#Challenge-參考答案)
+
+
+> [MDN DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+
+
+### ⚠️ 注意
+
+注意！雖然陣列的索引（indexes），是零為基礎(從 0 開始)。但Array 陣列的物件屬性`length`，`length` 可供設定或回傳該陣列實體中包含的元素個數，而它不是~~以零為基礎(從 0 開始)~~，而是從一開始。
+
+**🌰 例子：**
+
+```js
+
+let experience = ["CEO at Scrimba", "Frontend developer at Xeneta", "People counter for Norstat"]
+
+console.log(experience.length) 
+
+// log out 3 而不是 2，因為Array.length是從一開始，不是從零開始
+
+```
+
+
+
+### 📝 延伸 - `Array.length`
+
+**先看看MDN DOCS 解說：**`length` 為 `Array` 物件的屬性，可供設定或回傳該陣列實體中包含的元素個數。其值必為一大於零、32 位元、且恆大於該陣列最大索引數的正整數。
+
+
+**語法架構：**
+
+```js
+
+var fruits = ["Apple", "Banana"];
+
+console.log(fruits.length);
+
+// log out 2
+
+```
+
+
+### 🖼️ 圖解
+
+`length`就像統計水果攤的產品清單，總共列了幾個項目。
+
+![](https://i.imgur.com/Nea08Zu.png)
+
+水果攤的產品清單總共列**4個項目**
+
+
+**我們再看看程式碼：**
+
+
+```js
+let fruitProducts = [ "watermelons",
+
+						"oranges",
+						
+						"mangos",
+						
+						"apples" ]
+						
+
+console.log(fruitProducts.length)
+
+// log out 4 水果攤的產品清單總共列4項目
+```
+
+
+
+>[MDN DOCS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length)
+
+
+
+
+### 📝 延伸 - 陣列的方法 - `Array Methods`
+
+
+![](https://i.imgur.com/GLRBKfk.jpg)
+
+（[圖片來源](https://twitter.com/davidm_ml/status/1680489987396059138/photo/1))
+
+
+
+>[MDN DOCS | | 所有陣列的方法 - `Array Methods`](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array#%E6%96%B9%E6%B3%95)
+
+
+
+## [Arrays with multiple data types](https://youtu.be/jS4aFq5-91M?t=9831)
+
+
+### 陣列包含多種資料型態
+
+陣列裡，除了字串（string)外，也可包含數字（number)、布林(boolean)...等等。
+
+#### **🖼️ 圖解**
+
+我們除了在陣列列上水果攤的產品項目外，我們還可以紀錄產品數量（number 資料型態）、是否有促銷活動（boolean 資料型態）。
+
+![](https://i.imgur.com/OVstaCS.png)
+
+
+
+**程式碼：**
+
+
+```js
+let fruitProducts = [ "watermelons", 1 ,true,
+
+"oranges", 3 ,true,
+
+"mangos", 8 , false,
+
+"apples", 12 , true ]
+
+
+console.log(fruitProducts.length) // log out 12 水果攤的產品清單總共列12項目
+```
+
+
+### 🏁 Challenge
+
+
+1. 創建一個陣列來描述你自己。使用你目前所學的`JS`資料型態。
+
+   Create an array that describes yourself. Use the three primitive data types you've learned
+
+
+2. 它應該包含你的名字（string 資料型態）、你的年齡（number 資料型態）還有你喜不喜歡披薩（boolean 資料型態）。
+
+It should contain your name (string), your age (number), and whether you like pizza (boolean)
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+## [Adding & removing items from arrays](https://youtu.be/jS4aFq5-91M?t=9971)
+
+
+### 🏁 Challenge 1
+
+```js
+// Push the newMessage to the messages array, and then log out the array
+
+let messages = [
+
+"Hey, how's it going?",
+
+"I'm great, thank you! How about you?",
+
+"All good. Been working on my portfolio lately."
+
+]
+
+  
+
+let newMessage = "Same here!"
+```
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+### 🏁 Challenge 2
+
+**⭐ Passenger counter app 複習題 [Debugging online](https://tinyurl.com/2cgr5545)**
+
+你如何將移除陣列中，最後一個項目呢？嘗試自行上網（[Google](https://www.google.com/))查詢吧！
+
+```js
+// How can you remove the last item in an array? Try to google it!
+
+let messages = [
+
+"Hey, how's it going?",
+
+"I'm great, thank you! How about you?",
+
+"All good. Been working on my portfolio lately."
+
+]
+```
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+## [Creating cards array](https://youtu.be/jS4aFq5-91M?t=10236)
+
+
+### 🏁 Challenge
+
+⭐ 嘗試修改以下的原始碼，來創建陣列：
+
+```js
+let firstCard = 10
+
+let secondCard = 4
+
+// 1. Create a new array - cards - that contains firstCard and secondCard
+
+let sum = firstCard + secondCard
+
+let hasBlackJack = false
+
+let isAlive = true
+
+let message = ""
+
+let messageEl = document.getElementById("message-el")
+
+let sumEl = document.getElementById("sum-el")
+
+let cardsEl = document.getElementById("cards-el")
+
+  
+
+function startGame() {
+
+renderGame()
+
+}
+
+  
+
+function renderGame() {
+
+// 2. Refer to the cards array when rendering out the cards
+
+cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
+
+sumEl.textContent = "Sum: " + sum
+
+if (sum <= 20) {
+
+message = "Do you want to draw a new card?"
+
+} else if (sum === 21) {
+
+message = "You've got Blackjack!"
+
+hasBlackJack = true
+
+} else {
+
+message = "You're out of the game!"
+
+isAlive = false
+
+}
+
+messageEl.textContent = message
+
+}
+```
+
+
+[參考答案](#Challenge-參考答案)
+
+
+## [Push new card to array](https://youtu.be/jS4aFq5-91M?t=10304)
+
+
+### 🏁 Challenge
+
+⭐ 嘗試修改以下的原始碼，來新增項目（`card`變數的值）到`cards`陣列：
+
+```js
+function newCard() {
+
+console.log("Drawing a new card from the deck!")
+
+let card = 6;
+
+sum += card;
+
+// Push the card to the cards array
+
+renderGame()
+
+}
+```
+
+
+
+
+## [Counting - Loops](https://youtu.be/jS4aFq5-91M?t=10631)
+
+⭐ 這個單元資訊量有點大，我們透過(圖解）筆記來慢慢解析此語法。
+
+**先看語法架構：**
+
+```js
+for ([initialExpression /* START 初始化表達式 */]; [condition /* Finish */]; [incrementExpression /* STEP SIZE */ ]) statement;
+```
+
+
+（來源：[MDN Docs](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/for))
+
+
+### 🖼️ 圖解
+
+**🐶 假設你是一位訓犬師，你訓練狗狗跳柵欄，而`JS`的`loop`則像是你對狗狗下的指令**
+
+🌰 例子 1：請狗狗從第一個柵欄開始，一次跳一個柵欄，到第六個柵欄結束。
+
+![](https://i.imgur.com/n66m5kO.png)
+
+
+原始碼：
+
+
+```js
+for (let dog = 1; dog < 7; dog += 1){
+
+console.log(dog) // 1 2 3 4 5 6
+
+}
+```
+
+
+![](https://i.imgur.com/oxRQlSk.png)
+
+
+
+
+
+🌰 例子 2：請狗狗從第二個柵欄開始，一次跳一個柵欄，到第六個柵欄結束。
+
+![](https://i.imgur.com/kz1yVcK.png)
+
+
+原始碼：
+
+
+```js
+for (let dog = 2; dog < 7; dog += 1){
+
+console.log(dog) // 2 3 4 5 6
+
+}
+```
+
+
+![](https://i.imgur.com/cUGKeha.png)
+
+
+
+
+
+
+🌰 例子 3：請狗狗從第六個柵欄開始折返，一次跳一個柵欄，到第一個柵欄結束。
+
+![](https://i.imgur.com/yb41M2w.png)
+
+
+原始碼：
+
+```js
+for (let dog = 6; dog > 0; dog -= 1){
+
+console.log(dog) // 6 5 4 3 2 1
+
+}
+```
+
+![](https://i.imgur.com/OEwX99U.png)
+
+
+
+
+🌰 例子 4：請狗狗從第六個柵欄開始折返，一次跳三個柵欄，到第一個柵欄結束。
+
+![](https://i.imgur.com/tSVme3z.png)
+
+
+原始碼：
+
+
+```js
+for (let dog = 6; dog > 0; dog -= 3){
+
+console.log(dog) // 6 3
+
+}
+```
+
+
+![](https://i.imgur.com/LDNN9CI.png)
+
+
+
+
+
+🌰 例子 5：請狗狗從第五個柵欄開始折返，一次跳一個柵欄，到第二個柵欄結束。
+
+![](https://i.imgur.com/c63nSz5.png)
+
+
+原始碼：
+
+```js
+for (let dog = 5; dog > 1; dog -= 1){
+
+console.log(dog) // 5 4 3 2 1
+
+}
+```
+
+![](https://i.imgur.com/VIcs2ul.png)
+
+
+
+### 🏁 [Challenge](https://youtu.be/jS4aFq5-91M?t=10630)
+
+
+⭐ 嘗試創建你的第一個 `JS loop` 吧！
+
+
+
+```js
+// Create a for loop that counts from 10 to 100 in steps of 10
+
+// Use console.log to log out the numbers
+```
+
+
+[參考答案](#Challenge-參考答案)
+
+
+[MDN Docs](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/for)
+
+
+
+## [For loops & arrays](https://youtu.be/jS4aFq5-91M?t=10837)
+
+
+⭐ `JS loop`和`JS Array` 如何結合應用呢？這個單元資訊量有點大，我們一樣透過(圖解）筆記來慢慢解析此語法。
+
+
+
+
+**先看語法架構 (🌰 例子）：**
+
+
+```js
+let messages = [
+
+"Hey, how's it going?",
+
+"I'm great, thank you! How about you?",
+
+"All good. Been working on my portfolio lately.",
+
+"Same here!",
+
+"Great to hear",
+
+"🙌"
+
+]
+for (let i = 0; i < messages.length; i += 1) {
+
+console.log(messages[i])
+
+/* log out
+
+Hey, how's it going?
+
+I'm great, thank you! How about you?
+
+All good. Been working on my portfolio lately.
+
+Same here!
+
+Great to hear
+
+🙌
+
+*/
+}
+```
+
+
+
+
+
+### 🖼️ 圖解
+
+**🤵🏻‍♀ 假設你是一位服務生 :**
+
+
+`JS Loop`就像餐廳裡的桌號。
+
+
+![](https://i.imgur.com/yPtYGBo.png)
+
+
+
+`JS Array`陣列裡的字串`String`就像客人點的餐點。
+
+
+![](https://i.imgur.com/KvvXHE4.png)
+
+
+服務員開始收集客人點的餐點。
+
+
+![](https://i.imgur.com/pkRtf8M.png)
+
+
+接著服務員把小抄給廚師，但這個小抄似乎不好閱讀...
+
+
+![](https://i.imgur.com/aUchR5V.png)
+
+
+如何透過`JS`來讓將小抄變成好閱讀的清單呢？
+
+
+![](https://i.imgur.com/zUKWYgu.png)
+
+
+你可能會想透過[Array indexes](#Array-indexes)來解決，但重複寫一樣的程式碼，是程式設計師最忌諱的。
+
+
+```js
+console.log(order[0])
+
+console.log(order[1])
+
+console.log(order[3])
+
+console.log(order[4])
+```
+
+
+而且如果有客人加點餐點，那怎麼辦？
+
+
+```js
+let order = [ "Sprite",
+
+"juice",
+
+"black tea",
+
+"sorbet",
+
+"Cola",
+
+"New order"]
+
+  
+
+console.log(order[0])
+
+console.log(order[1])
+
+console.log(order[3])
+
+console.log(order[4])
+```
+
+
+![](https://i.imgur.com/4axUdbV.png)
+
+
+>這樣的寫法等於陣列(Array)每次有新的物件（Object)時，就必須在`console.log(order[indexes])`這段碼才能執行。我們寫程式就是為了讓電腦（計算機）可以自動幫我們完成事情，所以我們當然要寫可讓它自動幫我們完成事情的程式碼。
+
+
+
+所以，這時我們必須使用`loop`來解決。
+
+
+![](https://i.imgur.com/r6UlP8M.png)
+
+
+但這段碼還是會有問題， `i <= 5 `代表說清單只紀錄到第五桌的訂單。所以我們需要使用到陣列(Array)的物件屬性[`Array.length`](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/length)來計算。
+
+
+![](https://i.imgur.com/ooOPoi3.png)
+
+
+這樣就完成了！
+
+
+![](https://i.imgur.com/zUKWYgu.png)
+
+
+
+
+## [First array-based for loop](https://youtu.be/jS4aFq5-91M?t=11063)
+
+
+### 🏁 Challenge
+
+
+⭐ 嘗試創建第一個`JS`  `array-based for loop`吧！
+
+
+```js
+let cards = [7, 3, 9]
+
+
+// Create a for loop that logs out all the cards in the array
+
+
+// Use cards.length to specify how long the loop should run
+```
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+### 📝 延伸 - 遞增運算子 `++`
+
+`cards ++` 等於`cards += 1`。之前我們有學到[加法赋值（`+=`）](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Addition_assignment)，這一類運算子符號，讓我們的程式碼可以更乾淨、整潔。
+
+
+>[MDN DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Operators/Increment)
+
+
+
+
+
+
+
+## [For loops, arrays, & DOM](https://youtu.be/jS4aFq5-91M?t=11155)
+
+
+
+### 🏁 Challenge
+
+
+⭐ 嘗試創建`JS`  `array-based for loop` 結合 [`The DOM`](https://tinyurl.com/2cgr5545) 吧！
+
+
+```js
+let sentence = ["Hello ", "my ", "name ", "is ", "Per"]
+
+
+let greetingEl = document.getElementById("greeting-el")
+
+  
+
+
+// Render the sentence in the greetingEl paragraph using a for loop and .textContent
+```
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+
+
+## [Use loop to render cards](https://youtu.be/jS4aFq5-91M?t=11335)
+
+
+
+### 🏁 Challenge
+
+
+```js
+
+let cards = [firstCard,secondCard]
+
+
+function renderGame(){
+
+sumEl.textContent = "Sum: " + sum
+
+cardsEl.textContent = "Cards: "
+
+// Create a for loop that renders out all the cards instead of just two
+
+for (let i = 0; i < cards.length; i++) {
+
+cardsEl.textContent += cards[i] + " ";
+
+}
+```
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+
+## [Returning values](https://youtu.be/jS4aFq5-91M?t=11571)
+
+
+我們透過`return`來回傳指定變數的數值。
+
+
+🌰 **例子**
+
+```js
+let player1Time = 102
+
+let player2Time = 107
+
+  
+
+function getFastestRaceTime() {
+
+if (player1Time < player2Time) { // 如果 player1Time變數的值小於player2Time變數的值
+
+return player1Time // 則回傳player1Time變數的值
+
+} else if (player2Time < player1Time) { // 如果 player2Time變數的值小於player2Time變數的值
+
+return player2Time // 則回傳player2Time變數的值
+
+} else { // 如果都不符和上述的條件
+
+return player1Time // 則回傳player1Time變數的值
+
+}
+
+}
+```
+
+
+>[MDN DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/return)
+
+
+
+
+### 🏁 Challenge
+
+
+1. 寫一個函式來回傳（`return`) `player1Time` + `player1Time`的值。
+
+Write a function that returns the total race time
+
+
+2. 創一個變數來回呼（callback)你剛剛寫的函式。
+
+Call/invoke the function and store the returned value in a new variable
+
+
+3. 將你剛剛寫的變數顯示（`log`)在控制台(`console`)
+
+Finally, log the variable out
+
+
+```js
+// Write a function that returns the total race time
+
+// Call/invoke the function and store the returned value in a new variable
+
+// Finally, log the variable out
+
+  
+
+let player1Time = 102
+
+let player2Time = 107
+```
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+## [Use function to set card values](https://youtu.be/jS4aFq5-91M?t=11874)
+
+
+### 🏁 Challenge (上個單元[Returning values](#Returning-values)實作挑戰題)
+
+
+⭐ 將上個單元我們所學到的 `return`來作答吧!
+
+
+```js
+let firstCard = 10
+
+let secondCard = 4
+
+// 2. Use getRandomCard() to set the values of firstCard and secondCard
+
+let cards = [firstCard,secondCard]
+
+let sum = firstCard + secondCard
+
+let hasBlackJack = false
+
+let isAlive = true
+
+let message = ""
+
+  
+
+let sumEl = document.querySelector("#sum-el")
+
+let messageEl = document.getElementById("message-el")
+
+let cardsEl = document.getElementById("cards-el")
+
+  
+  
+  
+  
+  
+  
+  
+
+function renderGame(){
+
+sumEl.textContent = "Sum: " + sum
+
+cardsEl.textContent = "Cards: "
+
+// 1. Create a function, getRandomCard(), that always returns the number 5
+
+for (let i = 0; i < cards.length; i++) {
+
+cardsEl.textContent += cards[i] + " ";
+
+}
+
+  
+
+if (sum <= 20) {
+
+message = "Do you want to draw a new card? 🙂"
+
+} else if (sum === 21) {
+
+message = "Wohoo! You've got Blackjack! 🥳"
+
+hasBlackJack = true
+
+} else {
+
+message = "You're out of the game! 😭"
+
+isAlive = false
+
+}
+
+messageEl.textContent = message
+
+}
+
+  
+
+function newCard() {
+
+console.log("Drawing a new card from the deck!")
+
+let card = 6;
+
+sum += card;
+
+// 3. Use the getRandomCard() to set the value of card
+
+cards.push(card)
+
+renderGame()
+
+}
+```
+
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+
+
+
+
+## [Generating random numbers with Math.random()](https://youtu.be/jS4aFq5-91M?t=12066)
+
+
+產生隨機數字，這個功能是常常使用的。像是我們要開發的撲克牌遊戲、骰子遊戲、蘋果手機上有名的手遊 - Crossy Road...等等。在 `JS` 中，我們使用 `Math.random()`來產生隨機數字。
+
+
+**🌰 例子 :**
+
+
+```js
+let randomNumber = Math.random()
+
+
+console.log(randomNumber) // log out 0.14994122735300763
+```
+
+
+
+>[MDN DOCS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+
+
+
+## [Math.random() * 6](https://youtu.be/jS4aFq5-91M?t=12324)
 
 
 
@@ -1152,7 +2138,9 @@ let fruitProducts = [ "watermelons",
 
 # Challenge 參考答案
 
+
 ## ✏️ 學習筆記
+
 
 ### [Add firstCard, secondCard, & sum](https://youtu.be/jS4aFq5-91M?t=5547)
 
@@ -1698,6 +2686,32 @@ console.log("Drawing a new card from the deck!")
 }
 ```
 
+
+
+### [Add to sum when newCard is clicked](https://youtu.be/jS4aFq5-91M?t=8716)
+
+
+```js
+function newCard() {
+
+console.log("Drawing a new card from the deck!")
+
+let card = 6;
+
+sum += card;
+
+// Push the card to the cards array
+
+cards.push(card)
+
+renderGame()
+
+}
+```
+
+
+
+
 ### [Rename startGame function](#Rename-startGame-function)
 
 ```js
@@ -1744,7 +2758,9 @@ startGame()
 }
 ```
 
+
 👩🏻‍💻 筆者碎碎念: 記得在HTML文件裡，`onclick`監聽事件的函式名稱也要更改喔～
+
 
 ### [Arrays intro](https://youtu.be/jS4aFq5-91M?t=9251)
 
@@ -1752,4 +2768,408 @@ startGame()
 
 let experience = ["CEO at Scrimba", "Frontend developer at Xeneta", "People counter for Norstat"]
 
+```
+
+
+### [Array indexes](https://youtu.be/jS4aFq5-91M?t=9580)
+
+```js
+
+let experience = ["CEO at Scrimba", "Frontend developer at Xeneta", "People counter for Norstat"]
+
+  
+
+// Make the following appear in the console:
+
+// Frontend developer at Xeneta
+
+// People counter for Norstat
+
+// CEO at Scrimba
+
+console.log(experience[1])
+
+console.log(experience[2])
+
+console.log(experience[0])
+```
+
+
+
+### [Arrays with multiple data types](https://youtu.be/jS4aFq5-91M?t=9831)
+
+```js
+// Create an array that describes yourself. Use the three primitive data types you've learned
+
+// It should contain your name (string), your age (number), and whether you like pizza (boolean)
+
+let aboutMe = ["Michelle",16,true]
+
+```
+
+
+### [Adding & removing items from arrays](https://youtu.be/jS4aFq5-91M?t=9971)
+
+#### 🏁 Challenge 1
+
+
+教學影片中，老師的解答：
+
+```js
+// Push the newMessage to the messages array, and then log out the array
+
+  
+
+let messages = [
+
+"Hey, how's it going?",
+
+"I'm great, thank you! How about you?",
+
+"All good. Been working on my portfolio lately."
+
+]
+
+  
+
+let newMessage = "Same here!"
+
+  
+
+messages.push(newMessage)
+
+  
+
+console.log(messages)
+```
+
+
+
+我的解答：
+
+```js
+// Push the newMessage to the messages array, and then log out the array
+
+  
+
+let messages = [
+
+"Hey, how's it going?",
+
+"I'm great, thank you! How about you?",
+
+"All good. Been working on my portfolio lately."
+
+]
+
+  
+
+let newMessage = messages.push("Same here!");
+
+  
+
+console.log(messages)
+```
+
+
+
+#### 🏁 Challenge 2
+
+
+```js
+
+// How can you remove the last item in an array? Try to google it!
+
+messages.pop();
+
+console.log(messages)
+
+```
+
+
+
+### [Creating cards array](https://youtu.be/jS4aFq5-91M?t=10236)
+
+```js
+let firstCard = 10
+
+let secondCard = 4
+
+// 1. Create a new array - cards - that contains firstCard and secondCard
+
+let cards = [firstCard,secondCard]
+
+let sum = firstCard + secondCard
+
+let hasBlackJack = false
+
+let isAlive = true
+
+let message = ""
+
+  
+
+let sumEl = document.querySelector("#sum-el")
+
+let messageEl = document.getElementById("message-el")
+
+let cardsEl = document.getElementById("cards-el")
+
+  
+
+function startGame(){
+
+// 2. Refer to the cards array when rendering out the cards
+
+sumEl.textContent = "Sum: " + sum
+
+cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
+
+if (sum <= 20) {
+
+message = "Do you want to draw a new card? 🙂"
+
+} else if (sum === 21) {
+
+message = "Wohoo! You've got Blackjack! 🥳"
+
+hasBlackJack = true
+
+} else {
+
+message = "You're out of the game! 😭"
+
+isAlive = false
+
+}
+
+messageEl.textContent = message
+
+}
+```
+
+
+
+
+
+### [Counting - Loops](https://youtu.be/jS4aFq5-91M?t=10631)
+
+
+教學影片中，老師的解答：
+
+
+```js
+// Create a for loop that counts from 10 to 100 in steps of 10
+
+// Use console.log to log out the numbers
+
+for (let i = 10; i < 101; i += 10) {
+
+console.log(i)
+
+}
+```
+
+
+我的解答：
+
+
+```js
+// Create a for loop that counts from 10 to 100 in steps of 10
+
+// Use console.log to log out the numbers
+
+for (let i = 10; i <= 100; i += 10){
+
+console.log(i)
+
+}
+```
+
+
+
+### [First array-based for loop](https://youtu.be/jS4aFq5-91M?t=11063)
+
+
+
+```js
+let cards = [7, 3, 9]
+
+  
+
+// Create a for loop that logs out all the cards in the array
+
+// Use cards.length to specify how long the loop should run
+
+  
+
+for (let i = 0; i < cards.length; i++) {
+
+console.log(cards[i])
+
+}
+```
+
+
+
+
+
+### [For loops, arrays, & DOM](https://youtu.be/jS4aFq5-91M?t=11155)
+
+
+```js
+let sentence = ["Hello ", "my ", "name ", "is ", "Per"]
+
+let greetingEl = document.getElementById("greeting-el")
+
+  
+
+// Render the sentence in the greetingEl paragraph using a for loop and .textContent
+
+for (let i = 0; i < sentence.length; i++) {
+
+greetingEl.textContent += sentence[i] + " "
+
+}
+```
+
+
+
+
+
+### [Returning values](https://youtu.be/jS4aFq5-91M?t=11571)
+
+
+```js
+// Write a function that returns the total race time
+
+// Call/invoke the function and store the returned value in a new variable
+
+// Finally, log the variable out
+
+  
+
+let player1Time = 102
+
+let player2Time = 107
+
+  
+
+function totalRaceTime() {
+
+return player1Time + player2Time
+
+}
+
+  
+
+let totalTime = totalRaceTime()
+
+  
+
+console.log(totalTime)
+```
+
+
+
+
+
+
+## [Use function to set card values](https://youtu.be/jS4aFq5-91M?t=11874)
+
+
+```js
+let firstCard = getRandomCard()
+
+let secondCard = getRandomCard()
+
+// 2. Use getRandomCard() to set the values of firstCard and secondCard
+
+let cards = [firstCard,secondCard]
+
+let sum = firstCard + secondCard
+
+let hasBlackJack = false
+
+let isAlive = true
+
+let message = ""
+
+  
+
+let sumEl = document.querySelector("#sum-el")
+
+let messageEl = document.getElementById("message-el")
+
+let cardsEl = document.getElementById("cards-el")
+
+  
+  
+  
+  
+  
+  
+  
+
+function renderGame(){
+
+sumEl.textContent = "Sum: " + sum
+
+cardsEl.textContent = "Cards: "
+
+// 1. Create a function, getRandomCard(), that always returns the number 5
+
+function getRandomCard() {
+
+return 5
+
+}
+
+for (let i = 0; i < cards.length; i++) {
+
+cardsEl.textContent += cards[i] + " ";
+
+}
+
+  
+
+if (sum <= 20) {
+
+message = "Do you want to draw a new card? 🙂"
+
+} else if (sum === 21) {
+
+message = "Wohoo! You've got Blackjack! 🥳"
+
+hasBlackJack = true
+
+} else {
+
+message = "You're out of the game! 😭"
+
+isAlive = false
+
+}
+
+messageEl.textContent = message
+
+}
+
+  
+
+function newCard() {
+
+console.log("Drawing a new card from the deck!")
+
+let card = getRandomCard();
+
+sum += card;
+
+// 3. Use the getRandomCard() to set the value of card
+
+cards.push(card)
+
+renderGame()
+
+}
 ```

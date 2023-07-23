@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1f2679195b5af212",
+        "id": "d47a11a1726db73e",
         "type": "tabs",
         "children": [
           {
-            "id": "379e0e7bbf537809",
+            "id": "1f59dd3eeacd9071",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -135,7 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 269.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -147,9 +147,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "379e0e7bbf537809",
+  "active": "1f59dd3eeacd9071",
   "lastOpenFiles": [
     "().md",
-    "Javascript 新手 教學 - Build Blackjack Game.md"
+    "Javascript 新手 教學 - Build Blackjack Game.md",
+    "Array Methods Visualised.jpeg"
   ]
 }

@@ -1,16 +1,11 @@
 let fruitProducts = [ "watermelons",
                       "oranges",
                       "mangos",
-                      "apples" ]
+                      "apples"]
+
+console.log(fruitProducts[0])
+console.log(fruitProducts[1])
+console.log(fruitProducts[2])
+console.log(fruitProducts[3])
 
 
-
-// Create an array that lists your i.e. experience, education, licenses, skills or similar
-// The items of the array should be strings
-
-let skills = ["high homeschooler",
-                  "CSS basic",
-                  "html5",
-                  "English : CEFR A2"
-
-]

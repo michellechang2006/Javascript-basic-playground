@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d47a11a1726db73e",
+        "id": "0f04b6956f52a770",
         "type": "tabs",
         "children": [
           {
-            "id": "1f59dd3eeacd9071",
+            "id": "0e8bde82a137781d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -147,7 +147,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1f59dd3eeacd9071",
+  "active": "0e8bde82a137781d",
   "lastOpenFiles": [
     "().md",
     "Javascript 新手 教學 - Build Blackjack Game.md",

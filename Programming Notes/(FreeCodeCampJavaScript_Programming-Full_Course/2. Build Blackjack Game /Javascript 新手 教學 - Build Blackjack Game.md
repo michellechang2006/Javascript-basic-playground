@@ -90,7 +90,7 @@ else
   statement2
 ```
 
-（來源：[MDN Docs](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/if...else))
+（來源：[MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/if...else))
 
 
 **中文解析**
@@ -106,7 +106,7 @@ else // 如果不符合條件 condition
   statement2 // 則執行執行陳述式2 statement2 （程式碼）
 ```
 
-（來源：MDN Docs)
+（來源：MDN WEB DOCS)
 
 **👩🏻‍💻 筆者碎碎念：** 如果還是看不懂，沒關係！筆者嘗試整理成 🖼️ 圖解筆記，方便理解。
 
@@ -168,7 +168,7 @@ else /* 如果沒有*/
 ```
 
 
-> [MDN DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/if...else)
+> [MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/if...else)
 
 ### ✋🏻 實作
 
@@ -196,7 +196,7 @@ console.log("You're out of the game! 😭")// 將 "You're out of the game! 😭"
 
 ![](https://i.imgur.com/rRYH8XH.png)
 
->[MDN DOCS | | 比較運算子](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Guide/Expressions_and_operators#%E6%AF%94%E8%BC%83%E9%81%8B%E7%AE%97)
+>[MDN WEB DOCS | | 比較運算子](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Guide/Expressions_and_operators#%E6%AF%94%E8%BC%83%E9%81%8B%E7%AE%97)
 
 
 ### ⚠️ 注意 : 字串內有單引號，就必須使用雙引號包住文字。
@@ -232,7 +232,7 @@ console.log("You're out of the game! 😭")// You're 英文字有一個單引號
 ```
 
 
->[MDN DOCS | | 相等比較](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Equality_comparisons_and_sameness)
+>[MDN WEB DOCS | | 相等比較](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Equality_comparisons_and_sameness)
 
 **🗂️ Reference：**
 
@@ -289,7 +289,7 @@ console.log("You can not enter the club!")
 
 ```
 
-> [MDN DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/if...else)
+> [MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/if...else)
 
 ## [if/else...if/else statement](https://youtu.be/jS4aFq5-91M?t=6126)
 
@@ -315,7 +315,7 @@ let age = 100
 
 [參考答案](#Challenge-參考答案)
 
-> [MDN DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/if...else)
+> [MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/if...else)
 
 
 ### ⚠️ 注意 : `==` vs. `===`
@@ -339,7 +339,7 @@ let age = 100
 ```
 
 
->[MDN DOCS | | 相等比較](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Equality_comparisons_and_sameness)
+>[MDN WEB DOCS | | 相等比較](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Equality_comparisons_and_sameness)
 
 **🗂️ Reference：**
 
@@ -407,7 +407,7 @@ console.log("You're out of the game! 😭")
 console.log(hasBlackJack)
 ```
 
->[MDN DOCS | | Boolean](https://developer.mozilla.org/zh-TW/docs/Glossary/Boolean)
+>[MDN WEB DOCS | | Boolean](https://developer.mozilla.org/zh-TW/docs/Glossary/Boolean)
 
 
 ### 🖼️ 圖解
@@ -564,6 +564,11 @@ console.log(11 <= 11) //
 
 console.log(3 <= 2) //
 ```
+
+
+
+>[MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+
 
 
 ## [Add message variable](https://youtu.be/jS4aFq5-91M?t=6896)
@@ -810,7 +815,7 @@ var el = document.querySelector(".myclass"); // el 變數的值為回傳 documen
 ```
 
 
->[MDN DOCS](https://developer.mozilla.org/zh-TW/docs/Web/API/Document/querySelector)
+>[MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/API/Document/querySelector)
 
 
 
@@ -1099,7 +1104,8 @@ startGame()
 var fruits = ["Apple", "Banana"];
 ```
 
-（來源：[MDN Docs](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array))
+（來源：[MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array))
+
 
 ### 🖼️ 圖解
 
@@ -1141,7 +1147,7 @@ let fruitProducts = [ "watermelons",
 [參考答案](#Challenge-參考答案)
 
 
-> [MDN DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array)
+> [MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 
 
@@ -1165,7 +1171,7 @@ var first = fruits[0];
 // Apple
 ```
 
-（來源：[MDN DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array))
+（來源：[MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array))
 
 
 
@@ -1218,7 +1224,7 @@ let experience = ["CEO at Scrimba", "Frontend developer at Xeneta", "People coun
 [參考答案](#Challenge-參考答案)
 
 
-> [MDN DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array)
+> [MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 
 
@@ -1242,7 +1248,7 @@ console.log(experience.length)
 
 ### 📝 延伸 - `Array.length`
 
-**先看看MDN DOCS 解說：**`length` 為 `Array` 物件的屬性，可供設定或回傳該陣列實體中包含的元素個數。其值必為一大於零、32 位元、且恆大於該陣列最大索引數的正整數。
+**先看看MDN WEB DOCS 解說：**`length` 為 `Array` 物件的屬性，可供設定或回傳該陣列實體中包含的元素個數。其值必為一大於零、32 位元、且恆大於該陣列最大索引數的正整數。
 
 
 **語法架構：**
@@ -1287,7 +1293,7 @@ console.log(fruitProducts.length)
 
 
 
->[MDN DOCS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length)
+>[MDN WEB DOCS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length)
 
 
 
@@ -1301,7 +1307,7 @@ console.log(fruitProducts.length)
 
 
 
->[MDN DOCS | | 所有陣列的方法 - `Array Methods`](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array#%E6%96%B9%E6%B3%95)
+>[MDN WEB DOCS | | 所有陣列的方法 - `Array Methods`](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array#%E6%96%B9%E6%B3%95)
 
 
 
@@ -1519,7 +1525,7 @@ for ([initialExpression /* START 初始化表達式 */]; [condition /* Finish */
 ```
 
 
-（來源：[MDN Docs](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/for))
+（來源：[MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/for))
 
 
 ### 🖼️ 圖解
@@ -1652,7 +1658,7 @@ console.log(dog) // 5 4 3 2 1
 [參考答案](#Challenge-參考答案)
 
 
-[MDN Docs](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/for)
+[MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/for)
 
 
 
@@ -1843,7 +1849,7 @@ let cards = [7, 3, 9]
 `cards ++` 等於`cards += 1`。之前我們有學到[加法赋值（`+=`）](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Addition_assignment)，這一類運算子符號，讓我們的程式碼可以更乾淨、整潔。
 
 
->[MDN DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Operators/Increment)
+>[MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Operators/Increment)
 
 
 
@@ -1952,7 +1958,7 @@ return player1Time // 則回傳player1Time變數的值
 ```
 
 
->[MDN DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/return)
+>[MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/return)
 
 
 
@@ -1999,7 +2005,7 @@ let player2Time = 107
 ## [Use function to set card values](https://youtu.be/jS4aFq5-91M?t=11874)
 
 
-### 🏁 Challenge (上個單元[Returning values](#Returning-values)實作挑戰題)
+### 🏁 Challenge ([上個單元](#Returning-values)實作挑戰題)
 
 
 ⭐ 將上個單元我們所學到的 `return`來作答吧!
@@ -2113,11 +2119,28 @@ renderGame()
 產生隨機數字，這個功能是常常使用的。像是我們要開發的撲克牌遊戲、骰子遊戲、蘋果手機上有名的手遊 - Crossy Road...等等。在 `JS` 中，我們使用 `Math.random()`來產生隨機數字。
 
 
+**先看語法架構：**
+
+
+```js
+Math.random() * // Max 取得要產生隨機數字的最大範圍
+```
+
+
 **🌰 例子 :**
 
 
 ```js
-let randomNumber = Math.random()
+let randomNumber = Math.random() * 3
+
+  
+
+console.log(randomNumber) // 產生隨機數字的範圍為 0 ～ 2.9999999...
+```
+
+
+```js
+let randomNumber = Math.random()// 產生隨機數字的範圍為 0 ～ 0.9999999...
 
 
 console.log(randomNumber) // log out 0.14994122735300763
@@ -2125,11 +2148,1098 @@ console.log(randomNumber) // log out 0.14994122735300763
 
 
 
->[MDN DOCS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+>[MDN WEB DOCS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+
 
 
 
 ## [Math.random() * 6](https://youtu.be/jS4aFq5-91M?t=12324)
+
+
+### 🏁 Challenge  ([上個單元](#Generating-random-numbers-with-Math.random())觀念挑戰題)
+
+
+
+`randomNumber`變數的值 - `Math.random() * 6`產生隨機數字的範圍為?
+
+In which range will our randomNumber be now?
+
+
+
+```js
+let randomNumber = Math.random() * 6
+
+
+console.log(randomNumber)
+
+
+/*
+In which range will our randomNumber be now?
+
+  
+
+From: 
+
+To:
+
+*/
+```
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+
+
+## [Flooring number with Math.floor()](https://youtu.be/jS4aFq5-91M?t=12430)
+
+
+我們使用`Math.floor()`，來將帶有小數的數字（正數），轉化為整數。
+
+
+
+**🌰 例子 :**
+
+
+```js
+let flooredNumber = Math.floor(3.45632)
+
+  
+
+console.log(flooredNumber) // log out 3
+```
+
+
+
+如果是負數的話：
+
+
+```js
+let flooredNumber = Math.floor(-3.45632)
+
+  
+
+console.log(flooredNumber) // log out 4
+```
+
+
+
+>[MDN WEB DOCS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor)
+
+
+
+
+
+
+## [Using Math.random() and Math.floor to create a dice](https://youtu.be/jS4aFq5-91M?t=12518)
+
+
+
+### 🏁 Challenge  (`Math.random`和`Math.floor`綜合挑戰題)
+
+
+
+寫`randomNumber`變數的值 - `Math.random() * 6`有可能產生的數字。
+
+
+Write down all the possible values randomNumber can hold now!
+
+
+
+```js
+let randomNumber = Math.floor(Math.random() * 6)
+
+  
+
+console.log(randomNumber)
+
+  
+
+/*
+
+
+Write down all the possible values randomNumber can hold now!
+
+*/
+```
+
+
+[參考答案](#Challenge-參考答案)
+
+
+## [Completing our dice function](https://youtu.be/jS4aFq5-91M?t=12622)
+
+
+
+### 🏁 Challenge 1
+
+
+修改`randomNumber`變數的值 - `Math.floor( Math.random() * 6 )`，隨機產生數字的範圍為1～6
+
+
+```js
+// Try to modify the expression so that we get a range from 1 to 6
+
+let randomNumber = Math.floor( Math.random() * 6 )
+
+console.log(randomNumber)
+```
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+### 🏁 Challenge 2
+
+
+創機一個函式`rollDice()`，回傳`return`隨機數字的範圍為1～6。
+
+Create a function, rollDice(), that returns a random number between 1 and 6
+
+
+```js
+let randomNumber = Math.floor( Math.random() * (1 + 6) )
+
+console.log(randomNumber)
+
+  
+
+// Create a function, rollDice(), that returns a random number between 1 and 6
+```
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+
+## [Make getRandomCard() work](https://youtu.be/jS4aFq5-91M?t=12785)
+
+
+### 🏁 Challenge (實作挑戰題)
+
+
+⭐ 將我們目前所學的`Math.floor`和`Math.random`來運用到我們的庫克牌遊戲吧！
+
+
+讓函式`getRandomCard()`，回傳`return`隨機數字的範圍為1～13。
+
+Make this function return a random number between 1 and 13
+
+
+
+```js
+let hasBlackJack = false
+
+let isAlive = true
+
+let message = ""
+
+  
+
+let sumEl = document.querySelector("#sum-el")
+
+let messageEl = document.getElementById("message-el")
+
+let cardsEl = document.getElementById("cards-el")
+
+  
+  
+  
+  
+  
+
+// Make this function return a random number between 1 and 13
+
+function getRandomCard() {
+
+return 5
+
+}
+
+  
+
+function startGame() {
+
+renderGame()
+
+}
+
+  
+  
+
+function renderGame(){
+
+sumEl.textContent = "Sum: " + sum
+
+cardsEl.textContent = "Cards: "
+
+  
+
+for (let i = 0; i < cards.length; i++) {
+
+cardsEl.textContent += cards[i] + " ";
+
+}
+
+  
+
+if (sum <= 20) {
+
+message = "Do you want to draw a new card? 🙂"
+
+} else if (sum === 21) {
+
+message = "Wohoo! You've got Blackjack! 🥳"
+
+hasBlackJack = true
+
+} else {
+
+message = "You're out of the game! 😭"
+
+isAlive = false
+
+}
+
+messageEl.textContent = message
+
+}
+
+  
+
+function newCard() {
+
+console.log("Drawing a new card from the deck!")
+
+let card = getRandomCard();
+
+sum += card;
+
+  
+
+cards.push(card)
+
+renderGame()
+
+}
+```
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+
+## [getRandomNumber function](https://youtu.be/jS4aFq5-91M?t=12960)
+
+
+
+### 🏁 Challenge (實作挑戰題)
+
+
+寫一個 if...else 陳述式，設定的條件為:「如果隨機產生的數字為`1`，則回傳`11`」及「如果隨機產生的數字為`11 ～ 13`，則回傳`10`」。
+
+
+
+```js
+function getRandomCard() {
+
+// if 1 -> return 11
+
+// if 11-13 -> return 10
+
+return Math.floor(Math.random() * 13) + 1;
+
+
+}
+```
+
+
+
+[參考答案](#Challenge-參考答案) 
+
+
+
+
+## [Assign values in startGame function](https://youtu.be/jS4aFq5-91M?t=13146)
+
+
+### 🏁 Challenge (實作挑戰題)
+
+
+```js
+let cards = []
+
+let sum = 0
+
+let hasBlackJack = false
+
+let isAlive = false
+
+let message = ""
+
+  
+
+let sumEl = document.querySelector("#sum-el")
+
+let messageEl = document.getElementById("message-el")
+
+let cardsEl = document.getElementById("cards-el")
+
+  
+  
+  
+  
+  
+  
+
+function getRandomCard() {
+
+let random = Math.floor(Math.random() * 13) + 1;
+
+if (random === 1) {
+
+return 11
+
+} else if (random > 10) {
+
+return 10
+
+}
+
+else {
+
+return random
+
+}
+
+
+
+function startGame() {
+
+isAlive = true
+
+// Generate two random numbers
+
+// Re-assign the cards and sum variables so that the game can start
+
+renderGame()
+
+}
+```
+
+
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+
+
+
+## [Logical AND operator](https://youtu.be/jS4aFq5-91M?t=13374)
+
+
+### 🖼️ 圖解
+
+
+
+**🛵 假設，我們要創建一個`if...else`陳述句，來檢查小明是否能合法騎車。**
+
+
+
+要能合法騎車，小明需滿足以下<u>所有</u>條件：
+
+1. 成年（滿十八歲）
+2. 擁有一台摩托車
+3. 考到駕照
+4. 戴安全帽
+
+
+
+![](https://i.imgur.com/6FhfBui.png)
+
+
+
+我們這時可以把這些條件用英文來合起來，我們需要使用到`and`這個英文單字。而在`JS`裡，`&&`符號就等於`and`這個英文單字。
+
+
+
+![](https://i.imgur.com/kHpJdJS.png)
+
+
+
+理解完`&&`符號後，我們把這些條件設定為`if...else`陳述句的條件。
+
+
+
+![](https://i.imgur.com/rVfIh82.png)
+
+
+
+**程式碼：**
+
+
+
+```js
+// 小明的條件
+
+let comeOfAge = true
+
+let haveAScooter = true
+
+let haveADrivingLicense = true
+
+let haveAScooterHelmet = true
+
+// 小明滿足所有條件
+  
+
+
+// 檢查小民是否合法騎車
+
+if (comeOfAge === true && haveAScooter === true && haveADrivingLicense === true && haveAScooterHelmet === true)
+
+{
+
+console.log("合法騎車")
+
+}
+
+// log out "合法騎車"
+```
+
+
+
+
+
+如果小明沒有滿足<u>所有</u>條件，則沒辦法合法騎車。
+
+
+```js
+// 小明的條件
+
+  
+
+let comeOfAge = false
+
+let haveAScooter = false
+
+let haveADrivingLicense = false
+
+let haveAScooterHelmet = false
+
+// 小明沒有滿足所有條件
+  
+  
+// 檢查小民是否合法騎車
+
+if (comeOfAge === true && haveAScooter === true && haveADrivingLicense === true && haveAScooterHelmet === true)
+
+{
+
+console.log("合法騎車")
+
+}
+
+else {
+
+console.log("非法騎車")
+
+}
+// log out "非法騎車"
+```
+
+
+
+
+![](https://i.imgur.com/qnE1eob.png)
+
+
+
+
+```js
+// 小明的條件
+
+  
+
+let comeOfAge = true
+
+let haveAScooter = true
+
+let haveADrivingLicense = false // 沒有考到駕照
+
+let haveAScooterHelmet = true
+// 小明沒有滿足所有條件
+  
+  
+
+if (comeOfAge === true && haveAScooter === true && haveADrivingLicense === true && haveAScooterHelmet === true)
+
+{
+
+console.log("合法騎車")
+
+}
+
+else {
+
+console.log("非法騎車")
+
+}
+// log out "非法騎車"
+```
+
+
+
+![](https://i.imgur.com/kwwao7e.png)
+
+
+
+
+### 🗂️ Reference
+
+
+**🖼️ 圖解**的例子參考來源：[JS之路 Day23 - Logical operators (邏輯運算子) AND、NOT篇](https://ithelp.ithome.com.tw/articles/10305999?sc=iThelpR)
+
+
+
+
+>[MDN WEB DOCS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND)
+
+
+>[MDN WEB DOCS | | Boolean](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+
+
+
+
+
+
+## [Write your first logical operator](https://youtu.be/jS4aFq5-91M?t=13600)
+
+
+
+### 🏁 Challenge ([上個單元](#Logical-AND-operator)實作挑戰題)
+
+
+
+```js
+let hasSolvedChallenge = false
+
+let hasHintsLeft = false
+
+  
+
+// Create an if statement that checks that both variables are false.
+
+// If so, run the showSolution() function
+
+  
+
+function showSolution() {
+
+console.log("Showing the solution....")
+
+}
+```
+
+
+
+
+
+## [Logical OR operator](https://youtu.be/jS4aFq5-91M?t=13725)
+
+
+
+### 🖼️ 圖解
+
+
+
+**📝 小明在考試時，作弊。假設，我們要創建一個`if...else`陳述句，來檢查小明是否有做老師指派的<u>任</u>一項事務，才能下課。**
+
+
+
+![](https://i.imgur.com/Lz6OtTP.png)
+
+
+
+做老師指派的<u>任</u>一項事務，包含：
+
+- 🏃🏻 跑操場
+- 🗑️ 處理公共垃圾
+
+
+
+![](https://i.imgur.com/Cz8WzHJ.png)
+
+
+
+
+只要做老師指派的<u>任</u>一項事務，就可以下課了！
+
+
+
+
+```js
+// 小明的條件
+
+  
+
+let runningLaps = false // 沒有跑操場
+
+let cleaningGarbage = true // 有整理垃圾
+
+  
+  
+  
+
+// 檢查小明是否有做老師指派的任一項事務
+
+  
+
+if (runningLaps === true || cleaningGarbage === true) {
+
+console.log("放學！")
+
+}
+// log out "放學！"
+```
+
+
+
+
+
+
+![](https://i.imgur.com/sEcUzA1.png)
+
+
+
+
+
+
+```js
+// 小明的條件
+
+  
+
+let runningLaps = true // 有跑操場
+
+let cleaningGarbage = false // 沒有整理垃圾
+
+  
+  
+  
+
+// 檢查小明是否有做老師指派的任一項事務
+
+  
+
+if (runningLaps === true || cleaningGarbage === true) {
+
+console.log("放學！")
+
+}
+// log out "放學！"
+```
+
+
+
+
+
+![](https://i.imgur.com/yk66SBY.png)
+
+
+
+如果小明有跑操場又整理垃圾，當然可以下課囉！（但不可能吧🤣）
+
+
+
+```js
+// 小明的條件
+
+
+let runningLaps = true // 有跑操場
+
+let cleaningGarbage = true // 又整理垃圾
+
+  
+  
+  
+
+// 檢查小明是否有做老師指派的任一項事務
+
+
+if (runningLaps === true || cleaningGarbage === true) {
+
+console.log("放學！")
+
+} 
+// log out "放學！"
+```
+
+
+
+
+![](https://i.imgur.com/tBNAIxM.png)
+
+
+
+什麼都沒做，當然不能放學囉～
+
+
+
+```js
+// 小明的條件
+
+  
+
+let runningLaps = false // 沒有跑操場
+
+let cleaningGarbage = false // 也沒有整理垃圾
+
+  
+  
+  
+
+// 檢查小明是否有做老師指派的任一項事務
+
+  
+
+if (runningLaps === true || cleaningGarbage === true) {
+
+console.log("放學！")
+
+} else {
+
+console.log("不能放學！")
+
+}
+
+// log out  "不能放學！"
+```
+
+
+
+
+![](https://i.imgur.com/2xnimj2.png)
+
+
+
+
+
+>[MDN WEB DOCS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR)
+
+
+>[MDN WEB DOCS | | Boolean](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+
+
+
+
+
+
+## [Only trigger newCard() if you're allowed to](https://youtu.be/jS4aFq5-91M?t=13912)
+
+
+
+### 🏁 Challenge ([上個單元](#Logical-OR-operator)實作挑戰題)
+
+
+⭐ 繼續完成我們的庫克牌遊戲吧！
+
+
+```js
+function newCard() {
+
+// Only allow the player to get a new card if she IS alive and does NOT have Blackjack
+
+console.log("Drawing a new card from the deck!")
+
+let card = getRandomCard();
+
+sum += card;
+
+cards.push(card)
+
+renderGame()
+
+}
+
+```
+
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+## [Logical NOT operator (筆者自行補充)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT)
+
+
+
+
+### 🖼️ 圖解
+
+
+
+
+**📝 假設，我們要創建一個`if...else`陳述句，來檢查學生們是否有分數太低或作弊而無法通過考試。(這邊以[Logical OR operator](#Logical-OR-operator) `||` 來舉例）**
+
+
+
+
+
+![](https://i.imgur.com/sWR1Puw.png)
+
+
+
+在`JS`中，沒有- `NOT`等於驚嘆號 - `!`。
+
+
+
+![](https://i.imgur.com/Qo2vPCh.png)
+
+
+
+只要學生<u>沒有</u>「分數太低」<u>或</u>「作弊」，就可以「考試通過✅」。
+
+
+
+```js
+// 學生的條件
+
+let cheating = false // 沒有作弊
+
+let failTheTest = false // 沒有分數太低
+
+  
+// 檢查學生們是否有分數太低或作弊而無法通過考試
+
+if (! (cheating === true || failTheTest === true)) {
+
+console.log("考試通過 ✅")
+
+}
+// log out "考試通過 ✅"
+```
+
+
+
+
+![](https://i.imgur.com/ZXvIZwO.png)
+
+
+
+
+但如果學生「作弊」，就算「分數沒有太低」，還是「考試不通過」。
+
+
+
+
+```js
+// 學生的條件
+
+let cheating = true // 有作弊
+
+let failTheTest = false // 沒有分數太低
+
+
+
+// 檢查學生們是否有分數太低或作弊而無法通過考試
+
+if (! (cheating === true || failTheTest === true)) {
+
+console.log("考試通過 ✅")
+
+} else {
+
+console.log("考試不通過")
+
+}
+// log out "考試不通過"
+```
+
+
+
+
+![](https://i.imgur.com/Ng01Jmk.png)
+
+
+
+
+
+相反地，如果學生「分數太低」，就算「沒有作弊」，還是一樣「考試不通過」。
+
+
+
+
+
+```js
+// 學生的條件
+
+let cheating = false // 沒有作弊
+
+let failTheTest = true // 分數太低
+
+
+
+// 檢查學生們是否有分數太低或作弊而無法通過考試
+
+if (! (cheating === true || failTheTest === true)) {
+
+console.log("考試通過 ✅")
+
+} else {
+
+console.log("考試不通過")
+
+}
+// log out "考試不通過"
+```
+
+
+
+
+
+![](https://i.imgur.com/ZPntHlJ.png)
+
+
+
+
+當然，如果學生「分數太低」<u>又</u>「作弊」，考試一定不通過囉～
+
+
+
+
+```js
+// 學生的條件
+
+let cheating = true // 有作弊
+
+let failTheTest = true // 分數太低
+
+
+
+// 檢查學生們是否有分數太低或作弊而無法通過考試
+
+if (! (cheating === true || failTheTest === true)) {
+
+console.log("考試通過 ✅")
+
+} else {
+
+console.log("考試不通過")
+
+}
+// log out "考試不通過"
+```
+
+
+
+
+
+![](https://i.imgur.com/Vu1NnMk.png)
+
+
+
+
+>[MDN WEB DOCS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT)
+
+
+>[MDN WEB DOCS | | Boolean](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+
+
+
+
+
+
+
+## [Object](https://youtu.be/jS4aFq5-91M?t=14282)
+
+
+
+我們可以將`JS`的`Object`想像成一個表格：
+
+
+
+![](https://i.imgur.com/EUqRd5I.png)
+
+
+
+
+在`JS Object` 中，都會有一組對應的名稱（`key`)和值(`value`)，就像表格的每一個欄位的資料對應到的名稱（`key`)。
+
+
+
+
+```js
+let course = { 
+
+title : "course 1" , // title為名稱（key)
+
+lessons : 16,
+
+creator:"Emma",
+
+length: 63,
+
+isFree: true, // Boolean 布林 資料型態
+
+tags: ["html","css"] //  Object裡可有Array 資料型態
+
+}
+```
+
+
+
+
+### 如何存取物件（Object)？
+
+
+和`Array`一樣。我們可以透過`.`和`[" "]`存取`Object`。
+
+
+```js
+let course =
+
+{ title : "course 1" ,
+
+lessons : 16,
+
+creator:"Emma",
+
+length: 63,
+
+isFree: true,
+
+tags: ["html","css"]}
+
+  
+
+console.log(course.creator)
+```
+
+
+
+>[MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
+
+
+
 
 
 
@@ -3075,7 +4185,7 @@ console.log(totalTime)
 
 
 
-## [Use function to set card values](https://youtu.be/jS4aFq5-91M?t=11874)
+### [Use function to set card values](https://youtu.be/jS4aFq5-91M?t=11874)
 
 
 ```js
@@ -3170,6 +4280,391 @@ sum += card;
 cards.push(card)
 
 renderGame()
+
+}
+```
+
+
+
+
+### [Math.random() * 6](https://youtu.be/jS4aFq5-91M?t=12324)
+
+
+```js
+let randomNumber = Math.random() * 3
+
+  
+
+console.log(randomNumber)
+
+  
+
+/*
+In which range will our randomNumber be now?
+
+From: 0
+
+To:5.999999... 
+*/
+```
+
+
+
+### [Using Math.random() and Math.floor to create a dice](https://youtu.be/jS4aFq5-91M?t=12518)
+
+
+```js
+let randomNumber = Math.floor(Math.random() * 6)
+
+  
+
+console.log(randomNumber)
+
+  
+
+/*
+
+  
+
+Write down all the possible values randomNumber can hold now!
+
+  
+
+0,1,2,3,4,5
+
+  
+  
+
+*/
+```
+
+
+
+
+
+### [Completing our dice function](https://youtu.be/jS4aFq5-91M?t=12622)
+
+
+#### 🏁 Challenge 1
+
+
+```js
+// Try to modify the expression so that we get a range from 1 to 6
+
+let randomNumber = Math.floor( Math.random() * (1 + 6) )
+
+console.log(randomNumber)
+```
+
+
+
+#### 🏁 Challenge 2
+
+
+```js
+// Create a function, rollDice(), that returns a random number between 1 and 6
+
+function rollDice(){
+
+return Math.floor( Math.random() * (1 + 6) )
+
+}
+
+console.log(rollDice());
+```
+
+
+
+
+
+
+### [Make getRandomCard() work](https://youtu.be/jS4aFq5-91M?t=12785)
+
+
+
+```js
+let hasBlackJack = false
+
+let isAlive = true
+
+let message = ""
+
+  
+
+let sumEl = document.querySelector("#sum-el")
+
+let messageEl = document.getElementById("message-el")
+
+let cardsEl = document.getElementById("cards-el")
+
+  
+  
+  
+  
+  
+
+// Make this function return a random number between 1 and 13
+
+function getRandomCard() {
+
+return Math.floor(Math.random() * 13) + 1
+
+}
+
+  
+
+function startGame() {
+
+renderGame()
+
+}
+
+  
+  
+
+function renderGame(){
+
+sumEl.textContent = "Sum: " + sum
+
+cardsEl.textContent = "Cards: "
+
+  
+
+for (let i = 0; i < cards.length; i++) {
+
+cardsEl.textContent += cards[i] + " ";
+
+}
+
+  
+
+if (sum <= 20) {
+
+message = "Do you want to draw a new card? 🙂"
+
+} else if (sum === 21) {
+
+message = "Wohoo! You've got Blackjack! 🥳"
+
+hasBlackJack = true
+
+} else {
+
+message = "You're out of the game! 😭"
+
+isAlive = false
+
+}
+
+messageEl.textContent = message
+
+}
+
+  
+
+function newCard() {
+
+console.log("Drawing a new card from the deck!")
+
+let card = getRandomCard();
+
+sum += card;
+
+  
+
+cards.push(card)
+
+renderGame()
+
+}
+```
+
+
+
+
+
+
+### [getRandomNumber function](https://youtu.be/jS4aFq5-91M?t=12960)
+
+
+
+
+
+```js
+// 👩🏻‍💻 筆者碎碎念：記得在HTML文件，onclick事件監聽的函式要換成startGame()！
+function getRandomCard() {
+
+// if 1 -> return 11
+
+// if 11-13 -> return 10
+
+let random = Math.floor(Math.random() * 13) + 1;
+
+if (random === 1) {
+
+return 11
+
+} else if (random > 10) { // 👩🏻‍💻 筆者碎碎念：random變數-隨機產生的數字範圍是1～13，所以條件設定大於10沒問題，因爲random變數的值不會大於13
+
+return 10
+
+}
+
+else { // 👩🏻‍💻 筆者碎碎念：記得設定，如果random變數-隨機產生的數字不是1或11～13，要怎麼樣？（回傳它原本隨機產生數字的值就好）
+
+return random
+
+}
+
+  
+
+}
+```
+
+
+
+
+
+
+### [Assign values in startGame function](https://youtu.be/jS4aFq5-91M?t=13146)
+
+
+
+
+```js
+let cards = []
+
+let sum = 0
+
+let hasBlackJack = false
+
+let isAlive = false
+
+let message = ""
+
+  
+
+let sumEl = document.querySelector("#sum-el")
+
+let messageEl = document.getElementById("message-el")
+
+let cardsEl = document.getElementById("cards-el")
+
+  
+  
+  
+  
+  
+  
+
+function getRandomCard() {
+
+let random = Math.floor(Math.random() * 13) + 1;
+
+if (random === 1) {
+
+return 11
+
+} else if (random > 10) {
+
+return 10
+
+}
+
+else {
+
+return random
+
+}
+
+
+
+
+function startGame() {
+
+// Generate two random numbers
+
+// Re-assign the cards and sum variables so that the game can start
+
+isAlive = true
+
+let firstCard = getRandomCard()
+
+let secondCard = getRandomCard()
+
+cards = [firstCard,secondCard]
+
+sum = firstCard + secondCard
+
+renderGame()
+
+}
+```
+
+
+
+
+
+
+### [Logical AND operator](https://youtu.be/jS4aFq5-91M?t=13374)
+
+
+
+```js
+let hasSolvedChallenge = false
+
+let hasHintsLeft = false
+
+  
+
+// Create an if statement that checks that both variables are false.
+
+// If so, run the showSolution() function
+
+  
+
+if (hasSolvedChallenge === false && hasHintsLeft === false) {
+
+showSolution()
+
+}
+
+  
+
+function showSolution() {
+
+console.log("Showing the solution....")
+
+}
+```
+
+
+
+
+
+
+### [Only trigger newCard() if you're allowed to](https://youtu.be/jS4aFq5-91M?t=13912)
+
+
+
+```js
+function newCard() {
+
+// Only allow the player to get a new card if she IS alive and does NOT have Blackjack
+
+if ( isAlive === true && hasBlackJack === false) {
+
+console.log("Drawing a new card from the deck!")
+
+let card = getRandomCard();
+
+sum += card;
+
+cards.push(card)
+
+renderGame()
+
+}
 
 }
 ```

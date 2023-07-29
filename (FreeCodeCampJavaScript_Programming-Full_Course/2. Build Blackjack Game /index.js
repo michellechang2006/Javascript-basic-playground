@@ -1,10 +1,9 @@
-let firstCard = getRandomCard()
-let secondCard = getRandomCard()
-// 2. Use getRandomCard() to set the values of firstCard and secondCard
-let cards = [firstCard,secondCard]
-let sum = firstCard + secondCard
-let hasBlackJack = false 
-let isAlive = true
+ 
+let cards = []-  
+
+let sum = 0
+let hasBlackJack = false
+let isAlive = false
 let message = ""
 
 let sumEl = document.querySelector("#sum-el")
@@ -16,37 +15,59 @@ let cardsEl = document.getElementById("cards-el")
 
 
 
-
-function renderGame(){
-     sumEl.textContent = "Sum: " + sum
-    cardsEl.textContent = "Cards: "
-// 1. Create a function, getRandomCard(), that always returns the number 5
 function getRandomCard() {
-    return 5
+    let random = Math.floor(Math.random() * 13) + 1;
+    if (random === 1) {
+        return 11
+    } else if (random > 10) {
+        return 10
+    } 
+    else {
+        return random
+    }
+
 }
-     for (let i = 0; i < cards.length; i++) {
+
+
+function startGame() {
+    isAlive = true
+    let firstCard = getRandomCard()
+    let secondCard = getRandomCard()
+    cards = [firstCard,secondCard]
+    sum = firstCard +  secondCard
+    renderGame()
+}
+
+
+function renderGame() {
+    sumEl.textContent = "Sum: " + sum
+    cardsEl.textContent = "Cards: "
+
+    for (let i = 0; i < cards.length; i++) {
         cardsEl.textContent += cards[i] + " ";
-     }
+    }
 
     if (sum <= 20) {
         message = "Do you want to draw a new card? 🙂"
     } else if (sum === 21) {
         message = "Wohoo! You've got Blackjack! 🥳"
-        hasBlackJack = true 
+        hasBlackJack = true
     } else {
         message = "You're out of the game! 😭"
         isAlive = false
     }
-    
+
     messageEl.textContent = message
 }
 
 function newCard() {
+    // Only allow the player to get a new card if she IS alive and does NOT have Blackjack
+    if ( isAlive === true && hasBlackJack === false) {
     console.log("Drawing a new card from the deck!")
     let card = getRandomCard();
     sum += card;
-     // 3. Use the getRandomCard() to set the value of card
     cards.push(card)
     renderGame()
+    }
 }
 

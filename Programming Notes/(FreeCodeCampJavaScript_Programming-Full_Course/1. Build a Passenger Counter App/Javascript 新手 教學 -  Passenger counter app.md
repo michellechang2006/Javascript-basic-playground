@@ -125,7 +125,7 @@ document.getElementById("count-el").innerText = 5;
 
 ![](https://i.imgur.com/gPg30zs.jpg)
 
-> [MDN Docs](https://developer.mozilla.org/zh-TW/docs/Web/HTML/Element/script)
+> [MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/HTML/Element/script)
 
 ### 在 HTML檔案中，引入Javascript 程式碼
 
@@ -161,7 +161,7 @@ document.getElementById("count-el").innerText = 5;
 
 ![](https://i.imgur.com/ij8qwSZ.jpg)
 
-> [MDN Docs](https://developer.mozilla.org/zh-TW/docs/Web/HTML/Element/script)
+> [MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/HTML/Element/script)
 
 
 
@@ -255,7 +255,7 @@ console.log(count);
 這樣，程式碼的數值顯示在控制台。（紅色方框內）
 ![](https://i.imgur.com/g7vlzk2.png)
 
-> [MDN Docs](https://developer.mozilla.org/zh-TW/docs/Web/API/console)
+> [MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/API/console)
 
 ### 🏁 Challenge
 
@@ -317,7 +317,7 @@ console.log(count4);
 
 ![](https://i.imgur.com/ly0IIii.png)
 
-> [MDN Docs](https://developer.mozilla.org/zh-TW/docs/Learn/JavaScript/First_steps/Math)
+> [MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Learn/JavaScript/First_steps/Math)
 
 ### 變數取代數字
 
@@ -506,7 +506,7 @@ console.log("The button was clicked")
 
 ![](https://i.imgur.com/521bNWE.png)
 
->[事件監聽（event listener) 列表 ｜｜MDN Docs](https://developer.mozilla.org/en-US/docs/Web/Events)
+>[事件監聽（event listener) 列表 ｜｜MDN WEB DOCS](https://developer.mozilla.org/en-US/docs/Web/Events)
 
 
 ## [Using functions to write less code](https://youtu.be/jS4aFq5-91M?t=1510)
@@ -603,9 +603,9 @@ countDown () // 回呼 （callback）countDown 函式
 
 ![](https://i.imgur.com/v5AuUD9.png)
 
-> [MDN DOCS |  |  Function 函式](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function)
+> [MDN WEB DOCS |  |  Function 函式](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function)
 
->[MDN DOCS |  |  回呼函式 （callback function） ](https://developer.mozilla.org/zh-TW/docs/Glossary/Callback_function)
+>[MDN WEB DOCS |  |  回呼函式 （callback function） ](https://developer.mozilla.org/zh-TW/docs/Glossary/Callback_function)
 
 
 
@@ -624,7 +624,7 @@ countDown () // 回呼 （callback）countDown 函式
 
 [參考答案](#Challenge-參考答案)
 
-> [MDN Docs](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function)
+> [MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function)
 
 
 ## [Function that logs sum](https://youtu.be/jS4aFq5-91M?t=1775)
@@ -655,7 +655,7 @@ let lap3 = 36
 
 以這個單元為例子，我們回呼（callback)`let `來宣告`lap1～3`的變數，我們可以在`sumAllTheLapTimes`函式中回呼（callback)這些`lap1～3`變數，因爲`lap1～3`這些變數都是global variable(全域變數)。如果在`sumAllTheLapTimes`函式外，回呼（callback)`totalTime`變數時，則會在控制台（console)顯示「未定義」（undefined)，則是因為`totalTime`變數是function variable。
 
-⭐ MDN的文件有提到，以階層關係來說，基本上子階層（`sumAllTheLapTimes`函式）可以回呼（callback)父級階層裡的變數（`lap1～3`變數）。
+⭐ MDN WEB DOCS的文件有提到，以階層關係來說，基本上子階層（`sumAllTheLapTimes`函式）可以回呼（callback)父級階層裡的變數（`lap1～3`變數）。
 
 ```js
 // Create a function that Logs out the sum of all the Lap times
@@ -700,7 +700,7 @@ JS 有三種宣告方式（ES6增加let和const關鍵字來宣告變數），包
 >[解釋 Scope ( Global scope / Function scope / Block scope )](https://ithelp.ithome.com.tw/m/articles/10259529)
 
 
->[MDN Docs](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
+>[MDN WEB DOCS](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
 
 ## [Function that increments](https://youtu.be/jS4aFq5-91M?t=1946)
 
@@ -817,7 +817,7 @@ Model ：NASA的神農五號火箭就像HTML文件，而樂高版的火箭就像
 
 [[Javascript][HTML] DOM 概念](https://ithelp.ithome.com.tw/articles/10094965)
 
->[MDN DOCS](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
+>[MDN WEB DOCS](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
 
 > [HTML DOM Documents list](https://www.w3schools.com/jsref/dom_obj_document.asp)
 
@@ -885,7 +885,7 @@ countEl.innerText = count;
 在HTML中，所有的資料型態都是字串（string) 而不是數字（number)，則是因HTML並不是程式語言，沒辦法進行計算，所有自然不會有數字（number)這個資料型態。
 
 
-> [MDN DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/String)
+> [MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 
 
@@ -957,7 +957,7 @@ Create a variable, `messageToUser`, that contains the message we have Logged
 
 [參考答案](#Challenge-參考答案)
 
-> [MDN DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/String)
+> [MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 
 
@@ -980,7 +980,7 @@ Create a variable, `messageToUser`, that contains the message we have Logged
 
 [參考答案](#Challenge-參考答案)
 
->[MDN DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/String)
+>[MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 
 
@@ -1059,9 +1059,9 @@ console.log(100 + "100")
 
 [參考答案](#Challenge-參考答案)
 
->[MDN DOCS | | 字串 （strings)](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/String)
+>[MDN WEB DOCS | | 字串 （strings)](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/String)
 
->[MDN DOCS | | 數字 （number)](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Number)
+>[MDN WEB DOCS | | 數字 （number)](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Number)
 
 
 ## [Render welcome message](https://youtu.be/jS4aFq5-91M?t=3366)
@@ -1144,7 +1144,7 @@ welcomeEl.innerText += "👋🏻";
 
 `+=` 我們成為「加法賦值」。
 
-> [MDN DOCS](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Addition_assignment)
+> [MDN WEB DOCS](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Addition_assignment)
 
 
 
@@ -1264,14 +1264,14 @@ console.log(count)
 
 
 💡 **提示：關鍵字**
-🔍 `innerText alternative mdn`
+🔍 `innerText alternative MDN WEB DOCS`
 
-(MDN Web Docs 是一個開源的、協作式的項目，記錄了包括 CSS、HTML、JavaScript 和 Web API 等 Web 平台技術。我們還為初學者和學生提供了大量的學習資源。)
+(MDN WEB DOCS Web Docs 是一個開源的、協作式的項目，記錄了包括 CSS、HTML、JavaScript 和 Web API 等 Web 平台技術。我們還為初學者和學生提供了大量的學習資源。)
 
 ![](https://i.imgur.com/yu1GTgu.png)
 
 
-我們可以從[MDN Docs 的網頁中](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent)，得知`innertext`和`textcontent`的差異。
+我們可以從[MDN WEB DOCS 的網頁中](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent)，得知`innertext`和`textcontent`的差異。
 
 ![](https://i.imgur.com/BW9S25K.png)
 
@@ -1285,7 +1285,7 @@ textContent 獲取所有元素的內容，包括 `<script>` 和 `<style>` 元素
 
 ⭐ **運用：**
 
-從MDN文件得知，`innerText`「只顯示「人類可讀」（實際所見的內容）」的元素。因此空格無法渲染(呈現）到HTML，我們需要使用`textContent` 取代`innerText`。
+從MDN WEB DOCS文件得知，`innerText`「只顯示「人類可讀」（實際所見的內容）」的元素。因此空格無法渲染(呈現）到HTML，我們需要使用`textContent` 取代`innerText`。
 
 ```js
 function save() {
@@ -1308,7 +1308,7 @@ console.log(count)
 😊 貼心小提醒：
 教學影片作者有提到，看這一類「文件」的網路資源，不需看懂所有內容，只要擷取需要的資訊就好，他也不建議以一類「文件」的網路資源來學習（特別是新手），因為內容太複雜，可以嘗試看看其他專門「讓人學習」的網路資源，例如：[W3Schools](https://www.w3schools.com/)。
 
->[MDN DOCS](https://developer.mozilla.org/)
+>[MDN WEB DOCS](https://developer.mozilla.org/)
 
 >[W3Schools](https://www.w3schools.com/)
 
@@ -1316,9 +1316,9 @@ console.log(count)
 
 ### 🎢 筆者玩玩看 - 用AI debug
 
-教學影片拍攝時間是2021年，那時還沒有[ChatGPT](https://chat.openai.com)。剛好在寫此篇學習筆記時，MDN出了「[AI Help Beta](https://developer.mozilla.org/en-US/plus/ai-help)(Powered by GPT-3.5)」功能，它其實也算是ChatGPT，只不過有了最新的MDN文件資料，相信在Web技術這方面，會比一般的GPT更加準確。
+教學影片拍攝時間是2021年，那時還沒有[ChatGPT](https://chat.openai.com)。剛好在寫此篇學習筆記時，MDN WEB DOCS出了「[AI Help Beta](https://developer.mozilla.org/en-US/plus/ai-help)(Powered by GPT-3.5)」功能，它其實也算是ChatGPT，只不過有了最新的MDN WEB DOCS文件資料，相信在Web技術這方面，會比一般的GPT更加準確。
 
-🪄 一起來當AI詠唱師吧！我們來嘗試把剛剛的bug，問AI如何解決(記得要先註冊MDN的帳號喔～)：
+🪄 一起來當AI詠唱師吧！我們來嘗試把剛剛的bug，問AI如何解決(記得要先註冊MDN WEB DOCS的帳號喔～)：
 
 **🪄 提詞：**
 請問如何<u>透過修改以下原始碼</u>，字串(strings)中的空格(space)，渲染到HTML。以下是我的原始碼：
@@ -1360,9 +1360,9 @@ function save() {
 
 <u>💡 AI詠唱 Tips </u>
 
-提詞其實我修改了好幾次。我發現一個詠唱小撇步：為了避免AI (GPT)~~亂唬爛~~，請記得在提詞開頭要有 `...透過修改以下原始碼... `，並提供你要它修改的原始碼。另外，無論是MDN文件資料，或是GPT本身的資料庫，英文的資料一定比中文資料更多、更齊全，所以記得在專用名詞後面補充英文，例如字串(strings)、空格(space)。
+提詞其實我修改了好幾次。我發現一個詠唱小撇步：為了避免AI (GPT)~~亂唬爛~~，請記得在提詞開頭要有 `...透過修改以下原始碼... `，並提供你要它修改的原始碼。另外，無論是MDN WEB DOCS文件資料，或是GPT本身的資料庫，英文的資料一定比中文資料更多、更齊全，所以記得在專用名詞後面補充英文，例如字串(strings)、空格(space)。
 
-歡迎到[Github的issue](https://github.com/michellechang2006/Javascript-basic-playground/issues)和我交流一下你使用MDN「[AI Help Beta](https://developer.mozilla.org/en-US/plus/ai-help)」功能的技巧、心得喔～
+歡迎到[Github的issue](https://github.com/michellechang2006/Javascript-basic-playground/issues)和我交流一下你使用MDN WEB DOCS「[AI Help Beta](https://developer.mozilla.org/en-US/plus/ai-help)」功能的技巧、心得喔～
 
 
 **比較Bing(GPT 4):**
@@ -1372,7 +1372,7 @@ function save() {
 ![](https://i.imgur.com/R3Zss5P.png)
 
 
->[MDN AI Help Beta](https://developer.mozilla.org/en-US/plus/ai-help)
+>[MDN WEB DOCS AI Help Beta](https://developer.mozilla.org/en-US/plus/ai-help)
 
 >[Bing](https://www.bing.com/)
 

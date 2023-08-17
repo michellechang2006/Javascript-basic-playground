@@ -140,39 +140,6 @@
       "command-palette:Open command palette": false
     }
   },
-  "floating": {
-    "id": "4d98e023ca75bcaf",
-    "type": "floating",
-    "children": [
-      {
-        "id": "993179759dd0a344",
-        "type": "window",
-        "children": [
-          {
-            "id": "0861817857a36b87",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "356996bccc4d9d0a",
-                "type": "leaf",
-                "state": {
-                  "type": "empty",
-                  "state": {}
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 269,
-        "y": 107,
-        "width": 1024,
-        "height": 800,
-        "maximize": true,
-        "zoom": 0
-      }
-    ]
-  },
   "active": "0fb5131cae85eaa2",
   "lastOpenFiles": [
     "(FreeCodeCampJavaScript_Programming-Full_Course/(解答放最後面）Challenge_Passenger_counter_app.md",

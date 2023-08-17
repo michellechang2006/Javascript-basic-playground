@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+.container {
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    margin: 15vh 0;
+    border-radius: 2em;
+    padding: 0 1vw;
+}
+
+body{
+    text-align: center;
+    display: flex;
+    /* 水平置中 */
+    justify-content: center;    
+    /* 垂直置中 */
+    align-items: center; 
+    background-image: url(jason-leung-Xaanw0s0pMk-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.random-numbers,.numbers{
+    /* background: red; */
+    margin: 1em 0;
+}
+
+h1,h2{
+    color: #fff;
+    margin: 1em 0;
+}
+
+p{
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.number,.random {
+    display:inline-block;
+    margin:1.5em 1em;
+    font-size: 1.5em;
+    border-radius: 100%;
+    width: 1.5em;
+    color: #fff;
+    padding: .2rem;
+    box-shadow: 10px 9px 18px 1px rgba(105,105,105,0.29);
+}
+
+
+.random {
+    background: radial-gradient(circle at 65% 15%, white 1px, #C280B8 3%, #97498C 60%, #C280B8 100%);
+}
+.number {
+    background: radial-gradient(circle at 65% 15%, white 1px, #FDB800 3%, #FE7543 60%, #FDB800 100%);  
+}
+
+.random-spec,.number-spec{
+    background: radial-gradient(circle at 65% 15%, white 1px, #C5C8B1 3%, #9DA27C 60%, #C5C8B1 100%);  
+}
+
+
+
+.random-numbers > :nth-child(even),.numbers > :nth-child(even) {
+    transform: translateY(40px);
+}
+
+
+.random:hover,.number:hover{
+    transform: scale(1.5);
+    transition: .3s;
+}
+
+
+#start-random,#result,#start-btn,#restart-btn,#clean-color-btn{
+    border: none;
+    font-size: 1em;
+    border-radius: .3rem;
+    color: #fff;
+    box-shadow: 10px 9px 18px 1px rgba(105,105,105,0.29);
+    padding: .3em .5em;
+    margin: 1.5em 0;
+
+}
+
+#start-random,#result{
+    background-color: purple;
+}
+#start-random:hover,#result:hover{
+background-color: #C280B8;
+    transition: .3s;
+}
+
+.d-none,#start-random,#result,#restart-btn,#clean-color-btn{
+    display: none;
+}
+
+#start-btn,#restart-btn,#clean-color-btn{
+    background-color: #FE7543;
+}
+#start-btn:hover,#restart-btn:hover,#clean-color-btn:hover{
+    background-color: #FDB800;
+}
+
+
+a{
+    font-size: .8em;
+color: gray;
+}

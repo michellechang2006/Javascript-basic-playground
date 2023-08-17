@@ -1,3 +1,19 @@
+# 💪🏻 這個階段，我們會學到...
+
+
+- ### [Javascript 資料型態](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Data_structures)
+   - #### [array](#Arrays-intro)
+   - #### [object](#Object)
+   - #### [boolean](#Practice-boolean-conditions)
+- ### [if else statements](#If...else conditionals)
+- ###  [comparison operators](#If...else conditionals)
+- ###  [logical operators]()
+- ###  [for loops](#Counting - Loops)
+- ### [The Math object](#Generating-random-numbers-with-Math.random())
+- ### [return statements](#Returning-values)
+
+
+
 
 # 🔗 Section links 
 
@@ -30,6 +46,8 @@
 [Display cards](#Display-cards)
 
 [New card button](#New-card-button)
+
+[Add to sum when newCard is clicked](#Add-to-sum-when-newCard-is-clicked)
 
 ### [🏁 Recap Challenge](#Recap-Challenge)
 
@@ -341,9 +359,12 @@ let age = 100
 
 >[MDN WEB DOCS | | 相等比較](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Equality_comparisons_and_sameness)
 
+
+
 **🗂️ Reference：**
 
 [前端三十｜13. [JS] 為什麼判斷相等時不能用雙等號？](https://medium.com/schaoss-blog/%E5%89%8D%E7%AB%AF%E4%B8%89%E5%8D%81-13-js-%E7%82%BA%E4%BB%80%E9%BA%BC%E5%88%A4%E6%96%B7%E7%9B%B8%E7%AD%89%E6%99%82%E4%B8%8D%E7%94%A8%E8%83%BD%E9%9B%99%E7%AD%89%E8%99%9F-d02fbf91492f)
+
 
 
 ## [if...else statement for our game](https://youtu.be/jS4aFq5-91M?t=6327)
@@ -366,6 +387,7 @@ let age = 100
 ```
 
 [參考答案](#Challenge-參考答案)
+
 
 ## [Add the hasBlackJack variable](https://youtu.be/jS4aFq5-91M?t=6452)
 
@@ -417,6 +439,8 @@ console.log(hasBlackJack)
 
 
 ## [Add the isAlive variable](https://youtu.be/jS4aFq5-91M?t=6578)
+
+
 
 ### 🏁 Challenge （上個單元的實作題）
 
@@ -1636,6 +1660,7 @@ console.log(dog) // 5 4 3 2 1
 
 }
 ```
+
 
 ![](https://i.imgur.com/VIcs2ul.png)
 
@@ -3197,6 +3222,8 @@ creator:"Emma",
 
 length: 63,
 
+level:2,
+
 isFree: true, // Boolean 布林 資料型態
 
 tags: ["html","css"] //  Object裡可有Array 資料型態
@@ -3210,7 +3237,16 @@ tags: ["html","css"] //  Object裡可有Array 資料型態
 ### 如何存取物件（Object)？
 
 
-和`Array`一樣。我們可以透過`.`和`[" "]`存取`Object`。
+我們可以透過`.`和`[" "]`存取`Object`。
+
+
+**程式碼架構：**
+
+
+`{物件名稱}.{key名稱} = {這個key的value}`
+
+`{物件名稱}["{key名稱}"}] = {這個key的value}`
+
 
 
 ```js
@@ -3224,18 +3260,823 @@ creator:"Emma",
 
 length: 63,
 
+level:2,
+
 isFree: true,
 
 tags: ["html","css"]}
 
   
+// 存取物件（Object)
 
-console.log(course.creator)
+console.log(course.creator) // or
+console.log(course["creator"])
+
+
+// log out
+
+// Emma
 ```
 
 
 
 >[MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
+
+
+### 📝 延伸 - 如何創建物件（Object)？
+
+
+和存取物件（Object)語法一樣，我們可以透過`.`和`[" "]`存取`Object`。
+
+
+**程式碼架構：**
+
+`{物件名稱}.{key名稱} = {這個key的value}`
+
+`{物件名稱}["{key名稱}"}] = {這個key的value}`
+
+
+```js
+let course2 =
+
+  
+
+{ title : "course 2" ,
+
+  
+
+lessons : 20,
+
+  
+
+creator:"Jack",
+
+  
+
+length: 120,
+
+  
+
+level:1,
+
+  
+
+isFree: true,
+
+  
+
+tags: ["javascript","html","css"]}
+
+  
+  
+// 創建 "rating" key 到 course2 物件
+
+course2.rating = 5 // or
+
+course2["rating"] = 5
+
+  
+
+console.log(course2)
+
+// log out 
+
+/*{
+
+title: 'course 2',
+
+lessons: 20,
+
+creator: 'Jack',
+
+length: 120,
+
+level: 1,
+
+isFree: true,
+
+tags: [ 'javascript', 'html', 'css' ],
+
+rating: 5
+
+}*/
+```
+
+
+**🗂️ Reference**
+
+>[[第四週] JavaScript —  陣列 Array 與 物件 object](https://tinyurl.com/2yrdxapu)
+
+
+
+### 📝 延伸 - 如何刪除物件（Object)？
+
+
+
+和創建物件（Object)語法類似，只要在前面加上`delete`。
+
+
+**程式碼架構：**
+
+`delete {物件名稱}.{key名稱} = {這個key的value}`
+
+`delete {物件名稱}["{key名稱}"}] = {這個key的value}`
+
+
+
+```js
+  
+
+let course3 =
+
+  
+
+{ title : "course 3" ,
+
+  
+
+lessons : 10,
+
+  
+
+creator:"Jenny",
+
+  
+
+length: 34,
+
+  
+
+level:3,
+
+  
+
+isFree: false,
+
+  
+
+tags: ["react.js","javascript"]}
+
+  
+  
+  
+// 刪除 course3 物件 的 "title" key
+
+
+delete course3.title //or
+
+delete course3["title"]
+
+  
+
+console.log(course3)
+
+// log out
+
+/*
+{
+
+lessons: 10,
+
+creator: 'Jenny',
+
+length: 34,
+
+level: 3,
+
+isFree: false,
+
+tags: [ 'react.js', 'javascript' ]
+
+}
+*/
+```
+
+
+**🗂️ Reference**
+
+>[[第四週] JavaScript —  陣列 Array 與 物件 object](https://tinyurl.com/2yrdxapu)
+
+
+### 📝 延伸 - `new Object()`
+
+
+我們也可以先創一個「空的」物件（object)後，在以`創建物件（Object)`方式，來添加物件（object)的`key`及`value`。
+
+
+首先，先建立「空的」物件（object)，記得`Object()`的`O`是<u>大寫</u>喔～
+
+```js
+let mealA = new Object()
+```
+
+如果我們這時去`console.log`它，它則會執行出`Reference error`
+
+
+
+接著，我們就可以創建`mealA`裡的`key`及`value`。
+
+
+```js
+mealA.drinking = "Coke"
+
+  
+
+mealA.dish = "Hamburger"
+
+  
+
+mealA.sideDish = "French fries"
+
+  
+
+mealAPrice = 120
+
+  
+
+mealA.rating = 5
+```
+
+
+這樣創建玩我們的`mealA`物件了！
+
+
+```js
+let mealA = new Object()
+
+  
+
+mealA.drinking = "Coke"
+
+  
+
+mealA.dish = "Hamburger"
+
+  
+
+mealA.sideDish = "French fries"
+
+  
+
+mealAPrice = 120
+
+  
+
+mealA.rating = 5
+
+  
+
+console.log(mealA)
+```
+
+
+
+**🗂️ Reference**
+
+>[[第四週] JavaScript —  陣列 Array 與 物件 object](https://tinyurl.com/2yrdxapu)
+
+
+
+
+#### 👩🏻‍💻 筆者碎碎念
+
+
+歡迎參考 ES6 語法 如何修改 Object
+
+
+>[ES6 Destructuring assignment 解構賦值 筆記](https://tinyurl.com/23tqdb2m)
+
+
+
+
+
+## [create first object](https://youtu.be/jS4aFq5-91M?t=14567)
+
+
+### 🏁 Challenge ([上個單元](#Object)實作挑戰題)
+
+
+![](https://i.imgur.com/TfIEDrl.jpg)
+
+
+
+```js
+// Create an object that represents an airbnb castle listing.
+
+
+// It should contain at least one boolean, one string, one number, and one array
+
+
+// Log out at least two of the keys using the dot notation
+```
+
+
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+
+## [Use an object to store player data](https://youtu.be/jS4aFq5-91M?t=14768)
+
+
+### 🏁 Challenge (實作挑戰題)
+
+
+⭐ 繼續完成我們的庫克牌遊戲吧！
+
+
+```html
+<html>
+
+<head>
+
+<link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+<h1>Blackjack</h1>
+
+<p id="message-el">Want to play a round?</p>
+
+<p id="cards-el">Cards:</p>
+
+<p id="sum-el">Sum:</p>
+
+<button onclick="startGame()">START GAME</button>
+
+<br>
+
+<button onclick="newCard()">NEW CARD</button>
+
+<!-- 1. Create a paragraph with an id of "player-el" -->
+
+<p id="player-el"></p>
+
+<script src="index.js"></script>
+
+</body>
+
+</html>
+```
+
+
+
+
+```js
+// js
+// 2. Create the player object. Give it two keys, name and chips, and set their values
+
+let cards = []
+
+let sum = 0
+
+let hasBlackJack = false
+
+let isAlive = false
+
+let message = ""
+
+let messageEl = document.getElementById("message-el")
+
+let sumEl = document.getElementById("sum-el")
+
+let cardsEl = document.getElementById("cards-el")
+
+// 3. Grab ahold of the player-el paragraph and store it in a variable called playerEl
+
+  
+
+// 4. Render the player's name and chips in playerEl
+
+  
+
+function getRandomCard() {
+
+let randomNumber = Math.floor( Math.random()*13 ) + 1
+
+if (randomNumber > 10) {
+
+return 10
+
+} else if (randomNumber === 1) {
+
+return 11
+
+} else {
+
+return randomNumber
+
+}
+
+}
+
+  
+
+function startGame() {
+
+isAlive = true
+
+let firstCard = getRandomCard()
+
+let secondCard = getRandomCard()
+
+cards = [firstCard, secondCard]
+
+sum = firstCard + secondCard
+
+renderGame()
+
+}
+
+  
+
+function renderGame() {
+
+cardsEl.textContent = "Cards: "
+
+for (let i = 0; i < cards.length; i++) {
+
+cardsEl.textContent += cards[i] + " "
+
+}
+
+sumEl.textContent = "Sum: " + sum
+
+if (sum <= 20) {
+
+message = "Do you want to draw a new card?"
+
+} else if (sum === 21) {
+
+message = "You've got Blackjack!"
+
+hasBlackJack = true
+
+} else {
+
+message = "You're out of the game!"
+
+isAlive = false
+
+}
+
+messageEl.textContent = message
+
+}
+
+  
+  
+
+function newCard() {
+
+if (isAlive === true && hasBlackJack === false) {
+
+let card = getRandomCard()
+
+sum += card
+
+cards.push(card)
+
+renderGame()
+
+}
+
+}
+```
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+
+
+
+## [Recap](https://youtu.be/jS4aFq5-91M?t=15050)
+
+
+我們來回顧，我們目前學了什麼JS:
+
+
+- [Javascript 資料型態](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Data_structures)
+   - [array](#Arrays-intro)
+   - [object](#Object)
+   - [boolean](#Practice-boolean-conditions)
+- [if else statements](#If...else conditionals)
+- [comparison operators](#If...else conditionals)
+- [logical operators]()
+- [for loops](#Counting - Loops)
+- [The Math object](#Generating-random-numbers-with-Math.random())
+- [return statements](#Returning-values)
+
+
+
+恭喜🎉 你已經學會以上JS，並製作出你的第一個JS應用程式 -Javascript 新手 教學 - [Build Blackjack Game](https://codepen.io/michellechang2006/pen/jOQjpyV)！
+
+
+⭐ 接下來的單元，會有更多題目讓你練習。
+
+
+
+
+ 
+# Recap Challenge
+
+
+
+## [Objects & functions](https://youtu.be/jS4aFq5-91M?t=15317)
+
+
+
+```js
+// Create a person object that contains three keys: name, age, and county.
+
+// Use yourself as an example to set the values for name, age, and country
+
+  
+
+// Create a function, logData(), that uses the person object to create a
+
+// string in the following format:
+
+// "Per is 35 years old and lives in Norway"
+
+  
+
+// Call the logData() function to verify that it works
+```
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+
+
+## [if else](https://youtu.be/jS4aFq5-91M?t=15441)
+
+
+
+```js
+let age = 15
+
+  
+
+// less than 6 years old -> free
+
+// 6 to 17 years old -> child discount
+
+// 18 to 26 years old -> student discount
+
+// 27 to 66 years old -> full price
+
+// over 66 years old -> senior citizen discount
+
+  
+
+// Create a conditional statement (if/else/else if) that logs out the discount
+
+// the passenger will get based upon the value of the age variable
+```
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+
+
+
+## [Loops & arrays](https://youtu.be/jS4aFq5-91M?t=15614)
+
+
+
+```js
+let largeCountries = ["China","India","USA","Indonesia","Pakistan"]
+
+  
+
+/* Use a for loop to log the following to the console:
+
+  
+
+The 5 largest countries in the world:
+
+- China
+
+- India
+
+- United States
+
+- Indinesia
+
+- Pakistan
+
+*/
+```
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+
+## [push, pop, unshift, shift challenge](https://youtu.be/jS4aFq5-91M?t=15741)
+
+
+
+```js
+let largeCountries = ["China","India","USA","Indonesia","Pakistan"]
+
+  
+
+/* Use a for loop to log the following to the console:
+
+  
+
+The 5 largest countries in the world:
+
+- China
+
+- India
+
+- United States
+
+- Indinesia
+
+- Pakistan
+
+*/
+```
+
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+
+## [Logical operators](https://youtu.be/jS4aFq5-91M)
+
+
+
+
+```js
+let dayOfMonth = 13
+
+let weekday = "Tuesday"
+
+  
+
+// If it is Friday the 13th, log out this spooky face: 😱
+
+// Use the logical "AND operator" -> &&
+```
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+
+
+## [Rock papers scissors](https://youtu.be/jS4aFq5-91M?t=16070)
+
+
+
+```js
+let hands = ["rock", "paper", "scissor"]
+
+  
+
+// Create a function that returns a random item from the array
+```
+
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+
+## [emojifighter](https://scrimba.com/learn/learnjavascript/emojifighter-co0ae44c3916ad5cbf9d73166)
+
+
+
+⭐ 這題算是「實作」魔王題，沒有在YT教學影片中喔～）其實只要把觀念學好，會應用到這題，其實也不會很難啦～
+
+
+```js
+let fighters = ["🐉", "🐥", "🐊","💩", "🦍", "🐢", "🐩", "🦭", "🦀", "🐝", "🤖", "🐘", "🐸", "🕷","🐆", "🦕", "🦁"]
+
+  
+
+let stageEl = document.getElementById("stage")
+
+let fightButton = document.getElementById("fightButton")
+
+  
+
+fightButton.addEventListener("click", function() {
+
+// Challenge:
+
+// When the user clicks on the "Pick Fighters" button, pick two random
+
+// emoji fighters and display them as i.e. "🦀 vs 🐢" in the "stage" <div>.
+
+})
+```
+
+
+
+
+>[HTML&CSS 原始碼](https://scrimba.com/learn/learnjavascript/emojifighter-co0ae44c3916ad5cbf9d73166)
+
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+## [Sorting fruit](https://youtu.be/jS4aFq5-91M?t=16252)
+
+
+
+```js
+let fruit = ["🍎", "🍊", "🍎", "🍎", "🍊"]
+
+let appleShelf = document.getElementById("apple-shelf")
+
+let orangeShelf = document.getElementById("orange-shelf")
+
+  
+
+// Create a function that puts the apples onto the appleShelf
+
+// and the oranges onto the orangeShelf. Use a for loop,
+
+// a conditional statement, and the textContent property.
+```
+
+
+
+>[HTML&CSS 原始碼](https://scrimba.com/learn/learnjavascript/sorting-fruits-co2224ee0aa71a2ab76471c1c)
+
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+
+# [復刻 APP](#復刻-APP)
+
+
+###  📝 延伸 - ES6 modules scope
+
+
+# [Solo Project 學以致用](#學以致用-Solo-Project)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3509,6 +4350,9 @@ isAlive = false
 console.log(message)
 ```
 
+
+
+
 ### [Display message](https://youtu.be/jS4aFq5-91M?t=7873)
 
 ```js
@@ -3558,6 +4402,7 @@ messageEl.textContent = message
 
 }
 ```
+
 
 👩🏻‍💻 **筆者碎碎念**：要記得`messageEl.textContent = message`要放在`startGame()`函式裡，這樣當使用者點擊`START GAME`，才會觸發（執行）程式碼。
 
@@ -4667,4 +5512,768 @@ renderGame()
 }
 
 }
+```
+
+
+
+
+###  [create first object](https://youtu.be/jS4aFq5-91M?t=14567)
+
+
+
+影片中老師的解答：
+
+
+
+```js
+// Create an object that represents an airbnb castle listing.
+
+// It should contain at least one boolean, one string, one number, and one array
+
+// Log out at least two of the keys using the dot notation
+
+  
+
+let castle = {
+
+title: "Live like a king in my castle",
+
+price: 190,
+
+isSuperHost: true,
+
+images: ["img/castle1.png", "img/caste2.png"]
+
+}
+
+  
+
+console.log(castle.price)
+
+console.log(castle.isSuperHost)
+```
+
+
+
+
+
+
+
+
+
+我的解答：
+
+
+
+```js
+// Create an object that represents an airbnb castle listing.
+
+// It should contain at least one boolean, one string, one number, and one array
+
+// Log out at least two of the keys using the dot notation
+
+  
+  
+
+let aibnb = {title:"Live like a King in my Castle",
+
+address:"Privateroom in Galway",
+
+guests:4,
+
+rating:4.95,
+
+pricing:190,
+
+SUPERHOST:true
+
+}
+
+  
+  
+
+console.log(aibnb.title)
+
+console.log(aibnb.rating)
+```
+
+
+
+### [Methods on object (Object內的Function)]()
+
+
+我們也可以在`Object`中，創建函式`function`為`Object`的`value`。
+
+
+🌰 [W3school](https://www.w3schools.com/js/js_object_methods.asp) 例子：
+
+
+```html
+<h1>The JavaScript <i>this</i> Keyword</h1>
+<p>In this example, <b>this</b> refers to the <b>person</b> object.</p>
+<p>Because <b>fullName</b> is a method of the person object.</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName : function() { // 創建函式function為fullName(key)的value
+    return this.firstName + " " + this.lastName; 
+  }
+};
+
+// Display data from the object:
+document.getElementById("demo").innerHTML = person.fullName();
+</script>
+```
+
+
+
+
+#### 📝 延伸 - `this` keyword in Methods
+
+
+`this`是`global object`。也就是說，`this`只能調用父層區塊的程式碼。
+
+
+![](https://i.imgur.com/LRSZQal.png)
+
+
+
+我們再以🌰 [W3school](https://www.w3schools.com/js/js_object_methods.asp)的例子，來解釋：
+
+
+`person`  `object`裡，我們在`fullName`(`key`)中，創建了一個函式（`function`)，就是「子層（function scope)」為`fullName`(`key`)的`value`，而整個`person`  `object`就是「父層 (global scope)」。
+
+
+![](https://i.imgur.com/4u2qS89.png)
+
+
+
+![](https://i.imgur.com/GoYYyx6.png)
+
+
+
+>[複習 global/function scope](https://tinyurl.com/2cgr5545)
+
+
+
+
+
+
+
+
+
+
+
+
+### [Use an object to store player data](https://youtu.be/jS4aFq5-91M?t=14768)
+
+
+
+```js
+// 2. Create the player object. Give it two keys, name and chips, and set their values
+
+let player = {
+
+name: "Per",
+
+chips: 200
+
+}
+
+let cards = []
+
+let sum = 0
+
+let hasBlackJack = false
+
+let isAlive = false
+
+let message = ""
+
+let messageEl = document.getElementById("message-el")
+
+let sumEl = document.getElementById("sum-el")
+
+let cardsEl = document.getElementById("cards-el")
+
+// 3. Grab ahold of the player-el paragraph and store it in a variable called playerEl
+
+let playerEl = document.getElementById("player-el")
+
+  
+
+// 4. Render the player's name and chips in playerEl
+
+playerEl.textContent = player.name + ": $" + player.chips
+
+  
+
+function getRandomCard() {
+
+let randomNumber = Math.floor( Math.random()*13 ) + 1
+
+if (randomNumber > 10) {
+
+return 10
+
+} else if (randomNumber === 1) {
+
+return 11
+
+} else {
+
+return randomNumber
+
+}
+
+}
+
+  
+
+function startGame() {
+
+isAlive = true
+
+let firstCard = getRandomCard()
+
+let secondCard = getRandomCard()
+
+cards = [firstCard, secondCard]
+
+sum = firstCard + secondCard
+
+renderGame()
+
+}
+
+  
+
+function renderGame() {
+
+cardsEl.textContent = "Cards: "
+
+for (let i = 0; i < cards.length; i++) {
+
+cardsEl.textContent += cards[i] + " "
+
+}
+
+sumEl.textContent = "Sum: " + sum
+
+if (sum <= 20) {
+
+message = "Do you want to draw a new card?"
+
+} else if (sum === 21) {
+
+message = "You've got Blackjack!"
+
+hasBlackJack = true
+
+} else {
+
+message = "You're out of the game!"
+
+isAlive = false
+
+}
+
+messageEl.textContent = message
+
+}
+
+  
+  
+
+function newCard() {
+
+if (isAlive === true && hasBlackJack === false) {
+
+let card = getRandomCard()
+
+sum += card
+
+cards.push(card)
+
+renderGame()
+
+}
+
+}
+```
+
+
+
+
+
+## 🏁 Recap Challenge
+
+
+
+### [Objects & functions](https://youtu.be/jS4aFq5-91M?t=15317)
+
+
+影片中，老師的解答：
+
+
+```js
+// Create a person object that contains three keys: name, age, and county.
+
+// Use yourself as an example to set the values for name, age, and country
+
+  
+
+// Create a function, logData(), that uses the person object to create a
+
+// string in the following format:
+
+// "Per is 35 years old and lives in Norway"
+
+  
+
+// Call the logData() function to verify that it works
+
+  
+
+let person = {
+
+name: "Per",
+
+age: 35,
+
+country: "Norway"
+
+}
+
+  
+
+function logData() {
+
+console.log(person.name + " is " + person.age + " years old and lives in " + person.country)
+
+}
+
+  
+
+logData()
+```
+
+
+
+我的解答：
+
+
+```js
+// Create a person object that contains three keys: name, age, and county.
+
+// Use yourself as an example to set the values for name, age, and country
+
+  
+
+let person = {
+
+name:"Michelle Chang",
+
+age:16,
+
+country:"Taiwan"
+
+}
+
+  
+
+// Create a function, logData(), that uses the person object to create a
+
+// string in the following format:
+
+// "Per is 35 years old and lives in Norway"
+
+function logData() {
+
+console.log(person.name + " is " + person.age + " old " + "and lives in " + person.country)
+
+}
+
+  
+
+// Call the logData() function to verify that it works
+
+logData()
+```
+
+
+
+
+
+### [if else](https://youtu.be/jS4aFq5-91M?t=15441)
+
+
+
+```js
+let age = 55
+
+  
+
+// less than 6 years old -> free
+
+// 6 to 17 years old -> child discount
+
+// 18 to 26 years old -> student discount
+
+// 27 to 66 years old -> full price
+
+// over 66 years old -> senior citizen discount
+
+  
+
+// Create a conditional statement (if/else/else if) that logs out the discount
+
+// the passenger will get based upon the value of the age variable
+
+  
+
+if (age < 6) {
+
+console.log("free")
+
+} else if (age < 18) {
+
+console.log("child discount")
+
+} else if (age < 27) {
+
+console.log("student discount")
+
+} else if (age < 67) {
+
+console.log("full price")
+
+} else {
+
+console.log("senior citizen discount")
+
+}
+```
+
+
+
+### [Loops & arrays](https://youtu.be/jS4aFq5-91M?t=15614)
+
+
+
+```js
+let largeCountries = ["China","India","USA","Indonesia","Pakistan"]
+
+  
+
+/* Use a for loop to log the following to the console:
+
+  
+
+The 5 largest countries in the world:
+
+- China
+
+- India
+
+- United States
+
+- Indinesia
+
+- Pakistan
+
+*/
+
+  
+
+console.log("The 5 largest countries in the world:")
+
+for (let i = 0; i < largeCountries.length; i++) {
+
+let array = largeCountries[i];
+
+console.log("- " + array)
+
+}
+```
+
+
+
+
+
+### [push, pop, unshift, shift challenge](https://youtu.be/jS4aFq5-91M?t=15742)
+
+
+```js
+let largeCountries = ["Tuvalu","India","USA","Indonesia","Monaco"]
+
+  
+
+// You need to help me fixup the largeCountries array so that
+
+// China and Pakistan are added back into their respective places
+
+  
+
+// Use push() & pop() and their counterparts unshift() & shift()
+
+// Google how to use unshift() and shift()
+
+  
+  
+
+largeCountries.shift()
+
+largeCountries.unshift("China")
+
+  
+  
+
+largeCountries.pop()
+
+largeCountries.push("Pakistan")
+
+  
+  
+
+console.log(largeCountries)
+
+  
+
+// log out
+
+
+// [ 'China', 'India', 'USA', 'Indonesia', 'Pakistan' ]
+```
+
+
+
+
+
+
+
+### [Logical operators](https://youtu.be/jS4aFq5-91M)
+
+
+
+```js
+let dayOfMonth = 13
+
+let weekday = "Friday"
+
+  
+
+// If it is Friday the 13th, log out this spooky face: 😱
+
+// Use the logical "AND operator" -> &&
+
+  
+
+if (dayOfMonth === 13 && weekday === "Friday") {
+
+console.log("😱")
+
+}
+```
+
+
+
+
+### [Rock papers scissors](https://youtu.be/jS4aFq5-91M?t=16070)
+
+
+影片中，老師的解答：
+
+
+```js
+let hands = ["rock", "paper", "scissor"]
+
+  
+
+// Create a function that returns a random item from the array
+
+  
+
+function getHand() {
+
+let randomIndex = Math.floor( Math.random() * 3)
+
+return hands[randomIndex]
+
+}
+
+  
+
+console.log( getHand() )
+```
+
+
+
+
+我的解答：
+
+
+```js
+let hands = ["rock", "paper", "scissor"]
+
+  
+
+// Create a function that returns a random item from the array
+
+  
+
+function randomItem(){
+
+let i = Math.floor(Math.random() * 3)
+
+// console.log(i)
+
+console.log(hands[i])
+
+}
+
+  
+
+randomItem()
+```
+
+
+
+
+
+### [emojifighter](https://scrimba.com/learn/learnjavascript/emojifighter-co0ae44c3916ad5cbf9d73166)
+
+
+```js
+let fighters = ["🐉", "🐥", "🐊","💩", "🦍", "🐢", "🐩", "🦭", "🦀", "🐝", "🤖", "🐘", "🐸", "🕷","🐆", "🦕", "🦁"]
+
+  
+
+let stageEl = document.getElementById("stage")
+
+let fightButton = document.getElementById("fightButton")
+
+  
+
+fightButton.addEventListener("click", function() {
+
+// Challenge:
+
+// When the user clicks on the "Pick Fighters" button, pick two random
+
+// emoji fighters and display them as i.e. "🦀 vs 🐢" in the "stage" <div>.
+
+let randomIndexOne = Math.floor( Math.random() * fighters.length )
+
+let randomIndexTwo = Math.floor( Math.random() * fighters.length )
+
+stageEl.textContent = fighters[randomIndexOne] + " vs " + fighters[randomIndexTwo]
+
+})
+```
+
+
+
+
+
+
+### [Sorting fruit](https://youtu.be/jS4aFq5-91M?t=16252)
+
+
+影片中，老師的解答：
+
+
+```js
+let fruit = ["🍎", "🍊", "🍎", "🍎", "🍊"]
+
+let appleShelf = document.getElementById("apple-shelf")
+
+let orangeShelf = document.getElementById("orange-shelf")
+
+  
+
+// Create a function that puts the apples onto the appleShelf
+
+// and the oranges onto the orangeShelf. Use a for loop,
+
+// a conditional statement, and the textContent property.
+
+  
+
+function sortFruit() {
+
+for (let i = 0; i < fruit.length; i++) {
+
+if (fruit[i] === "🍎") {
+
+appleShelf.textContent += "🍎"
+
+} else if (fruit[i] === "🍊") {
+
+orangeShelf.textContent += "🍊"
+
+}
+
+}
+
+}
+
+  
+
+sortFruit()
+```
+
+
+
+我的解答：
+
+
+
+```js
+let fruit = ["🍎", "🍊", "🍎", "🍎", "🍊"]
+
+let appleShelf = document.getElementById("apple-shelf")
+
+let orangeShelf = document.getElementById("orange-shelf")
+
+  
+
+// Create a function that puts the apples onto the appleShelf
+
+// and the oranges onto the orangeShelf. Use a for loop,
+
+// a conditional statement, and the textContent property.
+
+  
+  
+
+function putToShelf() {
+
+for (let i = 0; i < fruit.length; i++) {
+
+var array = fruit[i];
+
+console.log(array)
+
+if (fruit[i] === "🍎") {
+
+appleShelf.textContent += fruit[i]
+
+} else {
+
+orangeShelf.textContent += fruit[i]
+
+}
+
+} 
+
+}
+
+putToShelf()
 ```

@@ -1,5 +1,10 @@
- 
-let cards = []-  
+
+let player = {
+name:"Michelle",
+chips:1
+}
+console.log(player.name)
+let cards = []
 
 let sum = 0
 let hasBlackJack = false
@@ -11,8 +16,10 @@ let messageEl = document.getElementById("message-el")
 let cardsEl = document.getElementById("cards-el")
 
 
+let playerEl = document.getElementById("player-el") 
 
 
+playerEl.textContent = player.name + ": $" + player.chips
 
 
 function getRandomCard() {
@@ -61,7 +68,7 @@ function renderGame() {
 }
 
 function newCard() {
-    // Only allow the player to get a new card if she IS alive and does NOT have Blackjack
+
     if ( isAlive === true && hasBlackJack === false) {
     console.log("Drawing a new card from the deck!")
     let card = getRandomCard();

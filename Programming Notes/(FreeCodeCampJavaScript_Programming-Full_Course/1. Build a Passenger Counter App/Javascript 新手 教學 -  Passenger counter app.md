@@ -1409,7 +1409,9 @@ function save() {
 - [innerText](#Display-count)
 - [textContent](#Debugging-online)
 
+
 恭喜🎉 你已經學會以上JS，並製作出你的第一個JS應用程式 -Javascript 新手 教學 - [Passenger counter app](https://codepen.io/michellechang2006/pen/abQwNZB)！
+
 
 ⭐ 接下來的單元，會有更多題目讓你練習。
 
@@ -1434,6 +1436,8 @@ function save() {
    Log `fullName` to the console
 
 [參考答案](#Challenge-參考答案)
+
+
 
 ## [Concatenate strings](https://youtu.be/jS4aFq5-91M?t=4662)
 
@@ -1504,6 +1508,8 @@ console.log("11" + "14") //
 
 [參考答案](#Challenge-參考答案)
 
+
+
 ## [Rendering error message](https://youtu.be/jS4aFq5-91M?t=4955)
 
 1. 當使用者點擊`purchase`按鈕時
@@ -1543,6 +1549,8 @@ console.log("11" + "14") //
 ```
 
 [參考答案](#Challenge-參考答案)
+
+
 
 ## [Calculator challenge](https://youtu.be/jS4aFq5-91M?t=5152)
 
@@ -1601,7 +1609,8 @@ E.g. if the user clicks on the `"Plus"` button, you should render
 [參考答案](#Challenge-參考答案)
 
 
-# [復刻 APP](https://codepen.io/michellechang2006/pen/abQwNZB)
+
+# [復刻 APP](https://michellechang2006.github.io/replica_passenger_counter_app/)
 
 🎉 恭喜你！學完第一階段啦～在將目前所學到JS學以致用，做一個小小的專案前，我決定先自行嘗試，從零開始復刻Passenger counter app的功能。歡迎透過[Github Issues](https://github.com/michellechang2006/Javascript-basic-playground/issues)來和我交流你復刻的Passenger counter app喔！
 
@@ -1615,6 +1624,8 @@ E.g. if the user clicks on the `"Plus"` button, you should render
 let count = 0;
 ```
 
+
+
 **[The DOM](#Document-Object-Model-(DOM))**
 
 [宣告了幾個變數](#Create-variable)，其值為[取出 HTML 內容當中](#Display-count)：
@@ -1625,6 +1636,8 @@ let countEl = document.getElementById("counter")
 let saveEl = document.getElementById("save-el")
 ```
 
+
+
 **[onclick event listener](#onclick-event-listener)**
 
 加入了`onclick`事件監聽（event listener)，這代表當使用者按一次按鈕時，則會執行`incrementBtn()`和`saveBtn()`函式裡的程式碼。
@@ -1634,6 +1647,8 @@ let saveEl = document.getElementById("save-el")
 
 <button id="save-btn" onclick="saveBtn()">SAVE</button>
 ```
+
+
 
 **[Using functions to write less code](#Using-functions-to-write-less-code)**
 
@@ -1663,6 +1678,8 @@ count += 1;
 }
 ```
 
+
+
 **[Display count / innerText](#Display-count-/-innerText)**
 
 計算好後，使用[`textContent`](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent)來將計算好的值嵌入HTML。
@@ -1677,6 +1694,8 @@ countEl.textContent = count;
 }
 ```
 
+
+
 **[What is string?](#What-is-string?)**
 
 除了計數功能外，還有儲存計數的功能。每次使用者按一次`SAVE`時，`count`變數的值會加入`" - "`[字串](#What-is-string?)後嵌入HTML，ID為`save-el`的段落。
@@ -1688,6 +1707,8 @@ saveEl.textContent += count + " - "
 
 }
 ```
+
+
 
 **[Set count to 0](#Set-count-to-0)**
 
@@ -1705,10 +1726,18 @@ countEl.textContent = count;
 }
 ```
 
+
+
 ![](https://i.imgur.com/CXBzZao.gif)
 
 
+
+>[成品&原始碼](https://github.com/michellechang2006/replica_passenger_counter_app)
+
+
 # [Solo Project 學以致用](https://scrimba.com/learn/learnjavascript/why-are-solo-projects-important-crdV3Gtq)
+
+
 
 ### 🏓 [桌球計分板 Table Tennis Scoreboard](https://michellechang2006.github.io/My-First-Javascript-APP/)
 

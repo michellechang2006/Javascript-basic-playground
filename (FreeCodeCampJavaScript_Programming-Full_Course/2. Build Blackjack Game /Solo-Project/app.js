@@ -35,7 +35,6 @@ let myNumbersSpec = 0
 let randomNumbersSpec = 0
 let randomEl = [];
 let myNumbersEl = [];
-let count = 0;
 
 
 for (let i = 1; i <= 6; i++) {
@@ -136,6 +135,7 @@ function restart() {
 
 function result() {
     let randomEl = []
+    let myNumbersEl = [];
     let count = 0;
     startRandomBtn.style = "display:none";
     resultBtn.style = "display:none";
@@ -164,13 +164,16 @@ function result() {
         randomEl.push(document.querySelector(`.random${i}`));
     }
     // DOM
-    let myNumbersEl = [];
+
 
     for (let i = 1; i <= 6; i++) {
         myNumbersEl.push(document.querySelector(`.number${i}`));
     }
     randomNumbers.forEach((value, index) => {
         let indexInArray2 = myNumbers.indexOf(value);
+        console.log("value: " + value)
+        console.log("indexInArray2 :" + indexInArray2)
+        console.log("index: " + index)
         if (indexInArray2 !== -1) {
             console.log(`數字 ${value} 在 randomNumbers 的索引是 ${index}，在 myNumbers 的索引是 ${indexInArray2}`);
             randomEl[index].style = "background: radial-gradient(circle at 65% 15%, white 1px, #FF7070 3%, red 60%, #FF7070 100%);"
@@ -203,52 +206,46 @@ function result() {
 
     switch (count) {
         case 6:
-            resultEl.textContent = "6"
+            resultEl.textContent = "中六個獎號！🎊"
             break
         case 5:
             if (specialNumbers === true) {
-                resultEl.textContent = "5";
+                resultEl.textContent = "中五個獎號 + 特別號！🎊";
             }
             break
         case 5:
-            resultEl.textContent = "5"
-            break
-
-        case 4:
-            if (specialNumbers === true) {
-                resultEl.textContent = "4";
-            }
+            resultEl.textContent = "中五個獎號！🎊"
             break
         case 4:
-            resultEl.textContent = "🥲"
+            resultEl.textContent = "中四個獎號！🎊"
             break
         case 4:
             if (specialNumbers === true) {
-                resultEl.textContent = "4";
+                resultEl.textContent = "中四個獎號 + 特別號！🎊";
             }
             break
         case 3:
-            resultEl.textContent = "3";
+            resultEl.textContent = "中三個獎號！🎊";
             break
         case 3:
             if (specialNumbers === true) {
-                resultEl.textContent = "3";
+                resultEl.textContent = "中四個獎號 + 特別號！🎊";
             }
             break
         case 2:
-            resultEl.textContent = "🥲"
+            resultEl.textContent = "中兩個獎號！🎊"
             break
         case 2:
             if (specialNumbers === true) {
-                resultEl.textContent = "2";
+                resultEl.textContent = "中兩個獎號 + 特別號！🎊";
             }
             break
 
         case 1:
-            resultEl.textContent = "🥲"
+            resultEl.textContent = "中一個獎號！🎊"
             break
         case 0:
-            resultEl.textContent = "🥲"
+            resultEl.textContent = "再接再勵 💪🏻  中零個獎號！"
             break
     }
 
@@ -296,52 +293,47 @@ function colorClean() {
 
     switch (count) {
         case 6:
-            resultEl.textContent = "6"
+            window.alert("恭喜您獲得頭獎！💰💰💰")
             break
         case 5:
             if (specialNumbers === true) {
-                resultEl.textContent = "5";
+                window.alert("恭喜您獲得貳獎！💰")
             }
             break
         case 5:
-            resultEl.textContent = "5"
+            window.alert("恭喜您獲得參獎！💵")
             break
 
         case 4:
             if (specialNumbers === true) {
-                resultEl.textContent = "4";
+                window.alert("恭喜您獲得肆獎！💵")
             }
             break
         case 4:
-            window.alert("🥲")
-            break
-        case 4:
-            if (specialNumbers === true) {
-                resultEl.textContent = "4";
-            }
+            window.alert("祝您平平安安！🧧")
             break
         case 3:
-            resultEl.textContent = "3";
+            window.alert("恭喜您獲得普獎! NT$400 🧧")
             break
         case 3:
             if (specialNumbers === true) {
-                resultEl.textContent = "3";
+                window.alert("恭喜您獲得伍獎！ NT$2,000 💵")
             }
             break
         case 2:
-            window.alert("🥲")
+            window.alert("祝您心想事成！🧧")
             break
         case 2:
             if (specialNumbers === true) {
-                resultEl.textContent = "2";
+                window.alert("恭喜您獲得柒獎！ NT$400 🧧")
             }
             break
 
         case 1:
-            window.alert("🥲")
+            window.alert("祝您心想事成！🧧")
             break
         case 0:
-            window.alert("🥲")
+            window.alert("祝您平平安安！🧧")
             break
     }
 

@@ -4058,29 +4058,31 @@ let orangeShelf = document.getElementById("orange-shelf")
 # [復刻 APP](#復刻-APP)
 
 
-###  📝 延伸 - ES6 modules scope
 
 
 # [Solo Project 學以致用](#學以致用-Solo-Project)
 
 
+###  📝 延伸 - ES6 modules scope
+
+
+
+>[MDN | | Array.prototype.indexOf() ](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
+
+
+
+>[MDN | | Array.prototype.includes()](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
+
+
+
+>[MDN | | Array.prototype.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
 
 
 
+#### 🗂️ Reference
 
-
-
-
-
-
-
-
-
-
-
-
-
+>[JS - for 迴圈與 forEach 有什麼不同](https://www.casper.tw/development/2020/10/05/js-for-loop-vs-for-each/)
 
 
 

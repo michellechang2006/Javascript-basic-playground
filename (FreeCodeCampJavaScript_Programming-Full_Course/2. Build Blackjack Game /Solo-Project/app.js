@@ -295,19 +295,15 @@ function colorClean() {
         case 6:
             window.alert("恭喜您獲得頭獎！💰💰💰")
             break
-        case 5:
-            if (specialNumbers === true) {
+        case (5 && specialNumbers === true):
                 window.alert("恭喜您獲得貳獎！💰")
-            }
             break
         case 5:
             window.alert("恭喜您獲得參獎！💵")
             break
 
-        case 4:
-            if (specialNumbers === true) {
-                window.alert("恭喜您獲得肆獎！💵")
-            }
+        case (4 && specialNumbers === true):
+            window.alert("恭喜您獲得肆獎！💵")
             break
         case 4:
             window.alert("祝您平平安安！🧧")
@@ -315,18 +311,14 @@ function colorClean() {
         case 3:
             window.alert("恭喜您獲得普獎! NT$400 🧧")
             break
-        case 3:
-            if (specialNumbers === true) {
+        case (3 && specialNumbers === true):
                 window.alert("恭喜您獲得伍獎！ NT$2,000 💵")
-            }
             break
         case 2:
             window.alert("祝您心想事成！🧧")
             break
-        case 2:
-            if (specialNumbers === true) {
+        case (2 && specialNumbers === true):
                 window.alert("恭喜您獲得柒獎！ NT$400 🧧")
-            }
             break
 
         case 1:

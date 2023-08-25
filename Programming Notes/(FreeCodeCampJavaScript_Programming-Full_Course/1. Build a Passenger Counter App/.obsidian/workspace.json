@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "cdd7d109e14c4d4b",
@@ -79,23 +80,6 @@
         "id": "ec7d99474e3d3e8c",
         "type": "tabs",
         "children": [
-          {
-            "id": "defce45584ae1a80",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Javascript 新手 教學 -  Passenger counter app.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
           {
             "id": "337159484e05b0c3",
             "type": "leaf",
@@ -130,7 +114,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",

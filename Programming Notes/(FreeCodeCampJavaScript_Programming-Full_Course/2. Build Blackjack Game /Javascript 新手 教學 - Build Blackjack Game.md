@@ -571,7 +571,7 @@ console.log("You're out of the game! 😭")
 
 ### 🏁 Challenge 
 
-請在每段程式碼旁，以註解(comments)`//`的方式作答輸出（`console.log`)的布林（`Boolean`）值。
+請在每段程式碼旁，以註解(comments)`//`的方式作答回傳（`console.log`)的布林（`Boolean`）值。
 
 ```js
 console.log(4 === 3) // 
@@ -3773,8 +3773,8 @@ renderGame()
    - [boolean](#Practice-boolean-conditions)
 - [if else statements](#If...else conditionals)
 - [comparison operators](#If...else conditionals)
-- [logical operators]()
-- [for loops](#Counting - Loops)
+- [logical operators](#Write-your-first-logical-operator)
+- [for loops](#Counting-Loops)
 - [The Math object](#Generating-random-numbers-with-Math.random())
 - [return statements](#Returning-values)
 
@@ -4054,24 +4054,1009 @@ let orangeShelf = document.getElementById("orange-shelf")
 
 
 
-
-# [復刻 APP](#復刻-APP)
-
-
-
-
 # [Solo Project 學以致用](#學以致用-Solo-Project)
+
+
+
+![](https://i.imgur.com/GSsmJQv.gif)
+
+
+### ✏️ 筆記
+
+
+#### [boolean](#Practice-boolean-conditions) / [if else statements](#If...else conditionals)
+
+
+
+使用 [if else statements](#If...else conditionals)，來檢查對獎的特別號碼 - `randomNumbersSpec` 變數，其值是否和玩家的特別號碼 - `myNumbersSpec` 變數是否相等。如相等，則`specialNumbers`  的值為 `true`( [boolean](#Practice-boolean-conditions)) 及更改特別號碼HTML 元素  (`numberSpecEl`及`randomSpecEl`) 的 CSS。如不相等，則`specialNumbers`  的值為 `false` ( [boolean](#Practice-boolean-conditions)) 。
+
+
+
+```js
+if (randomNumbersSpec === myNumbersSpec) {
+
+specialNumbers = true
+
+numberSpecEl.style = " background: radial-gradient(circle at 65% 15%, white 1px, #FF7070 3%, red 60%, #FF7070 100%);"
+
+randomSpecEl.style = " background: radial-gradient(circle at 65% 15%, white 1px, #FF7070 3%, red 60%, #FF7070 100%);"
+
+} else {
+
+specialNumbers = false
+
+}
+```
+
+
+
+
+
+
+#### [for loops](#Counting-Loops) / [comparison operators](#If...else conditionals) / [array](#Arrays-intro)
+
+
+目的是將選擇器 `.random1` 到 `.random6` 所選取的 DOM 元素全部加入到 `randomEl` 陣列中。
+
+
+宣告了一個名為 `randomEl` 空的陣列 - [array](#Arrays-intro)  
+`let randomEl = [];`
+
+
+創建了[for loops](#Counting-Loops)，在每次迴圈中，程式碼都會將選擇器 `.random${i}` 所選取的 DOM 元素加入到 `randomEl` 陣列中。這裡的 `${i}` 是一種稱為[模板字串]()的語法，會被替換為 `i` 的值。所以，如果 `i = 1`，那麼選擇器就會變成 `.random1`。
+
+
+
+```js
+let randomEl = [];
+
+  
+
+// DOM
+
+for (let i = 1; i <= 6; i++) {
+
+randomEl.push(document.querySelector(`.random${i}`));
+
+}
+```
+
+
+
+
+#### [The Math object](#Generating-random-numbers-with-Math.random()) / [return statements](#Returning-values) / [logical operators](#Write-your-first-logical-operator) / - [return statements](#Returning-values)
+
+
+
+在 `getRandomNumbers(length, min, max)` 建立了一個空的陣列 -  [array](#Arrays-intro)  ，用於存儲生成的隨機數字。
+
+
+使用 `Math.floor` 及 `Math.random()` - [The Math object](#Generating-random-numbers-with-Math.random()) 生成了一個在 `min` 和 `max` 之間的隨機整數。
+
+
+使用[NOT logical operator - ` ! `](#Logical-NOT-operator-(筆者自行補充)) 在if 條件語句，只有當 `numbers` 陣列中不包含當前生成的隨機數字時，才會執行大括號內的程式碼。
+
+
+使用[Array.prototype.push()](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/push)將當前生成的隨機數字加入到 `numbers` 陣列中。
+
+
+最後使用 [return statements](#Returning-values) ，使用當迴圈結束後（即 `numbers` 陣列的長度等於 `length`），函數會返回 `numbers` 。
+
+
+
+
+```js
+function getRandomNumbers(length /* 產生多少的隨機數字 */, min /* 產生隨機數字範圍（最小） */, max /* 產生隨機數字範圍（最大）*/) {
+
+let numbers = [];
+
+while (numbers.length < length) {
+
+let num = Math.floor(Math.random() * (max - min + 1)) + min; 
+
+if (! /* Not logical operators */ numbers.includes(num)) {
+
+numbers.push(num);
+
+}
+
+}
+
+return numbers;
+
+}
+
+  
+
+let randomNumbers = getRandomNumbers(6, 1, 49);
+```
+
+
+
+### [成果](michellechang2006.github.io/My-First-Javascript-APP)
+
+
+
+
+![](https://i.imgur.com/GSsmJQv.gif)
+
+
+
+>[原始碼](https://github.com/michellechang2006/lottery-game)
+
+
+
+
+
 
 
 ###  📝 延伸 - ES6 modules scope
 
+
+（圖A）
+
+![](https://i.imgur.com/w9fA09a.png)
+
+
+
+當我們使用ES6 Modules時，必須徹底了解作用域 (Scope)外，我們寫程式時，必須按照圖A，有上往下的順序來寫JS，否則某些區塊的程式碼無法執行。
+
+
+```js
+// gobal scope
+import { randomNumbers } from "./random_numbers.js"
+
+import { myNumbers, } from "./my_numbers.js";
+
+let randomBtn = document.querySelector('#start-random');
+
+randomBtn.addEventListener('click', StartRandom);
+
+
+
+
+// function scope
+
+function random() {
+
+randomNumbersSpec = Math.floor(Math.random() * 49) + 1
+
+randomSpecEl.textContent = randomNumbersSpec
+
+let randomEl = [];
+
+
+for (let i = 1; i <= 6; i++) {
+
+randomEl.push(document.querySelector(`.random${i}`));
+
+}
+
+for (let i = 0; i <= 6; i++) {
+
+randomEl[i].textContent = randomNumbers[i]
+
+}
+
+}
+
+
+function StartRandom() {
+
+startRandomBtn.style = "display:none";
+
+resultBtn.style = "display:inline";
+
+let randomEl = [];
+
+for (let i = 0; i < randomNumbers.length; i++) {
+
+randomNumbers[i] = Math.floor(Math.random() * 49) + 1;
+
+}
+
+random()
+
+}
+```
+
+
+
+
+>[中文 詳解 JS 各個 Scope](https://medium.com/itsems-frontend/javascript-scope-and-scope-chain-ca17a1068c96)
+
+
+>[MDN | | Scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
+
+
+
+###  📝 延伸 - Other Array Methods `indexOf()`
+
+
+**先看語法結構：**
+
+```js
+arr.indexOf(searchElement[, fromIndex])
+```
+
+
+#### 🖼️ 圖解
+
+![](https://i.imgur.com/IdVdGq6.png)
+
+
+
+**Search Element :**
+
+
+![](https://i.imgur.com/wNs3N8X.png)
+
+
+
+
+![](https://i.imgur.com/okvGb6U.png)
+
+
+
+
+![](https://i.imgur.com/BnD0W8S.png)
+
+
+
+
+<u>程式碼：</u>
+
+
+```js
+let fruitProducts = [ "watermelons",
+
+"oranges", 
+
+"mangos", 
+
+"apples"] 
+
+  
+
+console.log(fruitProducts.indexOf("oranges")) /// output: 1
+
+console.log(fruitProducts.indexOf("mangos")) /// output: 2
+
+console.log(fruitProducts.indexOf("apples")) /// output: 3
+```
+
+
+
+**Search Element  `-1` 索引值?**
+
+
+
+![](https://i.imgur.com/wNs3N8X.png)
+
+
+那麽假如我們要搜尋一個在陣列（Array)裡，沒有的元素，結果會是？
+
+
+![](https://i.imgur.com/UFMi1l6.png)
+
+
+搜尋一個在陣列（Array)裡，沒有的元素，將會回傳`-1`。
+
+
+<u>程式碼：</u>
+
+
+
+```js
+let fruitProducts = [ "watermelons",
+
+"oranges",
+
+"mangos",
+
+"apples"]
+
+  
+
+console.log(fruitProducts.indexOf("peachs")) /// output: -1
+```
+
+
+
+
+**fromIndex - 整數 索引值**
+
+
+
+🍊 假如我們希望知道，這個水果攤的產品清單 - `Array`中，第二顆橘子的索引值為何。
+
+
+![](https://i.imgur.com/CbCwX7j.png)
+
+
+
+語法像這樣，我們要從這個`Array`的 `2 index`來找：
+
+
+
+![](https://i.imgur.com/KKHhem0.png)
+
+
+
+這個水果攤的產品清單 - `Array`中，第二顆橘子的索引值為 `3`，回傳 `3`
+
+
+
+<u>程式碼：</u>
+
+
+
+```js
+let fruitProducts = [ "watermelons",
+
+"oranges",
+
+"mangos",
+
+"oranges"]
+
+  
+  
+
+console.log(fruitProducts.indexOf("oranges",2)) // output:3
+```
+
+
+
+
+**fromIndex - 負數 索引值**
+
+
+![](https://i.imgur.com/4LK16jk.png)
+
+
+
+我們也可以使用複數的索引值來搜尋。請注意，「第二顆橘子」的索引值回傳是整數 `3`，~~不是負數~~。
+
+
+
+![](https://i.imgur.com/pHXFzVf.png)
+
+
+
+**fromIndex - `-1` 索引值?**
+
+那麽假如我們要搜尋一個在這個陣列（Array)裡第二個橘子，但這個陣列（Array)並沒有這個元素，結果會是？
+
+![](https://i.imgur.com/ZzmR4h0.png)
+
+
+一樣也是回傳 `-1` 索引值。
+
+
+![](https://i.imgur.com/xToRjMO.png)
+
+
+![](https://i.imgur.com/xc24zNx.png)
+
+
+
+
+>[第11屆 iThome 鐵人賽 文章 | | JS 找出元素索引值的陣列 Array 方法 indexOf()](https://ithelp.ithome.com.tw/articles/10227363)
 
 
 >[MDN | | Array.prototype.indexOf() ](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
 
 
 
+
+
+###  📝 延伸 - Other Array Methods `includes()`
+
+
+**先看語法結構：**
+
+
+```js
+arr.includes(searchElement[, fromIndex])
+```
+
+
+
+我們使用`includes()`來搜尋看看是否有某個元素在`Array`裡。
+
+
+
+#### 🖼️ 圖解
+
+
+**searchElement - `true`**
+
+![](https://i.imgur.com/nrZ42Rx.png)
+
+
+
+如果有，則回傳`true`。
+
+
+
+![](https://i.imgur.com/zOYVUIR.png)
+
+
+
+
+<u>程式碼：</u>
+
+
+
+
+```js
+let fruitProducts = [ "watermelons",
+
+"apples",
+
+"mangos",
+
+"oranges"]
+
+  
+  
+
+console.log(fruitProducts.includes("mangos")) // output: true
+```
+
+
+
+**searchElement - `false`**
+
+
+
+![](https://i.imgur.com/8zBwMbo.png)
+
+
+
+假如，沒有，則回傳`false`
+
+
+
+![](https://i.imgur.com/gS6pMgf.png)
+
+
+
+
+<u>程式碼：</u>
+
+
+
+```js
+let fruitProducts = [ "watermelons",
+
+"peaches",
+
+"mangos",
+
+"apples"]
+
+  
+  
+
+console.log(fruitProducts.includes("oranges")) // output:false
+```
+
+
+
+
+**fromIndex - `true`**
+
+我們也可以像`indexOf()`一樣，指定搜尋特定的索引值。
+
+
+![](https://i.imgur.com/kvmQu3K.png)
+
+
+
+在這個`Array`中，索引值`1`的確有🍊，所以回傳`true`。
+
+
+
+![](https://i.imgur.com/TRz6ZNC.png)
+
+
+
+<u>程式碼：</u>
+
+
+
+```js
+let fruitProducts = [ "watermelons",
+
+"oranges",
+
+"mangos",
+
+"apples"]
+
+  
+  
+
+console.log(fruitProducts.includes("oranges",1)) // output: true
+```
+
+
+
+
+
+
+**fromIndex - `false`**
+
+
+![](https://i.imgur.com/1qzEN3z.png)
+
+
+
+在這個`Array`中，🥭 索引值是 `2` 不是 `3`，所以回傳`false`。
+
+
+
+![](https://i.imgur.com/yKBk7be.png)
+
+
+
+<u>程式碼：</u>
+
+
+
+```js
+let fruitProducts = [ "watermelons",
+
+"oranges",
+
+"mangos",
+
+"apples"]
+
+  
+  
+
+console.log(fruitProducts.includes("mangos",3)) // output:false
+```
+
+
+
+
 >[MDN | | Array.prototype.includes()](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
+
+
+
+
+
+
+### 📝 延伸 - Switch 陳述句
+
+
+
+
+**先看語法結構：**
+
+
+```js
+switch (expression) {
+  case value1:
+        //當 expression 的值符合 value1
+        //要執行的陳述句
+    [break;]
+  case value2:
+        //當 expression 的值符合 value2
+        //要執行的陳述句
+    [break;]
+  ...
+  case valueN:
+        //當 expression 的值符合 valueN
+        //要執行的陳述句
+    [break;]
+  [default:
+        //當 expression 的值都不符合上述條件
+        //要執行的陳述句
+    [break;]]
+}
+
+```
+
+
+
+
+#### 🖼️ 圖解
+
+
+還記得這張圖嗎？
+
+
+![](https://i.imgur.com/krsr2SU.png)
+
+
+
+我們先來複習一下，[`If...else conditionals`](#If...else conditionals) 語法：
+
+
+
+![](https://i.imgur.com/d2pD5mx.png)
+
+
+
+
+```js
+let traffic = "有塞車"
+
+
+if (traffic === "有塞車") {
+
+console.log("左轉")
+
+}
+
+else if ( traffic === "沒有塞車") {
+
+console.log("直走")
+
+}
+
+else {
+
+console.log("右轉")
+
+}
+
+  
+
+// output: 左轉
+```
+
+
+
+這是switch語法，是不是看起來更乾淨、清楚呢？ 
+
+⚠️ 注意：每當一個要執行的陳述句結束時，記得要上 `break`，沒有使用 `break` 的話，符合該條件（`value`)後面的所有 statement（不論有沒有符合條件）也都會被執行到。
+
+
+
+![](https://i.imgur.com/VBLb3rB.png)
+
+
+
+
+
+```js
+let traffic = "沒有塞車"
+
+
+switch (traffic) {
+
+
+case "有塞車": // if  (traffic = "有塞車") {
+
+console.log("左轉")
+
+break;
+
+case "沒有塞車": // if  (traffic = "沒有塞車") {
+
+console.log("直走")
+
+break;
+
+case "想休息": // if (traffic = "想休息") {
+
+console.log("右轉")
+
+break;
+
+}  // output: 左轉
+```
+
+
+#### 🗂️ Reference
+
+
+>[JS Switch Case 的使用](https://pjchender.dev/javascript/js-switch-case/)
+
+
+**Solo Project 應用 程式碼：**
+
+
+```js
+switch (count) {
+
+case 6:
+
+window.alert("恭喜您獲得頭獎！💰💰💰")
+
+break
+
+case (5 && specialNumbers === true):
+
+window.alert("恭喜您獲得貳獎！💰")
+
+break
+
+case 5:
+
+window.alert("恭喜您獲得參獎！💵")
+
+break
+
+  
+
+case (4 && specialNumbers === true):
+
+window.alert("恭喜您獲得肆獎！💵")
+
+break
+
+case 4:
+
+window.alert("祝您平平安安！🧧")
+
+break
+
+case 3:
+
+window.alert("恭喜您獲得普獎! NT$400 🧧")
+
+break
+
+case (3 && specialNumbers === true):
+
+window.alert("恭喜您獲得伍獎！ NT$2,000 💵")
+
+break
+
+case 2:
+
+window.alert("祝您心想事成！🧧")
+
+break
+
+case (2 && specialNumbers === true):
+
+window.alert("恭喜您獲得柒獎！ NT$400 🧧")
+
+break
+
+  
+
+case 1:
+
+window.alert("祝您心想事成！🧧")
+
+break
+
+case 0:
+
+window.alert("祝您平平安安！🧧")
+
+break
+
+}
+
+  
+
+}
+```
+
+
+
+
+
+>[MDN | | Switch](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/switch)
+
+
+
+
+
+
+
+### 📝 延伸 - 樣板字面值 (樣板字串） Template literals
+
+
+樣板字串，個人認為沒有太多複雜的「觀念」，但語法蠻複雜就是了，所以就不特別紀錄。推這個文章👉🏻[初學者跪著學JavaScript Day6 :template literals和 tagged template literals傻傻分不清楚](https://ithelp.ithome.com.tw/m/articles/10269028)
+
+
+
+**Solo Project 應用 程式碼：**
+
+
+
+```js
+let randomEl = [];
+
+let myNumbersEl = [];
+
+  
+  
+
+for (let i = 1; i <= 6; i++) {
+
+randomEl.push(document.querySelector(`.random${i}`));
+
+}
+
+for (let i = 1; i <= 6; i++) {
+
+myNumbersEl.push(document.querySelector(`.number${i}`));
+
+}
+```
+
+
+
+>[MDN | | 樣板字面值 (樣板字串） Template literals](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Template_literals)
+
+>[ 鐵人賽：JavaScript Template String 樣板字串](https://www.casper.tw/javascript/2017/12/22/javascript-template-string/)
+
+
+
+
+
+### 📝 延伸 -  `Array.prototype.forEach()`
+
+
+
+我們在學`for loop`時，有學到這個應用：
+
+
+
+```js
+let fruitProducts = [ "watermelons",
+
+"oranges",
+
+"mangos",
+
+"apples"]
+
+  
+  
+
+for (let i = 0; i < fruitProducts.length; i++) {
+
+const arr = fruitProducts[i];
+
+console.log(arr)
+
+}
+```
+
+
+
+而 `forEach()`的寫法是：
+
+
+```js
+fruitProducts.forEach(arr => {
+
+console.log(arr)
+
+});
+```
+
+
+
+
+
+**`forEach()`的優點**
+
+
+`for loop` 函式作用域 (function scope)，所以當我們使用`var`來宣告 `i` 變數時， `i` 變數則會變成全域(global scope)變數：
+
+
+
+```js
+for (var i = 0; i < fruitProducts.length; i++) {
+
+const arr = fruitProducts[i];
+
+}
+
+console.log(i) // output: 4
+```
+
+
+
+而`forEach()`並不需要特別宣告 `i` 這樣的變數，所以可以避免，使用`i` 變數時， `i` 變數則會變成全域(global scope)變數。
+
+
+
+```js
+fruitProducts.forEach(arr => {
+
+console.log(arr)
+
+});
+```
+
+
+
+
+**`forEach()`的缺點**
+
+
+儘管，`forEach()`語法非常方便、乾淨，但它也是有所限制。比方說， `for loop` 可使用`break`來停止執行迴圈：
+
+
+```js
+let fruitProducts = [ "watermelons",
+
+"oranges",
+
+"mangos",
+
+"apples"]
+
+  
+  
+
+for (var i = 0; i < fruitProducts.length; i++) {
+
+const arr = fruitProducts[i];
+
+if (i === 2) { // 如果迴圈到索引值 2
+
+break; // 則停止執行迴圈
+
+}
+
+console.log(arr)
+
+/*
+
+output:
+
+watermelons
+
+oranges
+
+*/
+
+}
+```
+
+
+
+
+**Solo Project 應用 程式碼：**
+
+
+```js
+randomNumbers.forEach((value, index) => {
+
+let indexInArray2 = myNumbers.indexOf(value);
+
+console.log("value: " + value)
+
+console.log("indexInArray2 :" + indexInArray2)
+
+console.log("index: " + index)
+
+if (indexInArray2 !== -1) {
+
+console.log(`數字 ${value} 在 randomNumbers 的索引是 ${index}，在 myNumbers 的索引是 ${indexInArray2}`);
+
+randomEl[index].style = "background: radial-gradient(circle at 65% 15%, white 1px, #FF7070 3%, red 60%, #FF7070 100%);"
+
+myNumbersEl[indexInArray2].style = "background: radial-gradient(circle at 65% 15%, white 1px, #FF7070 3%, red 60%, #FF7070 100%);"
+
+}
+
+});
+```
+
+
+
+
+#### 🗂️ Reference
+
+
+>[JS - for 迴圈與 forEach 有什麼不同](https://www.casper.tw/development/2020/10/05/js-for-loop-vs-for-each/)
 
 
 
@@ -4080,9 +5065,97 @@ let orangeShelf = document.getElementById("orange-shelf")
 
 
 
-#### 🗂️ Reference
 
->[JS - for 迴圈與 forEach 有什麼不同](https://www.casper.tw/development/2020/10/05/js-for-loop-vs-for-each/)
+###  📝 延伸 - while 語法
+
+
+只要符合條件（`true`），則會執行`while`內的程式碼，反之如果沒有符合條件（`false`），停止執行循環內部的 `statement`，並把控制權移交給循環後面的語句。
+
+
+
+**語法結構：**
+
+
+```js
+while (condition)
+  statement
+```
+
+
+
+<u>🌰 例子 - 循環：</u>
+
+
+
+```js
+let a = 0;
+
+let b = 0;
+
+while (a < 5) {
+
+a++;
+
+b += a;
+
+}
+
+console.log(a) // output: 5
+```
+
+
+
+**Solo Project 應用 程式碼：**
+
+
+
+```js
+function getMyNumbers(length, min, max) {
+
+let numbers = [];
+
+while (numbers.length < length) { // 當 numbers 陣列 元素的數量並沒有大於6時，...
+
+let num = Math.floor(Math.random() * (max - min + 1)) + min;
+
+if (!numbers.includes(num)) {
+
+numbers.push(num);
+
+}
+
+}
+
+return numbers;
+
+}
+
+  
+
+let myNumbers = getMyNumbers(6, 1, 49);
+```
+
+
+
+
+[MDN | | while 語法](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/while)
+
+
+
+
+### 📝    更多的延伸 
+
+
+**Arrow function expressions**
+
+
+[JavaScript ES6 Arrow Functions Tutorial](https://youtu.be/h33Srr5J9nY?si=8BE54phwUfMGGV_l)
+
+[鐵人賽：箭頭函式 (Arrow functions)](https://www.casper.tw/javascript/2017/12/21/javascript-es6-arrow-function/)
+
+[MDN | | Arrow function expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+
+
 
 
 

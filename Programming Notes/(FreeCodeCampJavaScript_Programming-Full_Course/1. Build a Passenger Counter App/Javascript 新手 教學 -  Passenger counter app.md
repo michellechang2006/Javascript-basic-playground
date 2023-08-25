@@ -1984,7 +1984,7 @@ scoreRecorder.textContent = countAll
 }
 ```
 
-### [成果]([michellechang2006.github.io/My-First-Javascript-APP/](https://michellechang2006.github.io/My-First-Javascript-APP/ "https://michellechang2006.github.io/My-First-Javascript-APP/"))
+### [成果](michellechang2006.github.io/My-First-Javascript-APP)
 
 ![](https://i.imgur.com/gE3lMwA.gif)
 
@@ -1994,7 +1994,10 @@ scoreRecorder.textContent = countAll
 
 # Challenge 參考答案
 
+
+
 ## ✏️ 學習筆記
+
 
 ### [Create variable](https://youtu.be/jS4aFq5-91M?t=462)
 

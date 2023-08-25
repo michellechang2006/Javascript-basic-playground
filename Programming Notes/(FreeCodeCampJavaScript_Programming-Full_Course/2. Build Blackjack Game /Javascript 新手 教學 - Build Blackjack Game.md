@@ -8,7 +8,7 @@
 - ### [if else statements](#If...else-conditionals)
 - ###  [comparison operators](#If...else-conditionals)
 - ###  [logical operators]()
-- ###  [for loops](#Counting - Loops)
+- ###  [for loops](#Counting-Loops)
 - ### [The Math object](#Generating-random-numbers-with-Math.random())
 - ### [return statements](#Returning-values)
 

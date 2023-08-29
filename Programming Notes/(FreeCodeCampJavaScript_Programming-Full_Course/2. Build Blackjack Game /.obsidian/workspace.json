@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9b2047799503318d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "(解答放最後面）Challenges - Build Blackjack Game.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "20e24e80c4ee7c98",
@@ -86,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Javascript 新手 教學 - Build Blackjack Game.md",
+                "file": "(解答放最後面）Challenges - Build Blackjack Game.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Javascript 新手 教學 - Build Blackjack Game.md",
+                "file": "(解答放最後面）Challenges - Build Blackjack Game.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Javascript 新手 教學 - Build Blackjack Game.md"
+                "file": "(解答放最後面）Challenges - Build Blackjack Game.md"
               }
             }
           }
@@ -147,10 +159,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5eb6f29f4bd21fd5",
+  "active": "9b2047799503318d",
   "lastOpenFiles": [
-    "().md",
+    "Challenges - Build Blackjack Game.md",
+    "(解答放最後面）Challenges - Build Blackjack Game.md",
     "Javascript 新手 教學 - Build Blackjack Game.md",
+    "未命名檔案夾",
+    "().md",
     "Untitled.canvas",
     "049.mp3",
     "全國高級中等學校112學年度商業類學生技藝競賽「網頁設計」職種競賽規則.pdf.pdf",

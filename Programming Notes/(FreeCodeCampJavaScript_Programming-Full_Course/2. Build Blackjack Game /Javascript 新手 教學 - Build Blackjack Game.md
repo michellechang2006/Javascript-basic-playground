@@ -49,7 +49,84 @@
 
 [Add to sum when newCard is clicked](#Add-to-sum-when-newCard-is-clicked)
 
+[Rename startGame function](#Rename-startGame-function)
+
+[Arrays intro](#Arrays-intro)
+
+[Array indexes](#Array-indexes)
+
+[Arrays with multiple data types](#Arrays-with-multiple-data-types)
+
+[Adding & removing items from arrays](#Adding-&-removing-items-from-arrays)
+
+[Creating cards array](#Creating-cards-array)
+
+[Push new card to array](#Push-new-card-to-array)
+
+[Counting - Loops](#Counting---Loops)
+
+[For loops & arrays](#For-loop-&-arrays)
+
+[First array-based for loop](#First-array-based-for-loop)
+
+[For loops, arrays, & DOM](#For-loops-arrays-&-DOM)
+
+[Use loop to render cards](#Use-loop-to-render-cards)
+
+[Returning values](#Returning-values)
+
+[Generating random numbers with Math.random()](#Generating-random-numbers-with-Math.random())
+
+[Math.random() * 6](#Math.random()-*-6)
+
+[Flooring number with Math.floor()](#Flooring-number-with-Math.floor())
+
+[Using Math.random() and Math.floor to create a dice](#Using-Math.random()-and-Math.floor-to-create-a-dice)
+
+[Completing our dice function](#Completing-our-dice-function)
+
+[Make getRandomCard() work](#Make-getRandomCard()-work)
+
+[getRandomNumber function](#getRandomNumber-function)
+
+[Assign values in startGame function](#Assign-values-in-startGame-function)
+
+[Logical AND operator](#Logical-AND-operator)
+
+[Write your first logical operator](#Write-your-first-logical-operator)
+
+[Logical OR operator](#Logical-OR-operator)
+
+[Only trigger newCard() if you're allowed to](#Only-trigger-newCard()-if-you're-allowed-to)
+
+[Logical NOT operator (筆者自行補充)](#Logical-NOT-operator-(筆者自行補充))
+
+[create first object](#create-first-object)
+
+[Use an object to store player data](#Use-an-object-to-store-player-data)
+
+[Recap](#Recap)
+
+
 ### [🏁 Recap Challenge](#Recap-Challenge)
+
+
+[Objects & functions](#Objects-&-functions)
+
+[if else](#if-else)
+
+[Loops & arrays](#Loops-&-arrays)
+
+[push, pop, unshift, shift challenge](#push,-pop,-unshift,-shift-challenge)
+
+[Logical operators](#Logical-operators)
+
+[Rock papers scissors](#Rock-papers-scissors)
+
+[emojifighter](#emojifighter)
+
+[Sorting fruit](#Sorting-fruit)
+
 
 ### [⭐ 復刻 APP](#復刻-APP)
 
@@ -309,6 +386,9 @@ console.log("You can not enter the club!")
 
 > [MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/if...else)
 
+
+
+
 ## [if/else...if/else statement](https://youtu.be/jS4aFq5-91M?t=6126)
 
 ### 🏁 Challenge
@@ -498,6 +578,9 @@ console.log("You're out of the game! 😭")
 ```
 
 [參考答案](#Challenge-參考答案)
+
+
+
 
 ## [Practice boolean conditions](https://youtu.be/jS4aFq5-91M?t=6688)
 
@@ -1929,13 +2012,9 @@ function renderGame(){
 
 sumEl.textContent = "Sum: " + sum
 
-cardsEl.textContent = "Cards: "
+cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
 
 // Create a for loop that renders out all the cards instead of just two
-
-for (let i = 0; i < cards.length; i++) {
-
-cardsEl.textContent += cards[i] + " ";
 
 }
 ```
@@ -2254,6 +2333,70 @@ console.log(flooredNumber) // log out 4
 
 >[MDN WEB DOCS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor)
 
+
+
+
+
+### [Methods on object (Object內的Function)]()
+
+
+我們也可以在`Object`中，創建函式`function`為`Object`的`value`。
+
+
+🌰 [W3school](https://www.w3schools.com/js/js_object_methods.asp) 例子：
+
+
+```html
+<h1>The JavaScript <i>this</i> Keyword</h1>
+<p>In this example, <b>this</b> refers to the <b>person</b> object.</p>
+<p>Because <b>fullName</b> is a method of the person object.</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName : function() { // 創建函式function為fullName(key)的value
+    return this.firstName + " " + this.lastName; 
+  }
+};
+
+// Display data from the object:
+document.getElementById("demo").innerHTML = person.fullName();
+</script>
+```
+
+
+
+
+#### 📝 延伸 - `this` keyword in Methods
+
+
+`this`是`global object`。也就是說，`this`只能調用父層區塊的程式碼。
+
+
+![](https://i.imgur.com/LRSZQal.png)
+
+
+
+我們再以🌰 [W3school](https://www.w3schools.com/js/js_object_methods.asp)的例子，來解釋：
+
+
+`person`  `object`裡，我們在`fullName`(`key`)中，創建了一個函式（`function`)，就是「子層（function scope)」為`fullName`(`key`)的`value`，而整個`person`  `object`就是「父層 (global scope)」。
+
+
+![](https://i.imgur.com/4u2qS89.png)
+
+
+
+![](https://i.imgur.com/GoYYyx6.png)
+
+
+
+>[複習 global/function scope](https://tinyurl.com/2cgr5545)
 
 
 
@@ -4054,11 +4197,19 @@ let orangeShelf = document.getElementById("orange-shelf")
 
 
 
-# [Solo Project 學以致用](#學以致用-Solo-Project)
+# [Solo Project 學以致用](https://scrimba.com/learn/learnjavascript/solo-project-pro-password-generator-cR9B46Sg)
+
+
+
+###  [樂透 小遊戲 Lottery Game](https://michellechang2006.github.io/lottery-game/)
+
 
 
 
 ![](https://i.imgur.com/GSsmJQv.gif)
+
+
+
 
 
 ### ✏️ 筆記
@@ -4173,7 +4324,7 @@ let randomNumbers = getRandomNumbers(6, 1, 49);
 
 
 
-### [成果](michellechang2006.github.io/My-First-Javascript-APP)
+### [成果](https://michellechang2006.github.io/lottery-game/)
 
 
 
@@ -5538,57 +5689,6 @@ messageEl.textContent = message
 ```
 
 
-```js
-let firstCard = 10
-
-let secondCard = 21
-
-let sum = firstCard + secondCard
-
-let hasBlackJack = false
-
-let isAlive = true
-
-let message = ""
-
-  
-
-// 2. Store the sum paragraph in a variable called sumEl
-
-let sumEl = document.querySelector("#sum-el")
-
-let messageEl = document.getElementById("message-el")
-
-  
-
-function startGame(){
-
-// 3. Render the sum on the page using this format -> "Sum: 14"
-
-sumEl.textContent = "Sum: " + sum
-
-if (sum <= 20) {
-
-message = "Do you want to draw a new card? 🙂"
-
-} else if (sum === 21) {
-
-message = "Wohoo! You've got Blackjack! 🥳"
-
-hasBlackJack = true
-
-} else {
-
-message = "You're out of the game! 😭"
-
-isAlive = false
-
-}
-
-messageEl.textContent = message
-
-}
-```
 
 
 ### [Display cards](https://youtu.be/jS4aFq5-91M?t=8377)
@@ -5980,6 +6080,24 @@ messageEl.textContent = message
 
 
 
+### [Push new card to array](https://youtu.be/jS4aFq5-91M?t=10304)
+
+
+```js
+function newCard() {
+
+console.log("Drawing a new card from the deck!")
+
+let card = 6;
+
+sum += card;
+
+// Push the card to the cards array
+cards.push(card)
+console.log(cards)
+renderGame()
+
+}
 
 
 ### [Counting - Loops](https://youtu.be/jS4aFq5-91M?t=10631)
@@ -6016,6 +6134,24 @@ console.log(i)
 }
 ```
 
+
+### [Counting - Loops](https://youtu.be/jS4aFq5-91M?t=10631)
+
+
+
+```js
+// Create a for loop that counts from 10 to 100 in steps of 10
+
+// Use console.log to log out the numbers
+
+  
+
+for (let i = 10; i < 101; i += 10) {
+
+console.log(i)
+
+}
+```
 
 
 ### [First array-based for loop](https://youtu.be/jS4aFq5-91M?t=11063)
@@ -6059,6 +6195,31 @@ let greetingEl = document.getElementById("greeting-el")
 for (let i = 0; i < sentence.length; i++) {
 
 greetingEl.textContent += sentence[i] + " "
+
+}
+```
+
+
+
+### [Use loop to render cards](https://youtu.be/jS4aFq5-91M?t=11335)
+
+
+```js
+
+let cards = [firstCard,secondCard]
+
+
+function renderGame(){
+
+sumEl.textContent = "Sum: " + sum
+
+cardsEl.textContent = "Cards: "
+
+// Create a for loop that renders out all the cards instead of just two
+
+for (let i = 0; i < cards.length; i++) {
+
+cardsEl.textContent += cards[i] + " ";
 
 }
 ```
@@ -6526,7 +6687,7 @@ renderGame()
 
 
 
-### [Logical AND operator](https://youtu.be/jS4aFq5-91M?t=13374)
+### [Write your first logical operator](https://youtu.be/jS4aFq5-91M?t=13600)
 
 
 
@@ -6671,75 +6832,6 @@ console.log(aibnb.title)
 
 console.log(aibnb.rating)
 ```
-
-
-
-### [Methods on object (Object內的Function)]()
-
-
-我們也可以在`Object`中，創建函式`function`為`Object`的`value`。
-
-
-🌰 [W3school](https://www.w3schools.com/js/js_object_methods.asp) 例子：
-
-
-```html
-<h1>The JavaScript <i>this</i> Keyword</h1>
-<p>In this example, <b>this</b> refers to the <b>person</b> object.</p>
-<p>Because <b>fullName</b> is a method of the person object.</p>
-
-<p id="demo"></p>
-
-<script>
-// Create an object:
-const person = {
-  firstName: "John",
-  lastName: "Doe",
-  id: 5566,
-  fullName : function() { // 創建函式function為fullName(key)的value
-    return this.firstName + " " + this.lastName; 
-  }
-};
-
-// Display data from the object:
-document.getElementById("demo").innerHTML = person.fullName();
-</script>
-```
-
-
-
-
-#### 📝 延伸 - `this` keyword in Methods
-
-
-`this`是`global object`。也就是說，`this`只能調用父層區塊的程式碼。
-
-
-![](https://i.imgur.com/LRSZQal.png)
-
-
-
-我們再以🌰 [W3school](https://www.w3schools.com/js/js_object_methods.asp)的例子，來解釋：
-
-
-`person`  `object`裡，我們在`fullName`(`key`)中，創建了一個函式（`function`)，就是「子層（function scope)」為`fullName`(`key`)的`value`，而整個`person`  `object`就是「父層 (global scope)」。
-
-
-![](https://i.imgur.com/4u2qS89.png)
-
-
-
-![](https://i.imgur.com/GoYYyx6.png)
-
-
-
->[複習 global/function scope](https://tinyurl.com/2cgr5545)
-
-
-
-
-
-
 
 
 

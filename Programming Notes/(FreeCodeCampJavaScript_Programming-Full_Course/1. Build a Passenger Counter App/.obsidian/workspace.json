@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript 新手 教學 -  Passenger counter app.md",
+                "file": "(解答放最後面）Challenge_Passenger_counter_app.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "cdd7d109e14c4d4b",
@@ -86,7 +85,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Javascript 新手 教學 -  Passenger counter app.md",
+                "file": "(解答放最後面）Challenge_Passenger_counter_app.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -109,7 +108,24 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Javascript 新手 教學 -  Passenger counter app.md"
+                "file": "(解答放最後面）Challenge_Passenger_counter_app.md"
+              }
+            }
+          },
+          {
+            "id": "ec8e73692850cfa9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "(解答放最後面）Challenge_Passenger_counter_app.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
               }
             }
           }
@@ -131,5 +147,9 @@
     }
   },
   "active": "c30a293cf64e7c84",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Challenges_Passenger_counter_app.md",
+    "(解答放最後面）Challenge_Passenger_counter_app.md",
+    "Javascript 新手 教學 -  Passenger counter app.md"
+  ]
 }

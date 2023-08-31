@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "20e24e80c4ee7c98",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "(解答放最後面）Challenges - Build Blackjack Game.md",
+                "file": "Javascript 新手 教學 - Build Blackjack Game.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "(解答放最後面）Challenges - Build Blackjack Game.md",
+                "file": "Javascript 新手 教學 - Build Blackjack Game.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "(解答放最後面）Challenges - Build Blackjack Game.md"
+                "file": "Javascript 新手 教學 - Build Blackjack Game.md"
               }
             }
           }
@@ -159,11 +159,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9b2047799503318d",
+  "active": "5eb6f29f4bd21fd5",
   "lastOpenFiles": [
-    "Challenges - Build Blackjack Game.md",
     "(解答放最後面）Challenges - Build Blackjack Game.md",
     "Javascript 新手 教學 - Build Blackjack Game.md",
+    "Challenges - Build Blackjack Game.md",
     "未命名檔案夾",
     "().md",
     "Untitled.canvas",

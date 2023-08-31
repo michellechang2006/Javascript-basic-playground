@@ -253,6 +253,7 @@ console.log(count);
 ```
 
 這樣，程式碼的數值顯示在控制台。（紅色方框內）
+
 ![](https://i.imgur.com/g7vlzk2.png)
 
 > [MDN WEB DOCS](https://developer.mozilla.org/zh-TW/docs/Web/API/console)
@@ -817,7 +818,7 @@ Model ：NASA的神農五號火箭就像HTML文件，而樂高版的火箭就像
 
 [[Javascript][HTML] DOM 概念](https://ithelp.ithome.com.tw/articles/10094965)
 
->[MDN WEB DOCS](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
+>[MDN | | Document: getElementById() method](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
 
 > [HTML DOM Documents list](https://www.w3schools.com/jsref/dom_obj_document.asp)
 

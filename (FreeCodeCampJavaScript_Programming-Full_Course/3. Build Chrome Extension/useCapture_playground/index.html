@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #red {
+            width: 30vw;
+            height: 20vh;
+            border: red solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #green {
+            width: 30vw;
+            height: 20vh;
+            border: green solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="red">
+        <div id="green"></div>
+    </div>
+    <script>
+        let redEl = document.getElementById("red")
+        let greenEl = document.getElementById("green")
+        redEl.addEventListener("click", red, true)
+        function red() {
+            console.log("Parent area")
+        }
+        greenEl.addEventListener("click", green, true)
+        function green() {
+            console.log("Child area")
+        }
+
+    </script>
+</body>
+
+</html>

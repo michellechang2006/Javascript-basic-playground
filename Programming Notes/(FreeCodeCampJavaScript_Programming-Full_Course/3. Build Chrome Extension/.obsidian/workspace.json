@@ -1,19 +1,19 @@
 {
   "main": {
-    "id": "1d2002ea7ea4d8e3",
+    "id": "377ebedeeef597d8",
     "type": "split",
     "children": [
       {
-        "id": "94f687aef4242610",
+        "id": "87f009082e28975c",
         "type": "tabs",
         "children": [
           {
-            "id": "c30a293cf64e7c84",
+            "id": "7764b2d1c1ee2909",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript 新手 教學 -  Passenger counter app.md",
+                "file": "Javascript 新手 教學 - Build Chrome Extension.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "9a6b007d1db34ea0",
+    "id": "233935f80f046a57",
     "type": "split",
     "children": [
       {
-        "id": "433785f2188cdc71",
+        "id": "c135fee2bc369c52",
         "type": "tabs",
         "children": [
           {
-            "id": "e914f0d193730cf4",
+            "id": "d977fa62bf097240",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +43,7 @@
             }
           },
           {
-            "id": "8891a740859960fb",
+            "id": "b7e68af7e2182c3d",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +58,7 @@
             }
           },
           {
-            "id": "1efd60debfcb43ef",
+            "id": "b21c6c7c58e0fbbe",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -73,27 +73,44 @@
     "collapsed": true
   },
   "right": {
-    "id": "cdd7d109e14c4d4b",
+    "id": "91925b2b681fe3a9",
     "type": "split",
     "children": [
       {
-        "id": "ec7d99474e3d3e8c",
+        "id": "a6e24abbe03805a5",
         "type": "tabs",
         "children": [
           {
-            "id": "337159484e05b0c3",
+            "id": "f4387fbf62c58201",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Javascript 新手 教學 - Build Chrome Extension.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d6c1dc7a09275d94",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Javascript 新手 教學 -  Passenger counter app.md",
+                "file": "Javascript 新手 教學 - Build Chrome Extension.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "7219d8e9c3460cdd",
+            "id": "d85002afa0cd2096",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -104,34 +121,17 @@
             }
           },
           {
-            "id": "5ba6ab3a149772cc",
+            "id": "3de63b462dcdf628",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Javascript 新手 教學 -  Passenger counter app.md"
-              }
-            }
-          },
-          {
-            "id": "ec8e73692850cfa9",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Javascript 新手 教學 -  Passenger counter app.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "file": "Javascript 新手 教學 - Build Chrome Extension.md"
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -147,10 +147,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c30a293cf64e7c84",
+  "active": "7764b2d1c1ee2909",
   "lastOpenFiles": [
-    "(解答放最後面）Challenge_Passenger_counter_app.md",
-    "Challenges_Passenger_counter_app.md",
-    "Javascript 新手 教學 -  Passenger counter app.md"
+    "().md",
+    "Javascript 新手 教學 - Build Chrome Extension.md"
   ]
 }

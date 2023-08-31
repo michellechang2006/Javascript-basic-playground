@@ -132,12 +132,14 @@
 
 ### [⭐ Solo Project 學以致用](#學以致用-Solo-Project)
 
-### [🏁 Challenge 題庫]()
+### [🏁 Challenge 題庫](https://tinyurl.com/2739estx)
 
 ### [🏁 Challenge 參考答案](#Challenge-參考答案)
 
 
 # 學習筆記
+
+
 
 ## [Add firstCard, secondCard, & sum](https://youtu.be/jS4aFq5-91M?t=5547)
 
@@ -285,11 +287,15 @@ console.log("You're out of the game! 😭")// 將 "You're out of the game! 😭"
 }
 ```
 
+
 `else if (sum > 21)`可取代為`else`。因爲我們第一個條件是設定為`如果sum變數的值小於21`，而`如果sum變數的值大於21`（true)條件代表說`如果sum變數的值沒有小於21，而是相反大於21`（false)，所以我們可以直接寫`else`即可。
+
 
 **🖼️ 圖解**
 
 ![](https://i.imgur.com/rRYH8XH.png)
+
+
 
 >[MDN WEB DOCS | | 比較運算子](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Guide/Expressions_and_operators#%E6%AF%94%E8%BC%83%E9%81%8B%E7%AE%97)
 

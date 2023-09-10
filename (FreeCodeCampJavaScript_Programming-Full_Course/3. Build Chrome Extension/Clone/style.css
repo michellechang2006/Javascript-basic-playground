@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap');
+
+
+body {
+    min-width: 400px;
+    color: #221914;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+input {
+    width: 400px;
+    height: 20px;
+    margin: 10px 0;
+    outline-color: #fdbdb6;
+    outline-width: .5em;
+    border-color: #221914 .5em;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a{
+    color: #221914;
+}
+
+button {
+    border: none;
+    background-color: #fdbdb6;
+    padding: .5rem;
+    border-radius: .5em;
+    font-family: 'Noto Sans', sans-serif;
+}

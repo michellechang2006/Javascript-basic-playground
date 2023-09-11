@@ -26,6 +26,14 @@ a{
     color: #221914;
 }
 
+#clear-btn{
+    background: none;
+    border: solid #fdbdb6 2px;
+    transition:1ms;
+}
+#clear-btn:hover{
+    background-color: #fdbdb6;
+}
 button {
     border: none;
     background-color: #fdbdb6;

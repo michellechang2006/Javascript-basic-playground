@@ -2,6 +2,18 @@
 # 💪🏻 這個階段，我們會學到...
 
 
+- [const](#Using-let-&-const)
+- [addEventListener()](#addEventListener())
+- [innerHTML](#How-to-render-li-elements-with-innerHTML)
+- [input.value](#Push-value-from-input-field)
+- [function parameters](#How-function-parameters-can-improve-our-code)
+- [template strings](#Template-strings)
+- [localStorage](#What-is-localStorage?)
+- [The JSON Object](#Storing-arrays-in-localStorage)
+- [objects in arrays](#How-to-get-the-current-tab?/Use-Chrome-API-to-get-tab)
+
+
+
 # 🔗 Section links 
 
 
@@ -473,7 +485,7 @@ console.log("Button clicked!")
 ## [Push value from input field](https://youtu.be/jS4aFq5-91M?si=02XWyb2eisG4qRcM&t=18084)
 
 
-🔍  嘗試自己Google看看吧～推薦搜尋關鍵字：`get value from input field javascript`
+🔍  嘗試自己[Google](https://letmegooglethat.com/?q=get+value+from+input+field+javascript)看看吧～推薦搜尋關鍵字：`get value from input field javascript`
 
 
 ```js
@@ -946,7 +958,7 @@ ulEl.innerHTML = listItems
 ### 🏁 Challenge 
 
 
-⭐ 嘗試自己Google來解答吧～
+⭐ 嘗試自己[Google](https://letmegooglethat.com/?q=clear+input+field+javascript)來解答吧～
 
 
 ```js
@@ -2549,6 +2561,29 @@ API(Application Programming Interface)，讓原本兩個（或多個）不相干
 
 
 
+## [Deploy final version](https://youtu.be/jS4aFq5-91M?si=aP_DZ6wFKnnIzSsi&t=26012)
+
+
+我們的Chrome Extension完成啦～現在來更新最終的版本吧～
+
+
+1. 一樣到「擴充功能」頁面，點擊我們Chrome Extension - Leads Tracker 的「詳細資料」。
+
+
+![](https://i.imgur.com/wRqrLCc.png)
+
+
+2. 點擊「更新」，就完成啦～ （Chrome 會通過檔案路徑，自動幫我們更新）
+
+
+![](https://i.imgur.com/2M0C7i5.png)
+
+
+
+>[Chrome Extensions 官方 開發者 文件](https://developer.chrome.com/docs/extensions/)
+
+
+
 
 
 ## 筆者自行補充
@@ -2557,9 +2592,347 @@ API(Application Programming Interface)，讓原本兩個（或多個）不相干
 >[MDN | | Window: load event](https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event)
 
 
+>[MDN | |Array.prototype.splice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
 
 
-## Recap
+>[MDN | | Array.prototype.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+
+
+>[MDN | | 箭頭函式](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+
+
+
+
+
+
+## [Recap](https://youtu.be/jS4aFq5-91M?si=9xbfx-s_N5N3pgNJ&t=26148)
+
+
+- [const](#Using-let-&-const)
+- [addEventListener()](#addEventListener())
+- [innerHTML](#How-to-render-li-elements-with-innerHTML)
+- [input.value](#Push-value-from-input-field)
+- [function parameters](#How-function-parameters-can-improve-our-code)
+- [template strings](#Template-strings)
+- [localStorage](#What-is-localStorage?)
+- [The JSON Object](#Storing-arrays-in-localStorage)
+- [objects in arrays](#How-to-get-the-current-tab?/Use-Chrome-API-to-get-tab)
+
+
+
+
+# [Recap Challenges](https://youtu.be/jS4aFq5-91M?si=tml8Pm_zvgiMOG6s&t=26495)
+
+
+
+## [let & const](https://scrimba.com/learn/learnjavascript/let-const-coa9447d5b2aeedc69985ac63)
+
+
+
+```js
+// SETTING THE STAGE
+
+let player = "Per"
+
+let opponent = "Nick"
+
+let game = "AmazingFighter"
+
+const points = 0
+
+const hasWon = false
+
+  
+
+// PLAYING THE GAME
+
+points += 100
+
+hasWon = true
+
+  
+
+// ANNOUNCING THE WINNER
+
+if (hasWon) {
+
+console.log(player + " got " + points + " points and won the " + game + " game!")
+
+} else {
+
+console.log("The winner is " + opponent + "! " + player + " lost the game")
+
+}
+
+  
+
+// Go through all variables and decide if they should be let or const
+
+// Change the console logs to use template strings instead of double quotes
+```
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+
+
+
+## [Log out items in an array](https://scrimba.com/learn/learnjavascript/log-out-items-in-an-array-cod5f44f69a15ee84141ba98a)
+
+
+```js
+let myCourses = ["Learn CSS Animations", "UI Design Fundamentals", "Intro to Clean Code"]
+
+  
+
+// Create a function that takes a single parameter, an array,
+
+// and logs all the items of the array to the console.
+
+// Call the function while passing in myCourses as an argument
+```
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+
+## [save to localStorage](https://scrimba.com/learn/learnjavascript/save-to-localstorage-co5b7404f9ce73339cbe5b13e)
+
+
+```js
+// Save a value to localStorage
+
+// Delete your code and refresh the page
+
+// Fetch your value from localStorage and log it out
+```
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+
+
+
+
+## [addEventListener and object in array](https://scrimba.com/learn/learnjavascript/addeventlistener-and-object-in-array-cod7441a996bab8ab629ee423)
+
+
+
+```js
+let data = [
+
+{
+
+player: "Jane",
+
+score: 52
+
+},
+
+{
+
+player: "Mark",
+
+score: 41
+
+}
+
+]
+
+  
+
+// Fetch the button from the DOM, store it in a variable
+
+// Use addEventListener() to listen for button clicks
+
+// Log Jane's score when the button is clicked (via data)
+```
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+## [Generate sentence](https://scrimba.com/learn/learnjavascript/generate-sentence-cp9Grdh3)
+
+
+😈 這題是魔王題
+
+
+```js
+// The generateSentence(desc, arr) takes two parameterer: a description and an array.
+
+// It should return a string based upon the description and array.
+
+  
+
+// Example 1: if you pass in "largest countries",and ["China", "India", "USA"],
+
+// it should return the string: "The 3 largest countries are China, India, USA"
+
+  
+
+// Example 2:If you pass in "best fruits" and ["Apples", "Bananas"], it should return:
+
+// "The 2 best fruits are Apples, Bananas"
+
+  
+
+// Use both a for loop and a template string to solve the challenge
+
+function generateSentence(desc, arr) {
+
+}
+```
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+## [Render images](https://scrimba.com/learn/learnjavascript/render-images-cbKR3qS9)
+
+
+
+
+```js
+// Create a function that renders the three team images
+
+// Use a for loop, template strings (``), plus equals (+=)
+
+// .innerHTML to solve the challenge.
+
+  
+
+const imgs = [
+
+"images/hip1.jpg",
+
+"images/hip2.jpg",
+
+"images/hip3.jpg"
+
+]
+```
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+
+
+## [Rounding Numbers](https://scrimba.com/learn/learnjavascript/rounding-numbers-cob924bf8beb96284010598e2)
+
+
+⭐ 這個方法（`method`)，老師還沒教。嘗試自己[Google](https://letmegooglethat.com/?q=JS+round+to+2+decimal)看看吧～
+
+
+```js
+// Challenge:
+
+// Round the price in the button down to two decimal places.
+
+// Don't know which method to use? Google it!
+
+  
+
+const totalPrice = 420.69235632455
+
+const btn = document.getElementById("purchase-btn")
+
+btn.textContent = `Buy €${ totalPrice }`
+```
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+>[MDN | | Number.prototype.toFixed()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed)
+
+
+
+
+
+
+
+## [Convert string to number challenge](https://scrimba.com/learn/learnjavascript/convert-string-to-number-challenge-co1ca4a908ffcc7ed176ccf50)
+
+
+⭐ 在真實的開發專案，常常會發生數字資料型態變成字串資料型態。嘗試自己將回傳的 [Google](https://letmegooglethat.com/?q=toFixed+is+not+a+function)看看吧～
+
+
+```js
+// Challenge:
+
+// The toFixed() method doesn't work anymore. Can you make it work?
+
+// Google the error message if you're unsure about how to do it
+
+  
+
+const totalPrice = "420.69235632455"
+
+const btn = document.getElementById("buy-btn")
+
+btn.textContent = `Buy €${totalPrice.toFixed(2)}`
+```
+
+
+
+[參考答案](#Challenge-參考答案)
+
+
+
+
+>[TypeError: toFixed is not a function in JavaScript](https://bobbyhadz.com/blog/javascript-typeerror-tofixed-is-not-a-function)
+
+>[Number.prototype.toFixed()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed)
+
+
+
+
+### [復刻 APP]()
+
+
+![](https://i.imgur.com/v9UXxsk.gif)
+
+
+>[原始碼]()
+
+
+
+
+
+### [Solo Project 學以致用](https://michellechang2006.github.io/)
+
+
+![](https://i.imgur.com/mXTfA15.gif)
+
+
+
+>[原始碼](https://github.com/michellechang2006/social-media-profile)
+
+
+
 
 
 
@@ -3644,4 +4017,261 @@ localStorage.setItem("myLeads", JSON.stringify(myLeads) )
 render(myLeads)
 
 })
+```
+
+
+
+
+
+## [Recap Challenges](https://youtu.be/jS4aFq5-91M?si=tml8Pm_zvgiMOG6s&t=26495)
+
+
+### [let & const](https://scrimba.com/learn/learnjavascript/let-const-coa9447d5b2aeedc69985ac63)
+
+
+```js
+// SETTING THE STAGE
+
+const player = "Per"
+
+const opponent = "Nick" // 對手
+
+const game = "AmazingFighter"
+
+let points = 0
+
+let hasWon = false
+
+  
+
+// PLAYING THE GAME
+
+points += 100
+
+hasWon = true
+
+  
+
+// ANNOUNCING THE WINNER
+
+if (hasWon) {
+
+console.log(`${player} got ${points} points and won the ${game} game!`)
+
+} else {
+
+console.log(`The winner is ${opponent}! ${player} lost the game`)
+
+}
+
+  
+
+// Go through all variables and decide if they should be let or const
+
+// Change the console logs to use template strings instead of double quotes
+```
+
+
+
+### [Log out items in an array](https://scrimba.com/learn/learnjavascript/log-out-items-in-an-array-cod5f44f69a15ee84141ba98a)
+
+
+```js
+let myCourses = ["Learn CSS Animations", "UI Design Fundamentals", "Intro to Clean Code"]
+
+  
+
+// Create a function that takes a single parameter, an array,
+
+// and logs all the items of the array to the console.
+
+// Call the function while passing in myCourses as an argument
+
+  
+
+function logItems(arr) {
+
+for (let i = 0; i < arr.length; i++) {
+
+console.log(arr[i])
+
+}
+
+}
+
+  
+
+logItems(myCourses)
+```
+
+
+
+
+### [save to localStorage](https://scrimba.com/learn/learnjavascript/save-to-localstorage-co5b7404f9ce73339cbe5b13e)
+
+
+
+```js
+// Save a value to localStorage
+
+// Delete your code and refresh the page
+
+// Fetch your value from localStorage and log it out
+
+  
+
+localStorage.setItem("saveToLocalStorage","Hello World")
+
+console.log(localStorage.getItem("saveToLocalStorage"))
+```
+
+
+
+### [Generate sentence](https://scrimba.com/learn/learnjavascript/generate-sentence-cp9Grdh3)
+
+
+
+```js
+// The generateSentence(desc, arr) takes two parameterer: a description and an array.
+
+// It should return a string based upon the description and array.
+
+  
+
+// Example 1: if you pass in "largest countries",and ["China", "India", "USA"],
+
+// it should return the string: "The 3 largest countries are China, India, USA"
+
+  
+
+// Example 2:If you pass in "best fruits" and ["Apples", "Bananas"], it should return:
+
+// "The 2 best fruits are Apples, Bananas"
+
+  
+
+// Use both a for loop and a template string to solve the challenge
+
+function generateSentence(desc, arr) {
+
+let string = `The ${arr.length} ${desc} are `
+
+const lastIndex = arr.length - 1
+
+for (let i = 0; i < arr.length; i++) {
+
+if (i === lastIndex) {
+
+string += arr[i]
+
+} else {
+
+string += arr[i] + ", "
+
+}
+
+}
+
+console.log(string)
+
+}
+
+  
+
+generateSentence("largest countries", ["China", "India", "USA"])
+```
+
+
+
+
+
+### [Render images](https://scrimba.com/learn/learnjavascript/render-images-cbKR3qS9)
+
+
+```js
+// Create a function that renders the three team images
+
+// Use a for loop, template strings (``), plus equals (+=)
+
+// .innerHTML to solve the challenge.
+
+  
+
+const imgs = [
+
+"images/hip1.jpg",
+
+"images/hip2.jpg",
+
+"images/hip3.jpg"
+
+]
+
+  
+
+const container = document.getElementById("container")
+
+function render(files){
+
+for (let i = 0; i < files.length; i++) {
+
+console.log(files[i])
+
+container.innerHTML += ` <img class="team-img" src="${files[i]}">`
+
+}
+
+}
+
+  
+
+render(imgs)
+```
+
+
+
+
+
+
+
+### [Rounding Numbers](https://scrimba.com/learn/learnjavascript/rounding-numbers-cob924bf8beb96284010598e2)
+
+
+```js
+// Challenge:
+
+// Round the price in the button down to two decimal places.
+
+// Don't know which method to use? Google it!
+
+  
+
+const totalPrice = 420.69235632455
+
+const btn = document.getElementById("purchase-btn")
+
+btn.textContent = `Buy €${totalPrice.toFixed(2)}`
+```
+
+
+
+
+### [Convert string to number challenge](https://scrimba.com/learn/learnjavascript/convert-string-to-number-challenge-co1ca4a908ffcc7ed176ccf50)
+
+
+
+```js
+// Challenge:
+
+// The toFixed() method doesn't work anymore. Can you make it work?
+
+// Google the error message if you're unsure about how to do it
+
+  
+
+const totalPrice = "420.69235632455"
+
+const btn = document.getElementById("buy-btn")
+
+btn.textContent = `Buy €${Number(totalPrice).toFixed(2) }`
 ```

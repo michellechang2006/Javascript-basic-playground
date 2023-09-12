@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "91925b2b681fe3a9",
@@ -147,7 +146,75 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7764b2d1c1ee2909",
+  "floating": {
+    "id": "68a6817ab4a2fc2b",
+    "type": "floating",
+    "children": [
+      {
+        "id": "71789d6771cdf920",
+        "type": "window",
+        "children": [
+          {
+            "id": "947ee9960f19a6ea",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "3578222d69604687",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Javascript 新手 教學 - Build Chrome Extension.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 62,
+        "y": 30,
+        "width": 1024,
+        "height": 714,
+        "maximize": true,
+        "zoom": 0
+      },
+      {
+        "id": "618e98ff580f6ade",
+        "type": "window",
+        "children": [
+          {
+            "id": "6c19be89641b2bd9",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "4b1db5ea3599bdfe",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Javascript 新手 教學 - Build Chrome Extension.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 448,
+        "y": 84,
+        "width": 1024,
+        "height": 800,
+        "maximize": true,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "4b1db5ea3599bdfe",
   "lastOpenFiles": [
     "Javascript 新手 教學 - Build Chrome Extension.md",
     "().md"

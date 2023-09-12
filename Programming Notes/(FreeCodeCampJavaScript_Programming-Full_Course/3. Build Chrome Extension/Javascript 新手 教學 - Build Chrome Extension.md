@@ -20,9 +20,106 @@
 ### [✏️ 學習筆記](#學習筆記)
 
 
+[Make input button work with onclick](#Make-input-button-work-with-onclick)
+
+[addEventListener()](#Write-your-first-addEventListener())
+
+[Your turn to refactor](#Your-turn-to-refactor)
+
+[Create myLeads array & inputEl](#Create-myLeads-array-&-inputEl)
+
+[Render leads in unordered list](#Render-leads-in-unordered-list)
+
+[How to render li elements with innerHTML](#How-to-render-li-elements-with-innerHTML)
+
+[Write your first innerHTML](#Write-your-first-innerHTML)
+
+[More innerHTML practice](#More-innerHTML-practice)
+
+[Render li elements with innerHTML](#Render-li-elements-with-innerHTML)
+
+[Use createElement() & append() instead of innerHTML](#Use createElement() & append() instead of innerHTML)
+
+[Improving performance of our app](#Improving-performance-of-our-app)
+
+[Create render function](#Create-render-function)
+
+[Clear input field](#Clear-input-field)
+
+[Add `<a>` tag](#Add-`<a>`-tag)
+
+[Template strings](#Template-strings)
+
+[Write your first Template strings](#Write-your-first-Template-strings)
+
+[Make template string more dynamic](#Make-template-string-more-dynamic)
+
+[Refactor app to use template string](#Refactor-app-to-use-template-string)
+
+[Preparing deployment](#Preparing-deployment)
+
+[Deploying Chrome Extension](#Deploying-Chrome-Extension)
+
+[What is localStorage?](#What-is-localStorage?)
+
+[Your first localStorage](#Your-first-localStorage)
+
+[Storing arrays in localStorage](#Storing-arrays-in-localStorage)
+
+[Save the leads to localStorage](#Save-the-leads-to-localStorage)
+
+[Get the leads from localStorage](#Get-the-leads-from-localStorage)
+
+[Truthy & falsy values](#Truthy-&-falsy-values)
+
+[Checking localStorage before rendering](#Checking-localStorage-before-rendering)
+
+[Make delete button work](#Make-delete-button-work)
+
+[How function parameters can improve our code](#How-function-parameters-can-improve-our-code)
+
+[Write your first function parameter](#Write-your-first-function-parameter)
+
+[Functions with multiple params](#Functions-with-multiple-params)
+
+[Numbers as function params](#Numbers-as-function-params)
+
+[Arguments vs Params](#Arguments-vs-Params)
+
+[Arrays as params](#Arrays-as-params)
+
+[Refactor renderLeads() to use parameter](#Refactor-renderLeads()-to-use-parameter)
+
+[Create the tabBtn](#Create-the-tabBtn)
+
+[Save the tab url](#Save-the-tab-url)
+
+[How to get the current tab?/Use Chrome API to get tab](#How-to-get-the-current-tab?/Use-Chrome-API-to-get-tab)
+
+[Deploy final version](#Deploy-final-version)
+
+[筆者自行補充](#筆者自行補充)
+
+[Recap](#Recap)
+
 
 ### [🏁 Recap Challenge](#Recap-Challenge)
 
+[let & const](#let-&-const)
+
+[Log out items in an array](#Log-ou- items-in-an-array)
+
+[save to localStorage](#save-to-localStorage)
+
+[addEventListener and object in array](#addEventListener-and-object-in-array)
+
+[Generate sentence](#Generate-sentence)
+
+[Render images](#Render-images)
+
+[Rounding Numbers](#Rounding-Numbers)
+
+[Convert string to number challenge](#Convert-string-to-number-challenge)
 
 
 ### [⭐ 復刻 APP](#復刻-APP)
@@ -32,6 +129,9 @@
 ### [🏁 Challenge 題庫](https://tinyurl.com/2739estx)
 
 ### [🏁 Challenge 參考答案](#Challenge-參考答案)
+
+
+
 
 
 
@@ -221,7 +321,7 @@ console.log("Button clicked!")
 
 
 
-## [Write your first `addEventListener()`](https://youtu.be/jS4aFq5-91M?si=RcMdMeg_siV5P4zV&t=17471)
+## [Write your first addEventListener()](https://youtu.be/jS4aFq5-91M?si=RcMdMeg_siV5P4zV&t=17471)
 
 
 
@@ -1172,7 +1272,7 @@ ulEl.innerHTML = listItems
 
 
 
-## [Preparing deployment]()
+## [Preparing deployment](https://youtu.be/jS4aFq5-91M?si=OaVarjAtmFxiqNkP&t=20773)
 
 
 ##### `manifest.json` 檔案
@@ -2161,7 +2261,7 @@ add(3, 4)
 
 
 
-## [Refactor `renderLeads()` to use parameter](https://youtu.be/jS4aFq5-91M?si=au4U4Xi_wT7_gppj&t=24902)
+## [Refactor renderLeads() to use parameter](https://youtu.be/jS4aFq5-91M?si=au4U4Xi_wT7_gppj&t=24902)
 
 
 ### 🏁 Challenge （上個單元實作題）
@@ -2916,7 +3016,7 @@ btn.textContent = `Buy €${totalPrice.toFixed(2)}`
 ![](https://i.imgur.com/v9UXxsk.gif)
 
 
->[原始碼]()
+>[原始碼](https://tinyurl.com/yp5w6ndj)
 
 
 

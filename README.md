@@ -11,11 +11,11 @@
 （持續更新...)
 - [我的Javascript之旅 - 自主學習成果 ： JavaScript Programming - Full Course 教學影片](https://youtu.be/jS4aFq5-91M)
   
-  - [單元一 ： Passenger counter app](https://tinyurl.com/2cgr5545)
+  - [單元一 ： 計算器 Passenger counter app](https://tinyurl.com/2cgr5545)
     
-  - [單元二 ： Build Blackjack Game](https://tinyurl.com/223oyx48)
+  - [單元二 ： 撲克牌小遊戲 Build Blackjack Game](https://tinyurl.com/223oyx48)
     
-  - [單元三 ： Build Chrome Extension](https://tinyurl.com/yudz9aoj)
+  - [單元三 ： Chrome 瀏覽器外掛 Build Chrome Extension](https://tinyurl.com/yudz9aoj)
  
   - [第一個專案 : 仿Linktree 一頁式網頁](https://github.com/michellechang2006/social-media-profile)
  

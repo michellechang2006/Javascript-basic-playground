@@ -17,6 +17,8 @@
     
   - [單元三 ： Build Chrome Extension](https://tinyurl.com/yudz9aoj)
  
+  - [第一個專案 : 仿Linktree 一頁式網頁](https://github.com/michellechang2006/social-media-profile)
+ 
 
 ## ⚠️ 注意：如果你要參考我的筆記
 1. 我是完全新手，內容可能有誤！如果你有發現任何錯誤，麻煩到[issues](#issues)回報給我🙏🏻

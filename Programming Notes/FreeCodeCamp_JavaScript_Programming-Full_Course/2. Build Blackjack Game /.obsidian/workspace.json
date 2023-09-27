@@ -1,19 +1,31 @@
 {
   "main": {
-    "id": "1d2002ea7ea4d8e3",
+    "id": "bab0feb7b0c5843d",
     "type": "split",
     "children": [
       {
-        "id": "94f687aef4242610",
+        "id": "887e724f899f6d82",
         "type": "tabs",
         "children": [
           {
-            "id": "c30a293cf64e7c84",
+            "id": "5eb6f29f4bd21fd5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript 新手 教學 -  Passenger counter app.md",
+                "file": "Javascript 新手 教學 - Build Blackjack Game.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9b2047799503318d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "(解答放最後面）Challenges - Build Blackjack Game.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,15 +37,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "9a6b007d1db34ea0",
+    "id": "f82f37537e23bafe",
     "type": "split",
     "children": [
       {
-        "id": "433785f2188cdc71",
+        "id": "c6dc0fdefd28d67b",
         "type": "tabs",
         "children": [
           {
-            "id": "e914f0d193730cf4",
+            "id": "0a8edab569939156",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +55,7 @@
             }
           },
           {
-            "id": "8891a740859960fb",
+            "id": "0e80b743225a6740",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +70,7 @@
             }
           },
           {
-            "id": "1efd60debfcb43ef",
+            "id": "cb4992f2739a68d8",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -73,27 +85,44 @@
     "collapsed": true
   },
   "right": {
-    "id": "cdd7d109e14c4d4b",
+    "id": "20e24e80c4ee7c98",
     "type": "split",
     "children": [
       {
-        "id": "ec7d99474e3d3e8c",
+        "id": "b6043db5bd5cde24",
         "type": "tabs",
         "children": [
           {
-            "id": "337159484e05b0c3",
+            "id": "fbcb9ba6e9565115",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Javascript 新手 教學 - Build Blackjack Game.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e5e5448e56b3d389",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Javascript 新手 教學 -  Passenger counter app.md",
+                "file": "Javascript 新手 教學 - Build Blackjack Game.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "7219d8e9c3460cdd",
+            "id": "2348998d05d0ac93",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -104,38 +133,31 @@
             }
           },
           {
-            "id": "5ba6ab3a149772cc",
+            "id": "9d945ca1d8756a62",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Javascript 新手 教學 -  Passenger counter app.md"
+                "file": "Javascript 新手 教學 - Build Blackjack Game.md"
               }
             }
           },
           {
-            "id": "ec8e73692850cfa9",
+            "id": "79d009eaf28cd825",
             "type": "leaf",
             "state": {
-              "type": "backlink",
+              "type": "all-properties",
               "state": {
-                "file": "Javascript 新手 教學 -  Passenger counter app.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "sortOrder": "frequency"
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 269.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -147,10 +169,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c30a293cf64e7c84",
+  "active": "5eb6f29f4bd21fd5",
   "lastOpenFiles": [
-    "(解答放最後面）Challenge_Passenger_counter_app.md",
-    "Challenges_Passenger_counter_app.md",
-    "Javascript 新手 教學 -  Passenger counter app.md"
+    "(解答放最後面）Challenges - Build Blackjack Game.md",
+    "Javascript 新手 教學 - Build Blackjack Game.md",
+    "Challenges - Build Blackjack Game.md",
+    "未命名檔案夾",
+    "().md",
+    "Untitled.canvas",
+    "049.mp3",
+    "全國高級中等學校112學年度商業類學生技藝競賽「網頁設計」職種競賽規則.pdf.pdf",
+    "文字-FAD6C185EFF4-1.txt",
+    "Array Methods Visualised.jpeg"
   ]
 }

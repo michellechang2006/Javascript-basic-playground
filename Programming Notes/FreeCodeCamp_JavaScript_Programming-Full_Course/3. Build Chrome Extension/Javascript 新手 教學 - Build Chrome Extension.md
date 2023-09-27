@@ -3010,7 +3010,7 @@ btn.textContent = `Buy €${totalPrice.toFixed(2)}`
 
 
 
-### [復刻 APP]()
+## [復刻 APP](https://tinyurl.com/yp5w6ndj)
 
 
 ![](https://i.imgur.com/v9UXxsk.gif)
@@ -3022,7 +3022,9 @@ btn.textContent = `Buy €${totalPrice.toFixed(2)}`
 
 
 
-### [Solo Project 學以致用](https://michellechang2006.github.io/)
+
+
+## [Solo Project 學以致用](https://michellechang2006.github.io/)
 
 
 ![](https://i.imgur.com/mXTfA15.gif)
@@ -3030,6 +3032,21 @@ btn.textContent = `Buy €${totalPrice.toFixed(2)}`
 
 
 >[原始碼](https://github.com/michellechang2006/social-media-profile)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

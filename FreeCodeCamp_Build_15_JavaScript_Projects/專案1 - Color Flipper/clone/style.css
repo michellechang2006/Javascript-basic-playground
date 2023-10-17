@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    letter-spacing: .2rem;
+    background-color: #fafafa;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row;
+    padding: 0 200px;
+    font-size: 1em;
+    box-shadow: 10px 10px 30px 3px rgba(31, 27, 27, 0.1);
+    background-color: #fafafa;
+}
+
+nav h3 {
+    color: #85CDFD;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #121212;
+}
+
+main {
+    min-height: 90vh;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    font-weight: 900;
+}
+
+.color-block {
+    display: flex;
+    justify-content: center;
+    background-color: #121212;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 3em;
+    border-radius: .8rem;
+}
+
+button {
+    margin-top: 30px;
+    background: none;
+    border: solid #121212;
+    border-radius: .3rem;
+    padding: 10px 30px;
+    box-shadow: 10px 10px 30px 3px rgba(31, 27, 27, 0.1);
+    transition: background-color .2s, color .2s;
+}
+
+button:hover {
+    background-color: #121212;
+    color: #fff;
+}

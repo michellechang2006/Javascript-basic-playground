@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Javascript 專案式 教學 - 1. Color Flipper.md",
+                "file": "Javascript 專案式 教學 雜記  - 1. Color Flipper.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ab969953e1fb4c81",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Javascript 專案式 教學 - 1. Color Flipper.md",
+                "file": "Javascript 專案式 教學 雜記  - 1. Color Flipper.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Javascript 專案式 教學 - 1. Color Flipper.md",
+                "file": "Javascript 專案式 教學 雜記  - 1. Color Flipper.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Javascript 專案式 教學 - 1. Color Flipper.md"
+                "file": "Javascript 專案式 教學 雜記  - 1. Color Flipper.md"
               }
             }
           }
@@ -148,6 +149,6 @@
   },
   "active": "2a556593559e3c66",
   "lastOpenFiles": [
-    "Javascript 專案式 教學 - 1. Color Flipper.md"
+    "Javascript 專案式 教學 雜記  - 1. Color Flipper.md"
   ]
 }

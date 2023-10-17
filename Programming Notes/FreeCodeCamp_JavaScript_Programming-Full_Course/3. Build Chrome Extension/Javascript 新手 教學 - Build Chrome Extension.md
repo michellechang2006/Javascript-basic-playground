@@ -315,7 +315,7 @@ console.log("Button clicked!")
 
 
 
->[MDN | | EventTarget: addEventListener() method](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+>[EventTarget: addEventListener() method | | MDN](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 
 
 
